@@ -1,0 +1,60 @@
+nav {
+    z-index: 99;
+    top: 0;
+    height: 10vh;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+
+    .logo {
+        height: 100%;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    input {
+        width: 25%;
+        font-size: 30px;
+        border-bottom: 2px solid black;
+        background: transparent;
+    }
+
+    ul {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                text-transform: capitalize;
+                font-weight: bold;
+
+
+                .underline {
+                    transition: 0.2s ease;
+                    position: absolute;
+                    bottom: 0;
+                    height: 2px;
+                    width: 0;
+                    background: black;
+                }
+
+                &:hover {
+                    .underline {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

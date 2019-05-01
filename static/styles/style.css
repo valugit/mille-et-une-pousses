@@ -46,24 +46,29 @@ nav {
   justify-content: space-around;
   font-size: 30px;
 }
+
 nav .logo {
   height: 100%;
 }
+
 nav .logo img {
   height: 100%;
 }
+
 nav input {
   width: 25%;
   font-size: 30px;
   border-bottom: 2px solid black;
   background: transparent;
 }
+
 nav ul {
   display: flex;
   width: 50%;
   justify-content: space-between;
   align-items: center;
 }
+
 nav ul li a {
   display: flex;
   justify-content: center;
@@ -72,6 +77,7 @@ nav ul li a {
   text-transform: capitalize;
   font-weight: bold;
 }
+
 nav ul li a .underline {
   transition: 0.2s ease;
   position: absolute;
@@ -80,6 +86,7 @@ nav ul li a .underline {
   width: 0;
   background: black;
 }
+
 nav ul li a:hover .underline {
   width: 100%;
 }
@@ -90,9 +97,11 @@ nav ul li a:hover .underline {
   justify-content: center;
   align-items: center;
 }
+
 .home .title {
   font-size: 123px;
 }
+
 .home .container {
   width: 85%;
 }
@@ -104,9 +113,11 @@ nav ul li a:hover .underline {
 .home-one {
   height: 100vh;
 }
+
 .home-one .container {
   text-align: left;
 }
+
 .home-one .container p {
   margin-top: 1em;
   width: 50%;
@@ -116,6 +127,7 @@ nav ul li a:hover .underline {
 .home-two {
   height: 57vh;
 }
+
 .home-two .container {
   width: 65%;
   display: flex;
@@ -124,9 +136,11 @@ nav ul li a:hover .underline {
   align-items: center;
   border: 10px solid white;
 }
+
 .home-two .container .title {
   margin-top: 22px;
 }
+
 .home-two .container p {
   width: 65%;
   font-size: 22px;
@@ -136,9 +150,11 @@ nav ul li a:hover .underline {
 .home-three {
   height: 78vh;
 }
+
 .home-three .container {
   text-align: left;
 }
+
 .home-three .container p {
   margin-top: 1em;
   width: 47%;
@@ -149,16 +165,19 @@ nav ul li a:hover .underline {
   height: 94vh;
   justify-content: space-evenly;
 }
+
 .home-four .container {
   height: 65%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .home-four .container p {
   width: 50%;
   font-size: 34px;
 }
+
 .home-four .container img {
   border: 1px solid white;
   width: 40%;
@@ -170,15 +189,18 @@ nav ul li a:hover .underline {
   justify-content: center;
   align-items: center;
 }
+
 .home-five .title {
   margin: 0.2em 0 0;
 }
+
 .home-five form {
   width: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .home-five form .container {
   width: 100%;
   display: flex;
@@ -186,6 +208,7 @@ nav ul li a:hover .underline {
   justify-content: space-between;
   margin: 3em 0;
 }
+
 .home-five form .container .input {
   height: 100%;
   width: 50%;
@@ -193,6 +216,7 @@ nav ul li a:hover .underline {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .home-five form .container .input input {
   border: 3px solid black;
   border-radius: 15px;
@@ -200,10 +224,12 @@ nav ul li a:hover .underline {
   width: 100%;
   padding: 0.4em 1em;
 }
+
 .home-five form .container p {
   width: 40%;
   font-size: 34px;
 }
+
 .home-five form textarea {
   resize: none;
   border: 3px solid black;
@@ -213,6 +239,7 @@ nav ul li a:hover .underline {
   height: 7em;
   padding: 0.5em 0 0 1em;
 }
+
 .home-five form .btn {
   margin: 1em;
   font-size: 44px;
@@ -228,12 +255,15 @@ nav ul li a:hover .underline {
   justify-content: center;
   align-items: flex-end;
 }
+
 .fp-one .container {
   width: 50%;
 }
+
 .fp-one .container .title {
   font-size: 123px;
 }
+
 .fp-one .container p {
   width: 85%;
   font-size: 22px;
@@ -247,37 +277,46 @@ footer {
   width: 100%;
   height: 40vh;
 }
+
 footer .container {
   width: 85%;
   display: flex;
   justify-content: space-between;
 }
+
 footer .container ul {
   font-size: 22px;
   height: 65%;
 }
+
 footer .container ul:first-child {
   margin-left: 100px;
 }
+
 footer .container ul .title-ul {
   font-size: 23px;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 1em;
 }
+
 footer .container ul .li {
   line-height: 2.3em;
 }
+
 footer .container ul .li span {
   text-transform: uppercase;
 }
+
 footer .container ul .li-language {
   display: flex;
   align-items: center;
 }
+
 footer .container ul .li-language span {
   text-transform: uppercase;
 }
+
 footer .container ul .li-language .flag {
   margin: 10px;
   width: 25px;
@@ -285,15 +324,18 @@ footer .container ul .li-language .flag {
   border-radius: 50%;
   background: linear-gradient(to right, blue 33%, white 33%, white 66%, red 66%);
 }
+
 footer .container ul .li-language hr {
   margin: 10px 10px 10px 0;
   height: 30px;
   width: 2px;
   background: black;
 }
+
 footer .container ul .li-language .change {
   font-weight: bold;
 }
+
 footer .icons {
   position: absolute;
   filter: brightness(0) invert(1);
@@ -302,5 +344,3 @@ footer .icons {
   right: 0;
   margin: 1em;
 }
-
-/*# sourceMappingURL=style.css.map */

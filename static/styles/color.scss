@@ -1,0 +1,30 @@
+$deepBlue: #005C78;
+$blue: #007791;
+$beige: #FECEA8;
+$lightPink: #FF847C;
+$pinkOrange: #E84A5F;
+
+.c-white {
+    color: white;
+}
+
+.c-black {
+    color: black;
+}
+
+.c-blue {
+    color: $blue;
+}
+
+.title {
+    text-shadow: 0 0.06em 0 $lightPink;
+    text-transform: uppercase;
+}
+
+.b-white {
+    background: white;
+}
+
+.b-beige {
+    background: $beige;
+}
