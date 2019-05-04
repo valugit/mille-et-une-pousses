@@ -1,4 +1,4 @@
-<footer class="b-beige">
+<footer class="b-blue">
     <div class="container">
         <ul>
             <li class="title-ul">aide & informations</li>

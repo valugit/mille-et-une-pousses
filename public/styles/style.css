@@ -35,6 +35,10 @@
   background: #FECEA8;
 }
 
+.b-blue {
+  background: #007791;
+}
+
 nav {
   z-index: 99;
   top: 0;
