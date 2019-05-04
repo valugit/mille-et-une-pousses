@@ -56,27 +56,3 @@
         <img src="" alt="alt">
     </div>
 </section>
-<section class="home home-five static static-three b-white">
-    <h2 class="title">Titre</h2>
-    <form action="post" class="container">
-        <div class="container">
-            <div class="input">
-                <input type="text" placeholder="Nom">
-                <input type="text" placeholder="Prénom">
-                <input type="text" placeholder="E-mail">
-            </div>
-            <p>Eius populus ab incunabulis primis ad usque
-                pueritiae tempus extremum, quod annis
-                circumcluditur Eius populus ab incunabulis
-                primis ad usque
-                pueritiae tempus extremum, quod annis
-                circumcluditur Eius populus ab incunabulis
-                primis ad usque
-                pueritiae tempus extremum, quod annis
-                circumcluditur
-            </p>
-        </div>
-        <textarea name="commentaire" placeholder="Commentaire"></textarea>
-        <input class="btn" type="submit">
-    </form>
-</section>
