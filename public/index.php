@@ -6,7 +6,9 @@ session_start();
 $controller_query = $_GET["controller"] ?? "index";
 $action = $_GET["action"] ?? "home";
 
-$controllerName = "\controllers\\".ucfirst($controller_query)."Controller";
+$controllerName = 
+              "\Controllers\\".
+              ucfirst($controller_query)."Controller";
 
 $config = json_decode(file_get_contents("../conf/config.json"), true);
 $db = new \Services\DBConnect(

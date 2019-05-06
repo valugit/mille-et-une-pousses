@@ -1,6 +1,6 @@
 <?php
 
-spl_autoload_register(function($class){
+spl_autoload_register(function($class) {
   $elements = explode("\\", $class);
   $path = implode("/", $elements).".php";
 

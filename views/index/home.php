@@ -1,3 +1,5 @@
+<?php include "../views/head.php"; ?>
+
 <section class="home home-one parallax parallax-one">
     <div class="container">
         <h1 class="title">Titre</h1>
@@ -56,3 +58,5 @@
         <img src="" alt="alt">
     </div>
 </section>
+
+<?php include "../views/foot.php"; ?>
