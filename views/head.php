@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/style.css">
-  <title>MilleEtUnePousse</title>
+  <title>Mille Et Une Pousses</title>
 </head>
 
 <body>
@@ -31,7 +31,7 @@
       </li>
     </ul>
     <a class="logo b-white" href="">
-      <img class="c-white" src="./../img/Logo_pousse.png" alt="logo">
+      <img class="c-white" src="./media/img/Logo_pousse.png" alt="logo">
     </a>
     <ul>
       <li>
