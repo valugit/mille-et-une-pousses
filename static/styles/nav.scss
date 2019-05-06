@@ -6,27 +6,30 @@ nav {
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 30px;
 
     .logo {
-        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        height: 22vh;
+        width: 22vh;
+        border: 15px solid #FECEA8;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         img {
-            height: 100%;
+            height: 90%;
         }
-    }
-
-    input {
-        width: 25%;
-        font-size: 30px;
-        border-bottom: 2px solid black;
-        background: transparent;
     }
 
     ul {
         display: flex;
-        width: 50%;
+        width: 30%;
         justify-content: space-between;
         align-items: center;
 
@@ -43,10 +46,11 @@ nav {
                 .underline {
                     transition: 0.2s ease;
                     position: absolute;
-                    bottom: 0;
-                    height: 2px;
+                    bottom: -5px;
+                    height: 5px;
                     width: 0;
-                    background: black;
+                    background: white;
+                    border-radius: 10px;
                 }
 
                 &:hover {
@@ -55,6 +59,14 @@ nav {
                     }
                 }
             }
+        }
+
+        &:first-of-type {
+            margin-left: 100px;
+        }
+
+        &:last-of-type {
+            margin-right: 100px;
         }
     }
 }
