@@ -12,13 +12,16 @@ $pinkOrange: #E84A5F;
     color: black;
 }
 
+.c-deepBlue {
+    color: $deepBlue;
+}
+
 .c-blue {
     color: $blue;
 }
 
-.title {
-    text-shadow: 0 0.06em 0 $lightPink;
-    text-transform: uppercase;
+.c-lightPink {
+    color: $lightPink;
 }
 
 .b-white {

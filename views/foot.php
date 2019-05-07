@@ -48,7 +48,7 @@
         </a>
     </div>
 </footer>
-<script src="main.js"></script>
+<script src="style.js"></script>
 </body>
 
 </html>
