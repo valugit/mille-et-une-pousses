@@ -27,7 +27,7 @@ footer {
             }
 
             .li {
-                line-height: 2.3em;
+                margin: 1em 0;
 
                 span {
                     text-transform: uppercase;
@@ -61,6 +61,16 @@ footer {
                     font-weight: bold;
                 }
             }
+
+            a {
+                transition: 0.05s ease;
+
+                &:hover {
+                    cursor: pointer;
+                    border-bottom: 2px solid black;
+                }
+            }
+
         }
     }
 

@@ -35,27 +35,12 @@
     </a>
     <ul>
       <li>
-        <a class="c-white rout" value="blog" href="">nos boxs
+        <a class="c-white rout" value="blog" href="">panier
           <span class="underline"></span>
         </a>
       </li>
       <li>
-        <a class="c-white rout" value="profile" href="">produits
-          <span class="underline"></span>
-        </a>
-      </li>
-      <li>
-        <a class="c-white rout" value="boxs" href="">mon compte
-          <span class="underline"></span>
-        </a>
-      </li>
-      <li>
-        <a class="c-white rout" value="produits" href="">blog
-          <span class="underline"></span>
-        </a>
-      </li>
-      <li>
-        <a class="c-white rout" value="panier" href="">panier
+        <a class="c-white rout" value="profile" href="">s'enregistrer / se connecter
           <span class="underline"></span>
         </a>
       </li>
