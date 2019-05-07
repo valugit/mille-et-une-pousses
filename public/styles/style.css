@@ -42,6 +42,14 @@
   background: #007791;
 }
 
+.b-deepBlue {
+  background: #005C78;
+}
+
+.b-lightPink {
+  background: #FF847C;
+}
+
 nav {
   transition: 0.6s ease;
   z-index: 99;
@@ -53,7 +61,7 @@ nav {
   align-items: center;
   justify-content: center;
   font-size: 30px;
-  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 10px 0 rgba(0, 92, 120, 0.3);
 }
 nav .logo {
   transition: 0.4s ease;
@@ -67,7 +75,7 @@ nav .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px 0 rgba(0, 92, 120, 0.1);
 }
 nav .logo img {
   height: 85%;
@@ -172,7 +180,9 @@ nav ul li a:hover .underline {
 }
 
 .home-two {
+  position: relative;
   height: 57vh;
+  overflow: hidden;
 }
 .home-two .container {
   width: 65%;
@@ -180,17 +190,59 @@ nav ul li a:hover .underline {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 10px solid #007791;
-  padding: 5em 0;
+  border: 10px solid #005C78;
+  padding: 7em 0;
 }
 .home-two .container p {
   text-align: center;
   width: 65%;
   font-size: 39px;
 }
+.home-two .leaf {
+  z-index: 2;
+  position: absolute;
+}
+.home-two .leaf-1 {
+  height: 50%;
+  top: -20px;
+  left: -130px;
+  transform: rotate(220deg);
+}
+.home-two .leaf-2 {
+  height: 75%;
+  bottom: -50px;
+  left: -100px;
+}
+.home-two .leaf-3 {
+  z-index: 1;
+  height: 75%;
+  bottom: -140px;
+  left: -130px;
+  transform: rotate(170deg);
+}
+.home-two .leaf-4 {
+  z-index: 1;
+  height: 75%;
+  top: -90px;
+  right: -150px;
+  transform: rotate(40deg);
+}
+.home-two .leaf-5 {
+  z-index: 1;
+  height: 75%;
+  top: 50px;
+  right: -80px;
+  transform: rotate(210deg);
+}
+.home-two .leaf-6 {
+  z-index: 1;
+  height: 50%;
+  bottom: 0px;
+  right: -100px;
+}
 
 .home-three {
-  height: 90Vh;
+  height: 92Vh;
   justify-content: flex-start;
 }
 .home-three .container {
@@ -206,33 +258,54 @@ nav ul li a:hover .underline {
   text-shadow: 0 0.05em 0 #683634;
 }
 .home-three .container p {
-  margin-top: 1em;
   width: 90%;
-  font-size: 34px;
+  font-size: 39px;
   padding: 1em;
 }
 
 .home-four {
-  height: 94vh;
-  justify-content: space-evenly;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
 }
 .home-four .title {
+  margin: 0.3em 0 0.5em 0;
   text-shadow: 0 0.05em 0 white;
 }
 .home-four .container {
-  height: 65%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  width: 85%;
+  margin: 0 0 50px 0;
 }
 .home-four .container p {
-  width: 50%;
-  font-size: 34px;
+  text-align: center;
+  font-size: 39px;
 }
-.home-four .container img {
-  border: 1px solid white;
-  width: 40%;
-  height: 100%;
+.home-four .container .img {
+  display: flex;
+  margin: 100px 0;
+}
+.home-four .container .img img {
+  height: 450px;
+  margin: 25px;
+}
+.home-four .leaf {
+  position: absolute;
+}
+.home-four .leaf-1 {
+  height: 50%;
+  top: -20px;
+  left: -130px;
+  transform: rotate(15deg);
+}
+.home-four .leaf-2 {
+  height: 50%;
+  top: -20px;
+  right: -80px;
+  transform: rotate(-145deg);
 }
 
 .fp-one {
@@ -254,74 +327,111 @@ nav ul li a:hover .underline {
 }
 
 footer {
-  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 40vh;
-}
-footer .container {
-  width: 85%;
-  display: flex;
   justify-content: space-between;
+  height: 45vh;
+  width: 100%;
 }
-footer .container ul {
-  font-size: 22px;
+footer section {
+  height: 100%;
+}
+footer .part1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 35%;
+}
+footer .part1 img {
+  height: 25%;
+}
+footer .part1 p {
+  width: 60%;
+  font-size: 23px;
+}
+footer .part1 p.upper {
+  text-transform: uppercase;
+}
+footer .part1 p:last-child {
+  font-size: 18px;
+}
+footer .part2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 65%;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  padding: 0 15% 0 5%;
 }
-footer .container ul:first-child {
-  margin-left: 100px;
-}
-footer .container ul .title-ul {
+footer .part2 ul {
   font-size: 23px;
   text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 1em;
 }
-footer .container ul .li {
+footer .part2 ul li {
+  margin: 0.3em 0;
+}
+footer .part2 ul li h3 {
   margin: 1em 0;
 }
-footer .container ul .li span {
-  text-transform: uppercase;
+footer .part2 ul li a {
+  transition: 0.1s ease;
 }
-footer .container ul .li-language {
+footer .part2 ul li a:hover {
+  border-bottom: 2px solid white;
+}
+footer .part3 {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-}
-footer .container ul .li-language span {
-  text-transform: uppercase;
-}
-footer .container ul .li-language .flag {
-  margin: 10px;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: linear-gradient(to right, blue 33%, white 33%, white 66%, red 66%);
-}
-footer .container ul .li-language hr {
-  margin: 10px 10px 10px 0;
-  height: 30px;
-  width: 2px;
-  background: black;
-}
-footer .container ul .li-language .change {
+  width: 33%;
+  padding-right: 1em;
+  height: 100%;
+  font-size: 23px;
   font-weight: bold;
 }
-footer .container ul a {
-  transition: 0.05s ease;
+footer .part3 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 85%;
+  height: 70%;
 }
-footer .container ul a:hover {
-  cursor: pointer;
-  border-bottom: 2px solid black;
+footer .part3 .container h3 {
+  text-transform: uppercase;
 }
-footer .icons {
-  position: absolute;
-  filter: brightness(0) invert(1);
+footer .part3 .container p:last-of-type {
+  font-size: 20px;
+}
+footer .part3 .container .form {
+  width: 100%;
+  display: flex;
+}
+footer .part3 .container .form input {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+footer .part3 .container .form input.text {
+  padding: 0.4em 2em 0.4em 1em;
+  max-width: 70%;
+  font-style: italic;
+  font-weight: 300;
+}
+footer .part3 .container .form input.submit {
+  padding: 0.4em 1em;
+  max-width: 30%;
+  font-weight: bold;
+}
+footer .part3 .container .icons {
   font-size: 40px;
-  bottom: 0;
-  right: 0;
-  margin: 1em;
+}
+footer .part3 .container .icons .fab {
+  transition: 0.2s ease;
+  margin: 0 0.2em;
+}
+footer .part3 .container .icons .fab:hover {
+  color: #FF847C;
 }
 
 /*# sourceMappingURL=style.css.map */

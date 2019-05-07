@@ -14,39 +14,46 @@
 </head>
 
 <body>
+
   <nav id="navbar" class="b-beige">
+
     <a class="logo b-white" href="">
-      <img class="c-blue" src="./media/img/logo.png" alt="logo">
+      <img src="./media/img/logo.png" alt="logo">
     </a>
+
     <ul>
+      
       <div>
         <li>
-          <a class="c-blue rout" value="blog" href="">plantes
-            <span class="underline b-blue"></span>
+          <a class="c-deepBlue rout" value="blog" href="">plantes
+            <span class="underline b-deepBlue"></span>
           </a>
         </li>
         <li>
-          <a class="c-blue rout" value="profile" href="">abonnements
-            <span class="underline b-blue"></span>
+          <a class="c-deepBlue rout" value="profile" href="">abonnements
+            <span class="underline b-deepBlue"></span>
           </a>
         </li>
         <li>
-          <a class="c-blue rout" value="produits" href="">blog
-            <span class="underline b-blue"></span>
+          <a class="c-deepBlue rout" value="produits" href="">blog
+            <span class="underline b-deepBlue"></span>
           </a>
         </li>
       </div>
+
       <div>
         <li>
-          <a class="c-blue rout" value="blog" href="">panier
-            <span class="underline b-blue"></span>
+          <a class="c-deepBlue rout" value="blog" href="">panier
+            <span class="underline b-deepBlue"></span>
           </a>
         </li>
         <li>
-          <a class="c-blue rout" value="profile" href="">s'enregistrer / se connecter
-            <span class="underline b-blue"></span>
+          <a class="c-deepBlue rout" value="profile" href="">s'enregistrer / se connecter
+            <span class="underline b-deepBlue"></span>
           </a>
         </li>
       </div>
+
     </ul>
+    
   </nav>

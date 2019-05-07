@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo = document.querySelector('#logo'),
         scroll = document.documentElement
 
-        if(scroll.scrollTop >= 40){
+        if(scroll.scrollTop >= 100){
             navbar.classList.add('navbar-scroll')
             logo.classList.add('logoExit')
         } else {

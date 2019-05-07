@@ -60,7 +60,9 @@ $pinkOrange: #E84A5F;
 }
 
 .home-two {
+    position: relative;
     height: 57vh;
+    overflow: hidden;
 
     .container {
         width: 65%;
@@ -68,8 +70,8 @@ $pinkOrange: #E84A5F;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 10px solid #007791;
-        padding: 5em 0;
+        border: 10px solid $deepBlue;
+        padding: 7em 0;
 
         p {
             text-align: center;
@@ -77,10 +79,60 @@ $pinkOrange: #E84A5F;
             font-size: 39px;
         }
     }
+
+    .leaf {
+        z-index: 2;
+        position: absolute;
+    }
+
+    .leaf-1 {
+        height: 50%;
+        top: -20px;
+        left: -130px;
+        transform: rotate(220deg);
+    }
+
+    .leaf-2 {
+        height: 75%;
+        bottom: -50px;
+        left: -100px;
+    }
+
+    .leaf-3 {
+        z-index: 1;
+        height: 75%;
+        bottom: -140px;
+        left: -130px;
+        transform: rotate(170deg);
+    }
+
+    .leaf-4 {
+        z-index: 1;
+        height: 75%;
+        top: -90px;
+        right: -150px;
+        transform: rotate(40deg);
+    }
+
+    .leaf-5 {
+        z-index: 1;
+        height: 75%;
+        top: 50px;
+        right: -80px;
+        transform: rotate(210deg);
+    }
+
+    .leaf-6 {
+        z-index: 1;
+        height: 50%;
+        bottom: 0px;
+        right: -100px;
+    }
+
 }
 
 .home-three {
-    height: 90Vh;
+    height: 92Vh;
     justify-content: flex-start;
 
     .container {
@@ -97,38 +149,63 @@ $pinkOrange: #E84A5F;
         }
 
         p {
-            margin-top: 1em;
             width: 90%;
-            font-size: 34px;
+            font-size: 39px;
             padding: 1em;
         }
     }
 }
 
 .home-four {
-    height: 94vh;
-    justify-content: space-evenly;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
 
     .title {
+        margin: 0.3em 0 0.5em 0;
         text-shadow: 0 0.05em 0 white;
     }
 
     .container {
-        height: 65%;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        width: 85%;
+        margin: 0 0 50px 0;
         
         p {
-            width: 50%;
-            font-size: 34px;
+            text-align: center;
+            font-size: 39px;
         }
 
-        img {
-            border: 1px solid white;
-            width: 40%;
-            height: 100%;
+        .img {
+            display: flex;
+            margin: 100px 0;
+
+            img {
+                height: 450px;
+                margin: 25px;
+            }
         }
+    }
+
+    .leaf {
+        position: absolute;
+    }
+
+    .leaf-1 {
+        height: 50%;
+        top: -20px;
+        left: -130px;
+        transform: rotate(15deg);
+    }
+
+    .leaf-2 {
+        height: 50%;
+        top: -20px;
+        right: -80px;
+        transform: rotate(-145deg);
     }
 } 
 
