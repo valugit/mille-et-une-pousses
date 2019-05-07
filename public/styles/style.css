@@ -423,6 +423,10 @@ footer .part3 .container .form input.submit {
   max-width: 30%;
   font-weight: bold;
 }
+footer .part3 .container .form input.submit:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 5px 0 black;
+}
 footer .part3 .container .icons {
   font-size: 40px;
 }
