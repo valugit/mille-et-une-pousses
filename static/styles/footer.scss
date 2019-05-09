@@ -98,23 +98,31 @@ footer {
 
                 input {
                     font-size: 20px;
-                    text-transform: uppercase;
 
                     &.text {
                         padding: 0.4em 2em 0.4em 1em;
                         max-width: 70%;
+                        min-width: 50%;
                         font-style: italic;
                         font-weight: 300;
+
+                        &::placeholder {
+                            text-transform: uppercase;
+                        }
                     }
 
                     &.submit {
+                        transition: 0.2s ease;
                         padding: 0.4em 1em;
                         max-width: 30%;
                         font-weight: bold;
+                        text-transform: uppercase;
+                        border: 3px solid $lightPink;
 
                         &:hover {
                             cursor: pointer;
-                            box-shadow: inset 0 0 5px 0 black;
+                            background: white;
+                            color: $lightPink;
                         }
                     }
                 }

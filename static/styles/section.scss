@@ -6,6 +6,66 @@ $pinkOrange: #E84A5F;
 
 // Home page
 
+main {
+    position: relative;
+    overflow: hidden;
+
+    .leaf {
+        z-index: 3;
+        position: absolute;
+    }
+
+    .leaf-home1 {
+        top: 108vh;
+        left: -130px;
+        transform: rotate(220deg);
+    }
+
+    .leaf-home2 {
+        top: 128vh;
+        left: -100px;
+    }
+
+    .leaf-home3 {
+        z-index: 2;
+        top: 138vh;
+        left: -80px;
+        transform: rotate(180deg);
+    }
+
+    .leaf-home4 {
+        z-index: 2;
+        top: 98vh;
+        right: -150px;
+        transform: rotate(40deg);
+    }
+
+    .leaf-home5 {
+        z-index: 2;
+        top: 108vh;
+        right: -80px;
+        transform: rotate(210deg);
+    }
+
+    .leaf-home6 {
+        z-index: 1;
+        top: 140vh;
+        right: -100px;
+    }
+
+    .leaf-home7 {
+        top: 250vh;
+        left: -130px;
+        transform: rotate(15deg);
+    }
+
+    .leaf-home8 {
+        top: 250vh;
+        right: -80px;
+        transform: rotate(-145deg);
+    }
+}
+
 .home {
     display: flex;
     flex-direction: column;
@@ -71,62 +131,13 @@ $pinkOrange: #E84A5F;
         justify-content: center;
         align-items: center;
         border: 10px solid $deepBlue;
-        padding: 7em 0;
+        padding: 5% 0;
 
         p {
             text-align: center;
             width: 65%;
             font-size: 39px;
         }
-    }
-
-    .leaf {
-        z-index: 2;
-        position: absolute;
-    }
-
-    .leaf-1 {
-        height: 50%;
-        top: -20px;
-        left: -130px;
-        transform: rotate(220deg);
-    }
-
-    .leaf-2 {
-        height: 75%;
-        bottom: -50px;
-        left: -100px;
-    }
-
-    .leaf-3 {
-        z-index: 1;
-        height: 75%;
-        bottom: -140px;
-        left: -130px;
-        transform: rotate(170deg);
-    }
-
-    .leaf-4 {
-        z-index: 1;
-        height: 75%;
-        top: -90px;
-        right: -150px;
-        transform: rotate(40deg);
-    }
-
-    .leaf-5 {
-        z-index: 1;
-        height: 75%;
-        top: 50px;
-        right: -80px;
-        transform: rotate(210deg);
-    }
-
-    .leaf-6 {
-        z-index: 1;
-        height: 50%;
-        bottom: 0px;
-        right: -100px;
     }
 
 }
@@ -148,10 +159,11 @@ $pinkOrange: #E84A5F;
             text-shadow: 0 0.05em 0 rgb(104, 54, 52);
         }
 
-        p {
+        q {
             width: 90%;
             font-size: 39px;
             padding: 1em;
+            font-style: italic;
         }
     }
 }
@@ -188,24 +200,6 @@ $pinkOrange: #E84A5F;
                 margin: 25px;
             }
         }
-    }
-
-    .leaf {
-        position: absolute;
-    }
-
-    .leaf-1 {
-        height: 50%;
-        top: -20px;
-        left: -130px;
-        transform: rotate(15deg);
-    }
-
-    .leaf-2 {
-        height: 50%;
-        top: -20px;
-        right: -80px;
-        transform: rotate(-145deg);
     }
 } 
 

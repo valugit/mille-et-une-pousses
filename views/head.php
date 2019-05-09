@@ -48,7 +48,7 @@
           </a>
         </li>
         <li>
-          <a class="c-deepBlue rout" value="profile" href="">s'enregistrer / se connecter
+          <a class="c-deepBlue rout" value="profile" href="">s'enregistrer&nbsp;/&nbsp;se&nbsp;connecter
             <span class="underline b-deepBlue"></span>
           </a>
         </li>

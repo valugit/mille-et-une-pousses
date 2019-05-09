@@ -2,6 +2,16 @@
 
 <main>
 
+    <img class="leaf leaf-home1" src="./../media/img/leaf2.png" alt="leaf1">
+    <img class="leaf leaf-home2" src="./../media/img/leaf1-reverse.png" alt="leaf1">
+    <img class="leaf leaf-home3" src="./../media/img/leaf1.png" alt="leaf1">
+    <img class="leaf leaf-home4" src="./../media/img/leaf1.png" alt="leaf1-reverse">
+    <img class="leaf leaf-home5" src="./../media/img/leaf1-reverse.png" alt="leaf2">
+    <img class="leaf leaf-home6" src="./../media/img/leaf2.png" alt="leaf2">
+
+    <img class="leaf leaf-home7" src="./../media/img/leaf1-reverse.png" alt="leaf1">
+    <img class="leaf leaf-home8" src="./../media/img/leaf1-reverse.png" alt="leaf1">
+
     <section class="home home-one parallax parallax-one">
 
         <div class="container">
@@ -18,17 +28,11 @@
 
         <div class="container">
 
-            <p class="c-deepBlue">Vous n’avez pas la main verte mais pourtant vous rêvez de faire fleurir votre intérieur ?
+            <p class="c-deepBlue">Vous n’avez pas la main verte mais pourtant vous rêvez de faire fleurir votre
+                intérieur ?
                 Mille et une pousses vous accompagne dans cette aventure !</p>
 
         </div>
-
-        <img class="leaf leaf-1" src="./../media/img/leaf2.png" alt="leaf1">
-        <img class="leaf leaf-2" src="./../media/img/leaf1-reverse.png" alt="leaf1">
-        <img class="leaf leaf-3" src="./../media/img/leaf1.png" alt="leaf1">
-        <img class="leaf leaf-4" src="./../media/img/leaf1.png" alt="leaf1-reverse">
-        <img class="leaf leaf-5" src="./../media/img/leaf1-reverse.png" alt="leaf2">
-        <img class="leaf leaf-6" src="./../media/img/leaf2.png" alt="leaf2">
 
     </section>
 
@@ -38,11 +42,11 @@
 
             <h2 class="title c-lightPink">ils nous ont fait confiance</h2>
 
-            <p class="c-blue">Ça faisait un bout de temps que je voulais orner mon appartement de diverses
+            <q class="c-blue">Ça faisait un bout de temps que je voulais orner mon appartement de diverses
                 plantes et c’est sans regrets que j’ai jeté mon dévolu sur Mille et une pousse !
                 Mon cactus se porte à merveille grâce aux précieux conseils apportés !
                 Sans oublier la box à laquelle je suis maintenant abonnée…
-                Un véritable bonheur de trouver chaque mois de nouvelles surprises !</p>
+                Un véritable bonheur de trouver chaque mois de nouvelles surprises !</q>
 
         </div>
 
@@ -66,11 +70,8 @@
 
         </div>
 
-        <img class="leaf leaf-1" src="./../media/img/leaf1-reverse.png" alt="leaf1">
-        <img class="leaf leaf-2" src="./../media/img/leaf1-reverse.png" alt="leaf1">
-
     </section>
-    
+
 </main>
 
 <?php include "../views/foot.php"; ?>

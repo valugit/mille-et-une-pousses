@@ -57,7 +57,7 @@
                 <input class="submit c-white b-lightPink" type="submit" value="envoyer">
             </div>
 
-            <p class="c-white">Suivez nous sur nos réseaux sociaux</p>
+            <p class="c-white">Suivez nous sur nos réseaux sociaux :</p>
             
             <div class="icons">
                 <a href="">

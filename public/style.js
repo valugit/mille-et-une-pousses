@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    console.log('ok')
-
     document.addEventListener('scroll', ()=> {
 
     let navbar = document.querySelector('#navbar'),
