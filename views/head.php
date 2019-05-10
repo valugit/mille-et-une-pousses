@@ -18,11 +18,11 @@
   <nav id="navbar" class="b-beige">
 
     <a class="logo b-white" href="">
-      <img src="./media/img/logo.png" alt="logo">
+      <img src="./../media/img/logo.png" alt="logo">
     </a>
 
     <ul>
-      
+
       <div>
         <li>
           <a class="c-deepBlue rout" value="blog" href="">plantes
@@ -43,9 +43,13 @@
 
       <div>
         <li>
-          <a class="c-deepBlue rout" value="blog" href="">panier
+
+          <a class="rout" value="blog" href="">
+            <p class="c-deepBlue">panier</p>
             <span class="underline b-deepBlue"></span>
+            <span class="cartValue">10</span>          
           </a>
+          <img class="cart" src="./../media/img/cart-icone.png" alt="panier">
         </li>
         <li>
           <a class="c-deepBlue rout" value="profile" href="">s'enregistrer&nbsp;/&nbsp;se&nbsp;connecter
@@ -55,5 +59,5 @@
       </div>
 
     </ul>
-    
+
   </nav>

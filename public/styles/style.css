@@ -90,10 +90,12 @@ nav ul div {
   display: flex;
 }
 nav ul li {
+  display: flex;
   transition: 0.6s ease;
   margin: 0 1.5em;
 }
 nav ul li a {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,6 +112,25 @@ nav ul li a .underline {
 }
 nav ul li a:hover .underline {
   width: 100%;
+}
+nav ul li .cart {
+  transition: 0.6s ease;
+  height: 40px;
+}
+nav ul li .cartValue {
+  transition: 0.6s ease;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  right: -60px;
+  height: 25px;
+  width: 25px;
+  background: #E84A5F;
+  border-radius: 50%;
+  font-size: 15px;
+  color: #FECEA8;
 }
 
 .navbar-scroll {
@@ -131,6 +152,23 @@ nav ul li a:hover .underline {
   height: 2px;
   bottom: -2px;
 }
+.navbar-scroll ul li .cart {
+  height: 33px;
+}
+.navbar-scroll ul li .cartValue {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  right: -50px;
+  height: 20px;
+  width: 20px;
+  background: #E84A5F;
+  border-radius: 50%;
+  font-size: 13px;
+  color: #FECEA8;
+}
 
 main {
   position: relative;
@@ -146,12 +184,12 @@ main .leaf-home1 {
   transform: rotate(220deg);
 }
 main .leaf-home2 {
-  top: 128vh;
+  top: 136vh;
   left: -100px;
 }
 main .leaf-home3 {
   z-index: 2;
-  top: 138vh;
+  top: 146vh;
   left: -80px;
   transform: rotate(180deg);
 }
@@ -169,7 +207,7 @@ main .leaf-home5 {
 }
 main .leaf-home6 {
   z-index: 1;
-  top: 140vh;
+  top: 148vh;
   right: -100px;
 }
 main .leaf-home7 {
@@ -192,9 +230,39 @@ main .leaf-home8 {
 .home .title {
   font-size: 115px;
   text-transform: uppercase;
+  font-family: "Roboto Condensed";
 }
 .home .container {
   width: 85%;
+}
+.home .btn {
+  transition: 0.2s ease;
+  font-family: "Roboto Condensed";
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  border: 2px solid;
+  border-radius: 50px;
+  padding: 0.2em 1.5em;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.home .btn.btn-lightPink {
+  border-color: #FF847C;
+}
+.home .btn.btn-lightPink:hover {
+  cursor: pointer;
+  background: transparent;
+  color: #FF847C;
+  box-shadow: none;
+}
+.home .btn.btn-deepBlue {
+  border-color: #005C78;
+}
+.home .btn.btn-deepBlue:hover {
+  cursor: pointer;
+  background: transparent;
+  color: #005C78;
+  box-shadow: none;
 }
 
 .parallax {
@@ -213,11 +281,41 @@ main .leaf-home8 {
 .home-one {
   margin-top: 8vh;
   height: 100vh;
-  justify-content: initial;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .home-one .container {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 55%;
+  width: 50%;
   margin-top: 12%;
+  margin-left: 100px;
+  text-transform: uppercase;
+}
+.home-one .container h2 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 35px;
+}
+.home-one .container h2::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 250px;
+  background: #005C78;
+  left: -260px;
+}
+.home-one .container h2::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 250px;
+  background: #005C78;
+  right: -260px;
 }
 .home-one .container .title {
   text-shadow: 0 0.05em 0 #683634;
@@ -226,13 +324,13 @@ main .leaf-home8 {
   text-align: center;
   margin-top: 0.5em;
   padding: 0.3em;
-  width: 42%;
   font-size: 39px;
+  font-weight: bold;
 }
 
 .home-two {
   position: relative;
-  height: 57vh;
+  height: 65vh;
   overflow: hidden;
 }
 .home-two .container {
@@ -242,20 +340,23 @@ main .leaf-home8 {
   justify-content: center;
   align-items: center;
   border: 10px solid #005C78;
-  padding: 5% 0;
+  padding: 3% 0;
 }
 .home-two .container p {
   text-align: center;
-  width: 65%;
+  width: 80%;
   font-size: 39px;
+  margin-bottom: 1em;
 }
 
 .home-three {
-  height: 92Vh;
-  justify-content: flex-start;
+  height: 70Vh;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
 }
 .home-three .container {
-  margin-top: 50px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -263,14 +364,23 @@ main .leaf-home8 {
   text-align: center;
 }
 .home-three .container .title {
-  font-size: 110px;
+  font-size: 80px;
   text-shadow: 0 0.05em 0 #683634;
 }
 .home-three .container q {
   width: 90%;
-  font-size: 39px;
+  font-size: 30px;
   padding: 1em;
   font-style: italic;
+}
+.home-three .container p {
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 32px;
+  margin-bottom: 1em;
+}
+.home-three img {
+  height: 100%;
 }
 
 .home-four {
@@ -287,7 +397,7 @@ main .leaf-home8 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 85%;
+  width: 70%;
   margin: 0 0 50px 0;
 }
 .home-four .container p {

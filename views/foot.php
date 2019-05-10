@@ -22,6 +22,9 @@
                 <h3 class="c-white">à propos</h3>
             </li>
             <li>
+                <a href="" class="c-white">mille&nbsp;et&nbsp;une&nbsp;pousses</a>
+            </li>
+            <li>
                 <a href="" class="c-white">contact</a>
             </li>
             <li>
@@ -71,7 +74,7 @@
 
                 </a>
                 <a href="">
-                    <i class="fab fa-snapchat-ghost c-white"></i>
+                    <i class="fab fa-youtube c-white"></i>
                 </a>
             </div>
 

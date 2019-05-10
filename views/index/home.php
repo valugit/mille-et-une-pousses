@@ -16,9 +16,13 @@
 
         <div class="container">
 
-            <h1 class="title c-lightPink">c'est le printemps</h1>
+            <h2 class="c-lightPink">fêtes des</h2>
 
-            <p class="c-blue">Profitez-en avec Mille et une pousses !</p>
+            <h1 class="title c-lightPink">mamans</h1>
+
+            <p class="c-deepBlue">Nous vous avons préparé une sélection de plantes spécialement pour l'occasion</p>
+
+            <button class="btn btn-lightPink b-lightPink c-white">découvrez la sélection</button>
 
         </div>
 
@@ -28,9 +32,11 @@
 
         <div class="container">
 
-            <p class="c-deepBlue">Vous n’avez pas la main verte mais pourtant vous rêvez de faire fleurir votre
-                intérieur ?
-                Mille et une pousses vous accompagne dans cette aventure !</p>
+            <p class="c-deepBlue">Les plantes que nous vous proposons sont choisies avec un soin particulier. En effet,
+                il nous tient à coeur de vous offrir une qualité irréprochable mais également des produits respectueux
+                de l’environnement.</p>
+
+            <button class="btn btn-deepBlue b-deepBlue c-white">découvrez nos plantes</button>
 
         </div>
 
@@ -42,13 +48,17 @@
 
             <h2 class="title c-lightPink">ils nous ont fait confiance</h2>
 
-            <q class="c-blue">Ça faisait un bout de temps que je voulais orner mon appartement de diverses
-                plantes et c’est sans regrets que j’ai jeté mon dévolu sur Mille et une pousse !
-                Mon cactus se porte à merveille grâce aux précieux conseils apportés !
-                Sans oublier la box à laquelle je suis maintenant abonnée…
-                Un véritable bonheur de trouver chaque mois de nouvelles surprises !</q>
+            <q class="c-deepBlue">Un véritable coup de coeur ! Je suis abonnée à la box “Découverte” depuis deux mois
+                et à chaque fois je suis surprise de son contenu. Merci à Mille et une pousses pour leur sélection
+                chaque mois ainsi que leurs précieux conseils !</q>
+
+            <p class="c-deepBlue">@élisabeth</p>
+
+            <button class="btn btn-deepBlue c-white b-deepBlue">découvrez nos abonnements</button>
 
         </div>
+
+        <img src="./../media/img/home2.png" alt="cactus">
 
     </section>
 
@@ -58,7 +68,8 @@
 
         <div class="container">
 
-            <p class="c-white">Mille et une pousse c’est avant tout une équipe de passionnés… </p>
+            <p class="c-deepBlue">Derrière Mille et une pousses se cache une équipe jeune et passionnée prête à relever
+                tous les défis pour vous satisfaire !</p>
 
             <div class="img">
 

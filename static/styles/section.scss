@@ -22,13 +22,13 @@ main {
     }
 
     .leaf-home2 {
-        top: 128vh;
+        top: 136vh;
         left: -100px;
     }
 
     .leaf-home3 {
         z-index: 2;
-        top: 138vh;
+        top: 146vh;
         left: -80px;
         transform: rotate(180deg);
     }
@@ -49,7 +49,7 @@ main {
 
     .leaf-home6 {
         z-index: 1;
-        top: 140vh;
+        top: 148vh;
         right: -100px;
     }
 
@@ -75,10 +75,47 @@ main {
     .title {
         font-size: 115px;
         text-transform: uppercase;
+        font-family: 'Roboto Condensed';
     }
 
     .container {
         width: 85%;
+    }
+
+
+
+    .btn {
+        transition: 0.2s ease;
+        font-family: 'Roboto Condensed';
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: bold;
+        border: 2px solid;
+        border-radius: 50px;
+        padding: 0.2em 1.5em;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+
+        &.btn-lightPink {
+            border-color: $lightPink;
+
+            &:hover {
+                cursor: pointer;
+                background: transparent;
+                color: $lightPink;
+                box-shadow: none;
+            }
+        }
+
+        &.btn-deepBlue {
+            border-color: $deepBlue;
+
+            &:hover {
+                cursor: pointer;
+                background: transparent;
+                color: $deepBlue;
+                box-shadow: none;
+            }
+        }
     }
 }
 
@@ -99,11 +136,44 @@ main {
 .home-one {
     margin-top: 8vh;
     height: 100vh;
-    justify-content: initial;
+    justify-content: flex-start;
+    align-items: flex-start;
 
     .container {
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 55%;
+        width: 50%;
         margin-top: 12%;
+        margin-left: 100px;
+        text-transform: uppercase;
+
+        h2 {
+            display: flex;
+            align-items: center;
+            position: relative;
+            font-size: 35px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 3px;
+                width: 250px;
+                background: $deepBlue;
+                left: -260px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 3px;
+                width: 250px;
+                background: $deepBlue;
+                right: -260px;
+            }
+        }
 
         .title {
             text-shadow: 0 0.05em 0 rgb(104, 54, 52);
@@ -113,15 +183,15 @@ main {
             text-align: center;
             margin-top: 0.5em;
             padding: 0.3em;
-            width: 42%;
             font-size: 39px;
+            font-weight: bold;
         }
     }
 }
 
 .home-two {
     position: relative;
-    height: 57vh;
+    height: 65vh;
     overflow: hidden;
 
     .container {
@@ -131,23 +201,26 @@ main {
         justify-content: center;
         align-items: center;
         border: 10px solid $deepBlue;
-        padding: 5% 0;
+        padding: 3% 0;
 
         p {
             text-align: center;
-            width: 65%;
+            width: 80%;
             font-size: 39px;
+            margin-bottom: 1em;
         }
     }
 
 }
 
 .home-three {
-    height: 92Vh;
-    justify-content: flex-start;
+    height: 70Vh;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
 
     .container {
-        margin-top: 50px;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -155,16 +228,27 @@ main {
         text-align: center;
 
         .title {
-            font-size: 110px;
+            font-size: 80px;
             text-shadow: 0 0.05em 0 rgb(104, 54, 52);
         }
 
         q {
             width: 90%;
-            font-size: 39px;
+            font-size: 30px;
             padding: 1em;
             font-style: italic;
         }
+
+        p {
+            text-transform: capitalize;
+            font-style: italic;
+            font-size: 32px;
+            margin-bottom: 1em;
+        }
+    }
+
+    img {
+        height: 100%;
     }
 }
 
@@ -183,9 +267,9 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 85%;
+        width: 70%;
         margin: 0 0 50px 0;
-        
+
         p {
             text-align: center;
             font-size: 39px;
@@ -201,7 +285,7 @@ main {
             }
         }
     }
-} 
+}
 
 // Fiche Produit page
 

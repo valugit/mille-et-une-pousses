@@ -48,10 +48,12 @@ nav {
         }
 
         li {
+            display: flex;
             transition: 0.6s ease;
             margin: 0 1.5em;
 
             a {
+                position: relative;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -72,6 +74,27 @@ nav {
                         width: 100%;
                     }
                 }
+            }
+
+            .cart {
+                transition: 0.6s ease;
+                height: 40px;
+            }
+
+            .cartValue {
+                transition: 0.6s ease;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 8px;
+                right: -60px;
+                height: 25px;
+                width: 25px;
+                background: $pinkOrange;
+                border-radius: 50%;
+                font-size: 15px;
+                color: #FECEA8;
             }
         }
     }
@@ -96,6 +119,25 @@ nav {
             .underline {
                 height: 2px;
                 bottom: -2px;
+            }
+
+            .cart {
+                height: 33px;
+            }
+
+            .cartValue {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 8px;
+                right: -50px;
+                height: 20px;
+                width: 20px;
+                background: $pinkOrange;
+                border-radius: 50%;
+                font-size: 13px;
+                color: #FECEA8;
             }
         }
     }
