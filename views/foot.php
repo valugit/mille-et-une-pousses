@@ -1,54 +1,91 @@
-<footer class="b-blue">
-    <div class="container">
+<footer class="c-white b-deepBlue">
+
+    <section class="part1">
+
+        <img src="./media/img/logo-white.png" alt="logo">
+
+        <p class="c-white">Embellissez votre intérieur
+            avec des plantes toutes plus
+            surprenantes les unes des autres.</p>
+
+        <p class="c-white upper">copyright 2019
+            © mille et une pousses</p>
+
+        <p class="c-white">Tous droits réservés.</p>
+
+    </section>
+
+    <section class="part2">
+
         <ul>
-            <li class="title-ul">aide & informations</li>
-            <li class="li"><a>Assistance</a></li>
-            <li class="li"><a>Suivi commande</a></li>
-            <li class="li"><a>Livraisons & Retours</a></li>
-            <li class="li"><a>-15% pour les étudiants</a></li>
-        </ul>
-        <ul>
-            <li class="title-ul">à propos de m&1pousse</li>
-            <li class="li"><a><span>à</span> propos de Mille et une Pousse</a></li>
-            <li class="li"><a>Mille et une Pousse recrute</a></li>
-            <li class="li"><a>Responsabilités des entreprises</a></li>
-            <li class="li"><a>Investisseurs</a></li>
-        </ul>
-        <ul>
-            <li class="title-ul">encore plus</li>
-            <li class="li"><a>Chèque cadeaux</a></li>
-            <li class="li"><a>Summer Days</a></li>
-            <li class="li"><a>Mobile & appli</a></li>
-            <li class="li"><a>Marketplace</a></li>
-            <li class="li"><a>Soldes</a></li>
-        </ul>
-        <ul>
-            <li class="title-ul">sélectionner le pays</li>
-            <li class="li li-language">
-                <p>Vous êtes en</p>
-                <div class="flag"></div>
-                <hr>
-                <span class="change">changer</span>
+            <li>
+                <h3 class="c-white">à propos</h3>
+            </li>
+            <li>
+                <a href="" class="c-white">mille&nbsp;et&nbsp;une&nbsp;pousses</a>
+            </li>
+            <li>
+                <a href="" class="c-white">contact</a>
+            </li>
+            <li>
+                <a href="" class="c-white">rejoignez-nous !</a>
+            </li>
+            <li>
+                <a href="" class="c-white">parainage</a>
+            </li>
+            <li>
+                <a href="" class="c-white">faq</a>
+            </li>
+            <li>
+                <a href="" class="c-white">mentions&nbsp;légales</a>
+            </li>
+            <li>
+                <a href="" class="c-white">cgv</a>
             </li>
         </ul>
-    </div>
-    <div class="icons">
-        <a href="">
-            <i class="fab fa-twitter"></i>
-        </a>
-        <a href="">
-            <i class="fab fa-facebook-square"></i>
-        </a>
-        <a href="">
-            <i class="fab fa-instagram"></i>
 
-        </a>
-        <a href="">
-            <i class="fab fa-snapchat-ghost"></i>
-        </a>
-    </div>
+    </section>
+
+    <section class="part3">
+
+        <div class="container">
+
+            <h3 class="c-white">la newsletter</h3>
+
+            <p class="c-white">Ne ratez plus aucunes actualités de notre blog
+                et les nouvelles offres de Mille et une pousses.</p>
+
+            <div class="form">
+                <input class="text b-white" type="text" placeholder="votre adresse email">
+                <input class="submit c-white b-lightPink" type="submit" value="envoyer">
+            </div>
+
+            <p class="c-white">Suivez nous sur nos réseaux sociaux :</p>
+            
+            <div class="icons">
+                <a href="">
+                    <i class="fab fa-twitter c-white"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-facebook-square c-white"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-instagram c-white"></i>
+
+                </a>
+                <a href="">
+                    <i class="fab fa-youtube c-white"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
 </footer>
-<script src="main.js"></script>
+
+<script src="style.js"></script>
+
 </body>
 
 </html>

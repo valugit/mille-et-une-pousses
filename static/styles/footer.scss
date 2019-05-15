@@ -1,85 +1,146 @@
+$lightPink: #FF847C;
+
 footer {
-    position: relative;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    height: 45vh;
     width: 100%;
-    height: 40vh;
 
-    .container {
-        width: 85%;
+    section {
+        height: 100%;
+    }
+
+    .part1 {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 35%;
 
-        ul {
-            font-size: 22px;
-            height: 65%;
+        img {
+            height: 25%;
+        }
 
-            &:first-child {
-                margin-left: 100px;
-            }
+        p {
+            width: 60%;
+            font-size: 23px;
 
-            .title-ul {
-                font-size: 23px;
+            &.upper {
                 text-transform: uppercase;
-                font-weight: bold;
-                margin-bottom: 1em;
             }
 
-            .li {
-                margin: 1em 0;
-
-                span {
-                    text-transform: uppercase;
-                }
+            &:last-child {
+                font-size: 18px;
             }
-
-            .li-language {
-                display: flex;
-                align-items: center;
-
-                span {
-                    text-transform: uppercase;
-                }
-
-                .flag {
-                    margin: 10px;
-                    width: 25px;
-                    height: 25px;
-                    border-radius: 50%;
-                    background: linear-gradient(to right, blue 33%, white 33%, white 66%, red 66%)
-                }
-
-                hr {
-                    margin: 10px 10px 10px 0;
-                    height: 30px;
-                    width: 2px;
-                    background: black;
-                }
-
-                .change {
-                    font-weight: bold;
-                }
-            }
-
-            a {
-                transition: 0.05s ease;
-
-                &:hover {
-                    cursor: pointer;
-                    border-bottom: 2px solid black;
-                }
-            }
-
         }
     }
 
-    .icons {
-        position: absolute;
-        filter: brightness(0) invert(1);
-        font-size: 40px;
-        bottom: 0;
-        right: 0;
-        margin: 1em;
+    .part2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65%;
+        border-left: 3px solid white;
+        border-right: 3px solid white;
+        padding: 0 15% 0 5%;
+
+        ul {
+            font-size: 23px;
+            text-transform: uppercase;
+
+            li {
+                margin: 0.3em 0;
+
+                h3 {
+                    margin: 1em 0;
+                }
+
+                a {
+                    transition: 0.1s ease;
+
+                    &:hover {
+                        border-bottom: 2px solid white;
+                    }
+                }
+            }
+        }
+    }
+
+    .part3 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 33%;
+        padding-right: 1em;
+        height: 100%;
+        font-size: 23px;
+        font-weight: bold;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 85%;
+            height: 70%;
+
+            h3 {
+                text-transform: uppercase;
+            }
+
+            p:last-of-type {
+                font-size: 20px;
+            }
+
+            .form {
+                width: 100%;
+                display: flex;
+
+                input {
+                    font-size: 20px;
+
+                    &.text {
+                        padding: 0.4em 2em 0.4em 1em;
+                        max-width: 70%;
+                        min-width: 50%;
+                        font-style: italic;
+                        font-weight: 300;
+
+                        &::placeholder {
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    &.submit {
+                        transition: 0.2s ease;
+                        padding: 0.4em 1em;
+                        max-width: 30%;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        border: 3px solid $lightPink;
+
+                        &:hover {
+                            cursor: pointer;
+                            background: white;
+                            color: $lightPink;
+                        }
+                    }
+                }
+
+            }
+
+            .icons {
+                font-size: 40px;
+
+                .fab {
+                    transition: 0.2s ease;
+                    margin: 0 0.2em;
+
+                    &:hover {
+                        color: $lightPink;
+                    }
+                }
+            }
+        }
     }
 }
