@@ -10,63 +10,67 @@ main {
     position: relative;
     overflow: hidden;
 
-    .leaf {
-        z-index: 3;
-        position: absolute;
-    }
+    &.home {
 
-    .leaf-home1 {
-        top: 108vh;
-        left: -130px;
-        transform: rotate(220deg);
-    }
 
-    .leaf-home2 {
-        top: 136vh;
-        left: -100px;
-    }
+        .leaf {
+            z-index: 3;
+            position: absolute;
+        }
 
-    .leaf-home3 {
-        z-index: 2;
-        top: 146vh;
-        left: -80px;
-        transform: rotate(180deg);
-    }
+        .leaf-1 {
+            top: 108vh;
+            left: -130px;
+            transform: rotate(220deg);
+        }
 
-    .leaf-home4 {
-        z-index: 2;
-        top: 98vh;
-        right: -150px;
-        transform: rotate(40deg);
-    }
+        .leaf-2 {
+            top: 136vh;
+            left: -100px;
+        }
 
-    .leaf-home5 {
-        z-index: 2;
-        top: 108vh;
-        right: -80px;
-        transform: rotate(210deg);
-    }
+        .leaf-3 {
+            z-index: 2;
+            top: 146vh;
+            left: -80px;
+            transform: rotate(180deg);
+        }
 
-    .leaf-home6 {
-        z-index: 1;
-        top: 148vh;
-        right: -100px;
-    }
+        .leaf-4 {
+            z-index: 2;
+            top: 98vh;
+            right: -150px;
+            transform: rotate(40deg);
+        }
 
-    .leaf-home7 {
-        top: 250vh;
-        left: -130px;
-        transform: rotate(15deg);
-    }
+        .leaf-5 {
+            z-index: 2;
+            top: 108vh;
+            right: -80px;
+            transform: rotate(210deg);
+        }
 
-    .leaf-home8 {
-        top: 250vh;
-        right: -80px;
-        transform: rotate(-145deg);
+        .leaf-6 {
+            z-index: 1;
+            top: 148vh;
+            right: -100px;
+        }
+
+        .leaf-7 {
+            top: 250vh;
+            left: -130px;
+            transform: rotate(15deg);
+        }
+
+        .leaf-8 {
+            top: 250vh;
+            right: -80px;
+            transform: rotate(-145deg);
+        }
     }
 }
 
-.home {
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,11 +99,14 @@ main {
         padding: 0.2em 1.5em;
         box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 
+        &:hover {
+            cursor: pointer;
+        }
+
         &.btn-lightPink {
             border-color: $lightPink;
 
             &:hover {
-                cursor: pointer;
                 background: transparent;
                 color: $lightPink;
                 box-shadow: none;
@@ -110,7 +117,6 @@ main {
             border-color: $deepBlue;
 
             &:hover {
-                cursor: pointer;
                 background: transparent;
                 color: $deepBlue;
                 box-shadow: none;
@@ -125,7 +131,7 @@ main {
 }
 
 .parallax-one {
-    background-image: url(./../media/img/home1.jpg)
+    background-image: url(./../media/img/home1.png)
 }
 
 .parallax-two {
@@ -286,6 +292,118 @@ main {
         }
     }
 }
+
+// Subscription
+
+
+.sub-one {
+    height: 100vh;
+
+    .text {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+
+        h1 {
+            text-shadow: 0 0.05em 0 rgb(104, 54, 52);
+        }
+
+        p {
+            text-align: center;
+            margin-top: 0.5em;
+            font-size: 39px;
+            font-weight: bold;
+        }
+    }
+}
+
+.sub-two {
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: linear-gradient(50deg, $lightPink 40%, $beige 40%);
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 47%;
+        height: 85%;
+
+        h2 {
+            font-size: 100px;
+            text-transform: uppercase;
+            text-shadow: 0 0.06em 0 $lightPink;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 70%;
+
+            img {
+                position: relative;
+                width: 45%;
+                height: 100%;
+                border: 1px solid black;
+
+                &.img-one::before {
+                    content: "";
+                    position: absolute;
+                    border-top: 5px solid $deepBlue;
+                    border-left: 5px solid $deepBlue;
+                    width: 100%;
+                    height: 25%;
+                    top: -20px;
+                    left: -20px;
+                }
+
+                &.img-two::before {
+                    content: "";
+                    position: absolute;
+                    border-bottom: 5px solid $deepBlue;
+                    border-right: 5px solid $deepBlue;
+                    width: 100%;
+                    height: 25%;
+                    bottom: -20px;
+                    right: -20px;
+                }
+            }
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 100%;
+                width: 45%;
+
+                p {
+                    font-size: 30px;
+                    text-align: center;
+
+                    &.price {
+                        display: flex;
+                        flex-direction: column;
+
+                        span {
+                            font-size: 40px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
 
 // Fiche Produit page
 

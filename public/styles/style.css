@@ -174,68 +174,68 @@ main {
   position: relative;
   overflow: hidden;
 }
-main .leaf {
+main.home .leaf {
   z-index: 3;
   position: absolute;
 }
-main .leaf-home1 {
+main.home .leaf-1 {
   top: 108vh;
   left: -130px;
   transform: rotate(220deg);
 }
-main .leaf-home2 {
+main.home .leaf-2 {
   top: 136vh;
   left: -100px;
 }
-main .leaf-home3 {
+main.home .leaf-3 {
   z-index: 2;
   top: 146vh;
   left: -80px;
   transform: rotate(180deg);
 }
-main .leaf-home4 {
+main.home .leaf-4 {
   z-index: 2;
   top: 98vh;
   right: -150px;
   transform: rotate(40deg);
 }
-main .leaf-home5 {
+main.home .leaf-5 {
   z-index: 2;
   top: 108vh;
   right: -80px;
   transform: rotate(210deg);
 }
-main .leaf-home6 {
+main.home .leaf-6 {
   z-index: 1;
   top: 148vh;
   right: -100px;
 }
-main .leaf-home7 {
+main.home .leaf-7 {
   top: 250vh;
   left: -130px;
   transform: rotate(15deg);
 }
-main .leaf-home8 {
+main.home .leaf-8 {
   top: 250vh;
   right: -80px;
   transform: rotate(-145deg);
 }
 
-.home {
+section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.home .title {
+section .title {
   font-size: 115px;
   text-transform: uppercase;
   font-family: "Roboto Condensed";
 }
-.home .container {
+section .container {
   width: 85%;
 }
-.home .btn {
+section .btn {
   transition: 0.2s ease;
   font-family: "Roboto Condensed";
   text-transform: uppercase;
@@ -246,20 +246,21 @@ main .leaf-home8 {
   padding: 0.2em 1.5em;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
-.home .btn.btn-lightPink {
+section .btn:hover {
+  cursor: pointer;
+}
+section .btn.btn-lightPink {
   border-color: #FF847C;
 }
-.home .btn.btn-lightPink:hover {
-  cursor: pointer;
+section .btn.btn-lightPink:hover {
   background: transparent;
   color: #FF847C;
   box-shadow: none;
 }
-.home .btn.btn-deepBlue {
+section .btn.btn-deepBlue {
   border-color: #005C78;
 }
-.home .btn.btn-deepBlue:hover {
-  cursor: pointer;
+section .btn.btn-deepBlue:hover {
   background: transparent;
   color: #005C78;
   box-shadow: none;
@@ -271,7 +272,7 @@ main .leaf-home8 {
 }
 
 .parallax-one {
-  background-image: url(./../media/img/home1.jpg);
+  background-image: url(./../media/img/home1.png);
 }
 
 .parallax-two {
@@ -411,6 +412,99 @@ main .leaf-home8 {
 .home-four .container .img img {
   height: 450px;
   margin: 25px;
+}
+
+.sub-one {
+  height: 100vh;
+}
+.sub-one .text {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+.sub-one .text h1 {
+  text-shadow: 0 0.05em 0 #683634;
+}
+.sub-one .text p {
+  text-align: center;
+  margin-top: 0.5em;
+  font-size: 39px;
+  font-weight: bold;
+}
+
+.sub-two {
+  height: 100vh;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: linear-gradient(50deg, #FF847C 40%, #FECEA8 40%);
+}
+.sub-two .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 47%;
+  height: 85%;
+}
+.sub-two .container h2 {
+  font-size: 100px;
+  text-transform: uppercase;
+  text-shadow: 0 0.06em 0 #FF847C;
+}
+.sub-two .container .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70%;
+}
+.sub-two .container .box img {
+  position: relative;
+  width: 45%;
+  height: 100%;
+  border: 1px solid black;
+}
+.sub-two .container .box img.img-one::before {
+  content: "";
+  position: absolute;
+  border-top: 5px solid #005C78;
+  border-left: 5px solid #005C78;
+  width: 100%;
+  height: 25%;
+  top: -20px;
+  left: -20px;
+}
+.sub-two .container .box img.img-two::before {
+  content: "";
+  position: absolute;
+  border-bottom: 5px solid #005C78;
+  border-right: 5px solid #005C78;
+  width: 100%;
+  height: 25%;
+  bottom: -20px;
+  right: -20px;
+}
+.sub-two .container .box .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 45%;
+}
+.sub-two .container .box .text p {
+  font-size: 30px;
+  text-align: center;
+}
+.sub-two .container .box .text p.price {
+  display: flex;
+  flex-direction: column;
+}
+.sub-two .container .box .text p.price span {
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .fp-one {
