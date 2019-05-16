@@ -1,19 +1,13 @@
 <?php include "../views/head.php"; ?>
 
-<main>
+<main class="subscription">
     <section class="sub-one">
         <div class="text">
 
             <h1 class="title c-lightPink">abonnements</h1>
 
-            <p class="c-deepBlue">Alios autem dicere aiunt multo etiam inhumanius (quem locum breviter paulo ante
-                perstrinxi) praesidii
-                adiumentique causa, non benevolentiae neque caritatis, amicitias esse expetendas; itaque, ut quisque
-                minimum
-                firmitatis haberet minimumque virium, ita amicitias appetere maxime; ex eo fieri ut mulierculae magis
-                amicitiarum praesidia quaerant quam viri et inopes quam opulenti et calamitosi quam ii qui putentur
-                beati.
-            </p>
+            <p class="c-deepBlue">Vous aimez les surprises ? Alors recevez chaque mois une sélection de nos produits
+                chouchous ! Des plantes, des accessoires, des conseils… Vous allez être comblés !</p>
 
         </div>
     </section>
@@ -22,20 +16,20 @@
 
         <div class="container">
 
-            <h2 class="c-deepBlue">box</h2>
+            <h2 class="c-deepBlue">mensuel</h2>
 
             <div class="box">
 
                 <div class="text">
 
-                    <p class="description c-deepBlue">Alios autem dicere aiunt multo etiam inhumanius (quem locum
-                        breviter paulo
-                        ante perstrinxi) praesidii adiumentique causa, non benevolentiae neque caritatis, amicitias esse
-                        expetendas; itaque, ut quisque minimum firmitatis haberet minimumque virium</p>
+                    <p class="description c-deepBlue">Offrez-vous un abonnement mensuel et profitez de nouvelles
+                        surprises chaque mois.</p>
 
-                    <p class="price c-deepBlue"><span class="c-deepBlue">15.90€</span>/mois</p>
+                        <p class="price c-deepBlue"><span class="c-deepBlue">17.90€</span>/mois</p>
 
-                    <button class="btn btn-deepBlue b-deepBlue c-white">s'abonner</button>
+                        <p class="c-deepBlue">Sans engagement</p>
+
+                        <button class="btn btn-deepBlue b-deepBlue c-white">s'abonner</button>
 
                 </div>
 
@@ -47,7 +41,7 @@
 
         <div class="container">
 
-            <h2 class="c-deepBlue">box</h2>
+            <h2 class="c-deepBlue">annuel</h2>
 
             <div class="box">
 
@@ -55,12 +49,11 @@
 
                 <div class="text">
 
-                    <p class="description c-deepBlue">Alios autem dicere aiunt multo etiam inhumanius (quem locum
-                        breviter paulo
-                        ante perstrinxi) praesidii adiumentique causa, non benevolentiae neque caritatis, amicitias esse
-                        expetendas; itaque, ut quisque minimum firmitatis haberet minimumque virium</p>
+                    <p class="description c-deepBlue">Offrez-vous 12 mois d’abonnement pour un prix de 11 box !</p>
 
-                    <p class="price c-deepBlue"><span class="c-deepBlue">15.90€</span>/mois</p>
+                    <p class="price c-deepBlue"><span class="c-deepBlue">195€</span>/ans</p>
+
+                    <p class="c-deepBlue">Paiement en une seule fois</p>
 
                     <button class="btn btn-deepBlue b-deepBlue c-white">s'abonner</button>
 
