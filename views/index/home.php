@@ -1,18 +1,18 @@
 <?php include "../views/head.php"; ?>
 
-<main>
+<main class="home">
 
-    <img class="leaf leaf-home1" src="./../media/img/leaf2.png" alt="leaf1">
-    <img class="leaf leaf-home2" src="./../media/img/leaf1-reverse.png" alt="leaf1">
-    <img class="leaf leaf-home3" src="./../media/img/leaf1.png" alt="leaf1">
-    <img class="leaf leaf-home4" src="./../media/img/leaf1.png" alt="leaf1-reverse">
-    <img class="leaf leaf-home5" src="./../media/img/leaf1-reverse.png" alt="leaf2">
-    <img class="leaf leaf-home6" src="./../media/img/leaf2.png" alt="leaf2">
+    <img class="leaf leaf-1" src="./../media/img/leaf2.png" alt="leaf1">
+    <img class="leaf leaf-2" src="./../media/img/leaf1-reverse.png" alt="leaf1">
+    <img class="leaf leaf-3" src="./../media/img/leaf1.png" alt="leaf1">
+    <img class="leaf leaf-4" src="./../media/img/leaf1.png" alt="leaf1-reverse">
+    <img class="leaf leaf-5" src="./../media/img/leaf1-reverse.png" alt="leaf2">
+    <img class="leaf leaf-6" src="./../media/img/leaf2.png" alt="leaf2">
 
-    <img class="leaf leaf-home7" src="./../media/img/leaf1-reverse.png" alt="leaf1">
-    <img class="leaf leaf-home8" src="./../media/img/leaf1-reverse.png" alt="leaf1">
+    <img class="leaf leaf-7" src="./../media/img/leaf1-reverse.png" alt="leaf1">
+    <img class="leaf leaf-8" src="./../media/img/leaf1-reverse.png" alt="leaf1">
 
-    <section class="home home-one parallax parallax-one">
+    <section class="home-one parallax parallax-one">
 
         <div class="container">
 
@@ -28,7 +28,7 @@
 
     </section>
 
-    <section class="b-beige home home-two static static-one">
+    <section class="b-beige home-two static static-one">
 
         <div class="container">
 
@@ -42,7 +42,7 @@
 
     </section>
 
-    <section class="home home-three parallax parallax-two">
+    <section class="home-three parallax parallax-two">
 
         <div class="container">
 
@@ -62,7 +62,7 @@
 
     </section>
 
-    <section class="b-beige home home-four static static-two">
+    <section class="b-beige home-four static static-two">
 
         <h2 class="title c-lightPink">mille et une pousses</h2>
 
