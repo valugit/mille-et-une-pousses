@@ -1,4 +1,4 @@
-<?php include "../views/head.php"; ?>
+<?php include "./inc/head.php";?>
 
 <main class="home">
 
@@ -85,4 +85,4 @@
 
 </main>
 
-<?php include "../views/foot.php"; ?>
+<?php include "./inc/foot.php";?>

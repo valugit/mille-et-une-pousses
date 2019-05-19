@@ -1,23 +1,58 @@
 <?php
-require_once("../src/autoload.php");
+require_once "../vendor/autoload.php";
 
-session_start();
+$request_url = $_SERVER['REQUEST_URI'];
 
-$controller_query = $_GET["controller"] ?? "index";
-$action = $_GET["action"] ?? "home";
+$path = parse_url($request_url, PHP_URL_PATH);
+$query = parse_url($request_url, PHP_URL_QUERY);
 
-$controllerName = 
-              "\Controllers\\".
-              ucfirst($controller_query)."Controller";
+$url_composants = explode("/", $path, 4);
+if (isset($url_composants[3])) {
+  $argument = $url_composants[3];
+} else {
+  $argument = null;
+}
 
-$config = json_decode(file_get_contents("../conf/config.json"), true);
-$db = new \Services\DBConnect(
-              $config["database"]["dsn"],
-              $config["database"]["user"],
-              $config["database"]["password"]
-            );
-$conn = $db->getConnexion();
+if (isset($url_composants[1])) {
+  if (strlen($url_composants[1]) == 0) {
+    $controller_name = "index";
+  } else {
+    $controller_name = $url_composants[1];
+  }
 
-$controller = new $controllerName($conn);
+} else {
+  $controller_name = "index";
+}
+if (isset($url_composants[2])) {
+  $action_name = $url_composants[2];
+} else {
+  $action_name = "index";
+}
 
-$controller->$action();
+try {
+
+  list($controller, $action) = Services\Router::load($controller_name, $action_name);
+
+} catch (Services\Exception\ControllerNotFound $e) {
+  $controller = new Controllers\ErrorController();
+  $action = "e404";
+  $argument = $e;
+
+} catch (Services\Exception\ActionNotFound $e) {
+  $controller = new Controllers\ErrorController();
+  $action = "e404";
+  $argument = $e;
+
+} catch (Exception $e) {
+  $controller = new Controllers\ErrorController();
+  $action = "e500";
+  $argument = $e;
+
+}
+
+chdir("../src/views/");
+$result = $controller->$action($argument);
+
+if (is_string($result)) {
+  echo $result;
+}

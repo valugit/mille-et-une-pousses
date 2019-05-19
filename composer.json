@@ -1,0 +1,13 @@
+{
+  "name": "mille-et-une-pousses/website",
+  "require": {
+    "php": ">=5.5"
+  },
+  "autoload": {
+    "psr-0": {
+      "Services": "src",
+      "Controllers": "src",
+      "Models": "src"
+    }
+  }
+}

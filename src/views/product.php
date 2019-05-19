@@ -1,4 +1,4 @@
-<?php include "../views/head.php"; ?>
+<?php include "./inc/head.php";?>
 
 <main>
     <section class="product-one">
@@ -121,4 +121,4 @@
     </section>
 </main>
 
-<?php include "../views/foot.php"; ?>
+<?php include "./inc/foot.php";?>
