@@ -2,7 +2,7 @@
 
     <section class="part1">
 
-        <img src="./media/img/logo-white.png" alt="logo">
+        <img src="/media/img/logo-white.png" alt="logo">
 
         <p class="c-white">Embellissez votre intérieur
             avec des plantes toutes plus
