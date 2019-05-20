@@ -61,7 +61,7 @@
             </div>
 
             <p class="c-white">Suivez nous sur nos réseaux sociaux :</p>
-            
+
             <div class="icons">
                 <a href="">
                     <i class="fab fa-twitter c-white"></i>
@@ -84,7 +84,7 @@
 
 </footer>
 
-<script src="style.js"></script>
+<script src="./scripts/style.js"></script>
 
 </body>
 
