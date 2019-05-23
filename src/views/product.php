@@ -5,17 +5,37 @@
         <div class="container">
 
             <div class="imgs">
-                <img src="./../media/img/calathea1.jpg" alt="calathea">
-                <img src="./../media/img/calathea2.jpg" alt="calathea">
-                <img src="./../media/img/calathea3.jpg" alt="calathea">
+                <div class="otherImg">
+                    <img class="imgsProduct" src="./../media/img/calathea1.jpg" alt="calathea">
+                    <span class="bar top-bar b-lightPink"></span>
+                    <span class="bar right-bar b-lightPink"></span>
+                    <span class="bar bottom-bar b-lightPink"></span>
+                    <span class="bar left-bar b-lightPink"></span>
+                </div>
+                <div class="otherImg">
+                    <img class="imgsProduct" src="./../media/img/calathea2.jpg" alt="calathea">
+                    <span class="bar top-bar b-lightPink"></span>
+                    <span class="bar right-bar b-lightPink"></span>
+                    <span class="bar bottom-bar b-lightPink"></span>
+                    <span class="bar left-bar b-lightPink"></span>
+                </div>
+                <div class="otherImg">
+                    <img class="imgsProduct" src="./../media/img/calathea3.jpg" alt="calathea">
+                    <span class="bar top-bar b-lightPink"></span>
+                    <span class="bar right-bar b-lightPink"></span>
+                    <span class="bar bottom-bar b-lightPink"></span>
+                    <span class="bar left-bar b-lightPink"></span>
+                </div>
             </div>
 
-            <img class="img" src="./../media/img/calathea.jpg" alt="calathea">
+            <div  class="imgPrincipal">
+                <img id="imgProduct" src="./../media/img/calathea.jpg" alt="calathea">
+            </div>
 
             <div class="text">
 
                 <header>
-                    <h1 class="title c-deepBlue">calathea</h1>
+                    <h1 class="title c-deepBlue">calathéa</h1>
                     <p class="price c-deepBlue">18€</p>
                 </header>
 
@@ -73,7 +93,7 @@
 
             <div class="other-products">
                 <div>
-                    <div>
+                    <div class="frame">
                         <a href="">
                             <img src="./../media/img/aglaonema_rose.jpg" alt="">
                             <span>
@@ -81,10 +101,13 @@
                             </span>
                         </a>
                     </div>
-                    <h4 class="c-lightPink">aglaonema</h4>
+                    <div class="info">
+                        <h4 class="c-deepBlue">aglaonema</h4>
+                        <h5 class="c-lightPink">99€</h5>
+                    </div>
                 </div>
                 <div>
-                    <div>
+                    <div class="frame">
                         <a href="">
                             <img src="./../media/img/aloe_vera.jpeg" alt="">
                             <span>
@@ -92,10 +115,13 @@
                             </span>
                         </a>
                     </div>
-                    <h4 class="c-lightPink">aloe vera</h4>
+                    <div class="info">
+                        <h4 class="c-deepBlue">aloe vera</h4>
+                        <h5 class="c-lightPink">99€</h5>
+                    </div>
                 </div>
                 <div>
-                    <div>
+                    <div class="frame">
                         <a href="">
                             <img src="./../media/img/pilea.jpeg" alt="">
                             <span>
@@ -103,10 +129,13 @@
                             </span>
                         </a>
                     </div>
-                    <h4 class="c-lightPink">pilea</h4>
+                    <div class="info">
+                        <h4 class="c-deepBlue">pilea</h4>
+                        <h5 class="c-lightPink">99€</h5>
+                    </div>
                 </div>
                 <div>
-                    <div>
+                    <div class="frame">
                         <a href="">
                             <img src="./../media/img/sansevieria.jpg" alt="">
                             <span>
@@ -114,7 +143,10 @@
                             </span>
                         </a>
                     </div>
-                    <h4 class="c-lightPink">sansevieria</h4>
+                    <div class="info">
+                        <h4 class="c-deepBlue">sansevieria</h4>
+                        <h5 class="c-lightPink">99€</h5>
+                    </div>
                 </div>
             </div>
         </div>

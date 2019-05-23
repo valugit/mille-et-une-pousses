@@ -12,4 +12,21 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
 
+    let imgsProduct = document.querySelectorAll('.imgsProduct')
+    let imgProduct = document.querySelector('#imgProduct')
+
+    imgsProduct.forEach(element => {
+        element.addEventListener('click', () => {
+
+            let imgProductSrc = document.querySelector('#imgProduct').getAttribute('src')
+            let elementSrc = element.getAttribute('src')
+
+            element.setAttribute('src', imgProductSrc)
+
+            imgProduct.setAttribute('src', elementSrc)
+        })
+    });
+
+
+
 })

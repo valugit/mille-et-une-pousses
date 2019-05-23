@@ -431,20 +431,123 @@ section {
         margin-bottom: 6vh;
 
         .imgs {
+            transition: 0.2s ease;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            height: 65%;
+            height: 70%;
             width: 10%;
 
-            img {
-                width: 100%;
+            .otherImg {
+                position: relative;
+                height: 30%;
+                padding: 5px;
+
+                img {
+                    height: 100%;
+                }
+
+
+                .bar {
+                    transition: 0.5s ease;
+                    position: absolute;
+                }
+
+                .top-bar {
+                    top: 0;
+                    right: 0;
+                    left: initial;
+                    height: 3px;
+                    width: 0;
+                }
+
+                .right-bar {
+                    bottom: 0;
+                    top: initial;
+                    right: 0;
+                    width: 3px;
+                    height: 0;
+                }
+
+                .bottom-bar {
+                    bottom: 0;
+                    left: 0;
+                    right: initial;
+                    height: 3px;
+                    width: 0;
+                }
+
+                .left-bar {
+                    top: 0;
+                    bottom: initial;
+                    left: 0;
+                    width: 3px;
+                    height: 0;
+                }
+
+                &:hover {
+                    cursor: zoom-in;
+
+                    .top-bar {
+                        right: initial;
+                        left: 0;
+                        width: 100%;
+                    }
+
+                    .right-bar {
+                        top: 0;
+                        bottom: initial;
+                        height: 100%;
+                    }
+
+                    .bottom-bar {
+                        right: 0;
+                        left: initial;
+                        width: 100%;
+                    }
+
+                    .left-bar {
+                        bottom: 0;
+                        top: initial;
+                        height: 100%;
+                    }
+                }
+
             }
         }
 
-        .img {
-            height: 80%;
+
+
+        .imgPrincipal {
+            position: relative;
+            height: 75%;
+
+            img {
+                height: 100%;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                border-top: 5px solid $deepBlue;
+                border-left: 5px solid $deepBlue;
+                width: 33%;
+                height: 66%;
+                top: -20px;
+                left: -20px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                border-bottom: 5px solid $deepBlue;
+                border-right: 5px solid $deepBlue;
+                width: 66%;
+                height: 33%;
+                bottom: -20px;
+                right: -20px;
+            }
         }
 
         .text {
@@ -550,7 +653,7 @@ section {
             align-items: center;
             justify-content: space-between;
 
-            div {
+            .frame {
                 position: relative;
                 height: 350px;
                 width: 350px;
@@ -628,11 +731,22 @@ section {
                 }
             }
 
-            h4 {
-                text-align: center;
-                margin: 1em;
-                font-size: 30px;
-                text-transform: capitalize;
+            .info {
+                margin-top: 2em;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                h4 {
+                    font-size: 30px;
+                    text-transform: capitalize;
+                }
+
+                h5 {
+                    font-size: 25px;
+                }
+
             }
         }
     }
