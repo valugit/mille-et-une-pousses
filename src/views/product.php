@@ -6,21 +6,21 @@
 
             <div class="imgs">
                 <div class="otherImg">
-                    <img class="imgsProduct" src="./../media/img/calathea1.jpg" alt="calathea">
+                    <img class="imgsProduct" src="./../media/products/calathea/calathea1.jpg" alt="calathea">
                     <span class="bar top-bar b-lightPink"></span>
                     <span class="bar right-bar b-lightPink"></span>
                     <span class="bar bottom-bar b-lightPink"></span>
                     <span class="bar left-bar b-lightPink"></span>
                 </div>
                 <div class="otherImg">
-                    <img class="imgsProduct" src="./../media/img/calathea2.jpg" alt="calathea">
+                    <img class="imgsProduct" src="./../media/products/calathea/calathea2.jpg" alt="calathea">
                     <span class="bar top-bar b-lightPink"></span>
                     <span class="bar right-bar b-lightPink"></span>
                     <span class="bar bottom-bar b-lightPink"></span>
                     <span class="bar left-bar b-lightPink"></span>
                 </div>
                 <div class="otherImg">
-                    <img class="imgsProduct" src="./../media/img/calathea3.jpg" alt="calathea">
+                    <img class="imgsProduct" src="./../media/products/calathea/calathea3.jpg" alt="calathea">
                     <span class="bar top-bar b-lightPink"></span>
                     <span class="bar right-bar b-lightPink"></span>
                     <span class="bar bottom-bar b-lightPink"></span>
@@ -29,7 +29,7 @@
             </div>
 
             <div  class="imgPrincipal">
-                <img id="imgProduct" src="./../media/img/calathea.jpg" alt="calathea">
+                <img id="imgProduct" src="./../media/products/calathea/calathea.jpg" alt="calathea">
             </div>
 
             <div class="text">
@@ -95,7 +95,7 @@
                 <div>
                     <div class="frame">
                         <a href="">
-                            <img src="./../media/img/aglaonema_rose.jpg" alt="">
+                            <img src="./../media/products/aglaonema/aglaonema.jpg" alt="">
                             <span>
                                 <p class="btn b-lightPink c-white">en savoir plus</p>
                             </span>
@@ -109,7 +109,7 @@
                 <div>
                     <div class="frame">
                         <a href="">
-                            <img src="./../media/img/aloe_vera.jpeg" alt="">
+                            <img src="./../media/products/aloe_vera/aloe_vera.jpeg" alt="">
                             <span>
                                 <p class="btn b-lightPink c-white">en savoir plus</p>
                             </span>
@@ -123,7 +123,7 @@
                 <div>
                     <div class="frame">
                         <a href="">
-                            <img src="./../media/img/pilea.jpeg" alt="">
+                            <img src="./../media/products/pilea/pilea.jpeg" alt="">
                             <span>
                                 <p class="btn b-lightPink c-white">en savoir plus</p>
                             </span>
@@ -137,7 +137,7 @@
                 <div>
                     <div class="frame">
                         <a href="">
-                            <img src="./../media/img/sansevieria.jpg" alt="">
+                            <img src="./../media/products/sansevieria/sansevieria.jpg" alt="">
                             <span>
                                 <p class="btn b-lightPink c-white">en savoir plus</p>
                             </span>

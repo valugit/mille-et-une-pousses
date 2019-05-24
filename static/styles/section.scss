@@ -780,10 +780,15 @@ section {
     height: 100vh;
 
     .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
 
         .title {
             font-size: 80px;
             text-shadow: 0 0.06em 0 $lightPink;
+            margin: 0.5em;
         }
 
         p {
@@ -794,6 +799,7 @@ section {
     .buttons {
         display: flex;
         flex-direction: column;
+        margin-top: 100px;
 
         .btn {
             font-size: 35px;
