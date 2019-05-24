@@ -1,6 +1,6 @@
 <?php include "./inc/head.php";?>
 
-<main class="subscription">
+<main class="subscriptionPage">
     <section class="sub-one">
         <div class="text">
 
@@ -33,7 +33,7 @@
 
                 </div>
 
-                <img class="img-one" src="./../media/img/" alt="première box">
+                <img class="img-one" src="./../media/img/" alt="box mensuel">
 
             </div>
 
@@ -45,7 +45,7 @@
 
             <div class="box">
 
-                <img class="img-two" src="./../media/img/" alt="deuxième box">
+                <img class="img-two" src="./../media/img/" alt="box annuel">
 
                 <div class="text">
 

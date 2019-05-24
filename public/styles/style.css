@@ -58,8 +58,12 @@
   background: #FF847C;
 }
 
+.b-pinkOrange {
+  background: #E84A5F;
+}
+
 nav {
-  z-index: 99;
+  z-index: 10;
   top: 0;
   height: 13vh;
   position: fixed;
@@ -180,49 +184,50 @@ nav ul li .cartValue {
 main {
   position: relative;
   overflow: hidden;
+  margin-top: 8vh;
 }
-main.home .leaf {
+main.homePage .leaf {
   z-index: 3;
   position: absolute;
 }
-main.home .leaf-1 {
+main.homePage .leaf-1 {
   top: 108vh;
   left: -130px;
   transform: rotate(220deg);
 }
-main.home .leaf-2 {
+main.homePage .leaf-2 {
   top: 136vh;
   left: -100px;
 }
-main.home .leaf-3 {
+main.homePage .leaf-3 {
   z-index: 2;
   top: 146vh;
   left: -80px;
   transform: rotate(180deg);
 }
-main.home .leaf-4 {
+main.homePage .leaf-4 {
   z-index: 2;
   top: 98vh;
   right: -150px;
   transform: rotate(40deg);
 }
-main.home .leaf-5 {
+main.homePage .leaf-5 {
   z-index: 2;
   top: 108vh;
   right: -80px;
   transform: rotate(210deg);
 }
-main.home .leaf-6 {
+main.homePage .leaf-6 {
   z-index: 1;
   top: 148vh;
   right: -100px;
 }
-main.home .leaf-7 {
+main.homePage .leaf-7 {
   top: 250vh;
   left: -130px;
   transform: rotate(15deg);
 }
-main.home .leaf-8 {
+main.homePage .leaf-8 {
   top: 250vh;
   right: -80px;
   transform: rotate(-145deg);
@@ -249,7 +254,6 @@ section .btn {
   font-size: 40px;
   font-weight: bold;
   border: 2px solid;
-  border-radius: 50px;
   padding: 0.2em 1.5em;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
@@ -278,6 +282,17 @@ section .btn.btn-deepBlue:hover {
 section .btn.btn-deepBlue:hover i {
   color: #005c78;
 }
+section .btn.btn-pinkOrange {
+  border-color: #e84a5f;
+}
+section .btn.btn-pinkOrange:hover {
+  background: transparent;
+  color: #e84a5f;
+  box-shadow: none;
+}
+section .btn.btn-pinkOrange:hover i {
+  color: #e84a5f;
+}
 section .btn-quantity {
   padding: 0;
   font-size: 25px;
@@ -300,7 +315,6 @@ section .btn-quantity {
 }
 
 .home-one {
-  margin-top: 8vh;
   height: 100vh;
   justify-content: flex-start;
   align-items: flex-start;
@@ -434,115 +448,17 @@ section .btn-quantity {
   margin: 25px;
 }
 
-.sub-one {
-  height: 100vh;
-  background-image: url(./../media/img/sub1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.sub-one .text {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 45%;
-}
-.sub-one .text h1 {
-  text-shadow: 0 0.05em 0 #683634;
-}
-.sub-one .text p {
-  text-align: center;
-  margin-top: 0.5em;
-  font-size: 39px;
-  font-weight: bold;
-}
-
-.sub-two {
-  height: 100vh;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  background: linear-gradient(50deg, #ff847c 40%, #fecea8 40%);
-}
-.sub-two .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 45%;
-  height: 85%;
-}
-.sub-two .container h2 {
-  font-size: 100px;
-  text-transform: uppercase;
-  text-shadow: 0 0.06em 0 #ff847c;
-}
-.sub-two .container .box {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 70%;
-}
-.sub-two .container .box img {
-  position: relative;
-  width: 45%;
-  height: 100%;
-  border: 1px solid black;
-}
-.sub-two .container .box img.img-one::before {
-  content: "";
-  position: absolute;
-  border-top: 5px solid #005c78;
-  border-left: 5px solid #005c78;
-  width: 100%;
-  height: 25%;
-  top: -20px;
-  left: -20px;
-}
-.sub-two .container .box img.img-two::after {
-  content: "";
-  position: absolute;
-  border-bottom: 5px solid #005c78;
-  border-right: 5px solid #005c78;
-  width: 100%;
-  height: 25%;
-  bottom: -20px;
-  right: -20px;
-}
-.sub-two .container .box .text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 100%;
-  width: 45%;
-}
-.sub-two .container .box .text p {
-  font-size: 30px;
-  text-align: center;
-}
-.sub-two .container .box .text p.price {
-  display: flex;
-  flex-direction: column;
-  font-size: 40px;
-}
-.sub-two .container .box .text p.price span {
-  font-size: 50px;
-  font-weight: bold;
-}
-
 .product-one {
-  height: 110vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
 }
 .product-one .container {
+  margin-bottom: 5vh;
   display: flex;
   justify-content: space-between;
-  height: 70%;
-  margin-bottom: 6vh;
+  height: 75%;
 }
 .product-one .container .imgs {
   transition: 0.2s ease;
@@ -760,13 +676,14 @@ section .btn-quantity {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.2);
 }
 .product-two .container .other-products .frame a span p {
   transition: 0.2s ease;
   text-transform: capitalize;
   font-size: 30px;
   text-align: center;
+  border: none;
 }
 .product-two .container .other-products .frame a:hover img {
   height: 125%;
@@ -807,6 +724,178 @@ section .btn-quantity {
 }
 .product-two .container .other-products .info h5 {
   font-size: 25px;
+}
+
+.sub-one {
+  height: 100vh;
+  background-image: url(./../media/img/sub1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sub-one .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+}
+.sub-one .text h1 {
+  text-shadow: 0 0.05em 0 #683634;
+}
+.sub-one .text p {
+  text-align: center;
+  margin-top: 0.5em;
+  font-size: 39px;
+  font-weight: bold;
+}
+
+.sub-two {
+  height: 100vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(50deg, #ff847c 40%, #fecea8 40%);
+}
+.sub-two .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 45%;
+  height: 85%;
+}
+.sub-two .container h2 {
+  font-size: 100px;
+  text-transform: uppercase;
+  text-shadow: 0 0.06em 0 #ff847c;
+}
+.sub-two .container .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70%;
+}
+.sub-two .container .box img {
+  position: relative;
+  width: 45%;
+  height: 100%;
+  border: 1px solid black;
+}
+.sub-two .container .box img.img-one::before {
+  content: "";
+  position: absolute;
+  border-top: 5px solid #005c78;
+  border-left: 5px solid #005c78;
+  width: 100%;
+  height: 25%;
+  top: -20px;
+  left: -20px;
+}
+.sub-two .container .box img.img-two::after {
+  content: "";
+  position: absolute;
+  border-bottom: 5px solid #005c78;
+  border-right: 5px solid #005c78;
+  width: 100%;
+  height: 25%;
+  bottom: -20px;
+  right: -20px;
+}
+.sub-two .container .box .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 45%;
+}
+.sub-two .container .box .text p {
+  font-size: 30px;
+  text-align: center;
+}
+.sub-two .container .box .text p.price {
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+}
+.sub-two .container .box .text p.price span {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.account-one {
+  height: 100vh;
+}
+.account-one .text .title {
+  font-size: 80px;
+  text-shadow: 0 0.06em 0 #ff847c;
+}
+.account-one .text p {
+  font-size: 35px;
+}
+.account-one .buttons {
+  display: flex;
+  flex-direction: column;
+}
+.account-one .buttons .btn {
+  font-size: 35px;
+  width: 600px;
+  margin: 0.3em;
+}
+
+.connexion {
+  position: relative;
+  z-index: 15;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+.connexion section {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  height: 70%;
+  width: 35%;
+  padding: 1em;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.connexion section span {
+  z-index: -1;
+  position: absolute;
+  height: 700px;
+  width: 700px;
+  border-radius: 50%;
+  top: -350px;
+  right: -350px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+}
+.connexion section h1 {
+  font-size: 70px;
+  text-shadow: 0 0.05em 0 #FF847C;
+  text-transform: uppercase;
+}
+.connexion section form {
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.connexion section form .text {
+  font-size: 40px;
+  text-transform: capitalize;
+  border: 3px solid #FF847C;
+  padding: 0.25em 1em;
+  max-width: 80%;
+}
+.connexion section form p {
+  text-align: center;
+  width: 80%;
 }
 
 footer {

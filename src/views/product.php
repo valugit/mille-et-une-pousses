@@ -1,6 +1,6 @@
 <?php include "./inc/head.php";?>
 
-<main>
+<main class="productPage">
     <section class="product-one">
         <div class="container">
 
@@ -44,13 +44,13 @@
                     <h3 class="c-deepBlue">quantité</h3>
 
                     <div>
-                        <button class="btn btn-quantity btn-lightPink b-lightPink">
+                        <button id="less" class="btn btn-quantity btn-lightPink b-lightPink">
                             <i class="fas fa-minus c-white"></i>
                         </button>
 
-                        <input class="c-deepBlue" type="text" value="1">
+                        <input id="quantity" class="c-deepBlue" type="text" value="1" disabled>
 
-                        <button class="btn btn-quantity btn-lightPink b-lightPink">
+                        <button id="more" class="btn btn-quantity btn-lightPink b-lightPink">
                             <i class="fas fa-plus c-white"></i>
                         </button>
                     </div>
@@ -97,13 +97,13 @@
                         <a href="">
                             <img src="./../media/img/aglaonema_rose.jpg" alt="">
                             <span>
-                                <p class="c-lightPink">voir cette plante</p>
+                                <p class="btn b-lightPink c-white">en savoir plus</p>
                             </span>
                         </a>
                     </div>
                     <div class="info">
-                        <h4 class="c-deepBlue">aglaonema</h4>
-                        <h5 class="c-lightPink">99€</h5>
+                        <h4 class="c-deepBlue">aglaonéma</h4>
+                        <h5 class="c-lightPink">18€</h5>
                     </div>
                 </div>
                 <div>
@@ -111,13 +111,13 @@
                         <a href="">
                             <img src="./../media/img/aloe_vera.jpeg" alt="">
                             <span>
-                                <p class="c-lightPink">voir cette plante</p>
+                                <p class="btn b-lightPink c-white">en savoir plus</p>
                             </span>
                         </a>
                     </div>
                     <div class="info">
                         <h4 class="c-deepBlue">aloe vera</h4>
-                        <h5 class="c-lightPink">99€</h5>
+                        <h5 class="c-lightPink">9€</h5>
                     </div>
                 </div>
                 <div>
@@ -125,13 +125,13 @@
                         <a href="">
                             <img src="./../media/img/pilea.jpeg" alt="">
                             <span>
-                                <p class="c-lightPink">voir cette plante</p>
+                                <p class="btn b-lightPink c-white">en savoir plus</p>
                             </span>
                         </a>
                     </div>
                     <div class="info">
                         <h4 class="c-deepBlue">pilea</h4>
-                        <h5 class="c-lightPink">99€</h5>
+                        <h5 class="c-lightPink">11€</h5>
                     </div>
                 </div>
                 <div>
@@ -139,13 +139,13 @@
                         <a href="">
                             <img src="./../media/img/sansevieria.jpg" alt="">
                             <span>
-                                <p class="c-lightPink">voir cette plante</p>
+                                <p class="btn b-lightPink c-white">en savoir plus</p>
                             </span>
                         </a>
                     </div>
                     <div class="info">
                         <h4 class="c-deepBlue">sansevieria</h4>
-                        <h5 class="c-lightPink">99€</h5>
+                        <h5 class="c-lightPink">30€</h5>
                     </div>
                 </div>
             </div>

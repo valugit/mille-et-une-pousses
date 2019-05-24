@@ -9,8 +9,9 @@ $pinkOrange: #e84a5f;
 main {
     position: relative;
     overflow: hidden;
+    margin-top: 8vh;
 
-    &.home {
+    &.homePage {
         .leaf {
             z-index: 3;
             position: absolute;
@@ -91,7 +92,6 @@ section {
         font-size: 40px;
         font-weight: bold;
         border: 2px solid;
-        border-radius: 50px;
         padding: 0.2em 1.5em;
         box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 
@@ -126,6 +126,20 @@ section {
                 }
             }
         }
+
+        &.btn-pinkOrange {
+            border-color: $pinkOrange;
+
+            &:hover {
+                background: transparent;
+                color: $pinkOrange;
+                box-shadow: none;
+
+                i {
+                    color: $pinkOrange;
+                }
+            }
+        }
     }
 
     .btn-quantity {
@@ -151,7 +165,6 @@ section {
 }
 
 .home-one {
-    margin-top: 8vh;
     height: 100vh;
     justify-content: flex-start;
     align-items: flex-start;
@@ -303,132 +316,25 @@ section {
     }
 }
 
-// Subscription
 
-.sub-one {
-    height: 100vh;
-    background-image: url(./../media/img/sub1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+// Products Page
 
-    .text {
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 45%;
 
-        h1 {
-            text-shadow: 0 0.05em 0 rgb(104, 54, 52);
-        }
 
-        p {
-            text-align: center;
-            margin-top: 0.5em;
-            font-size: 39px;
-            font-weight: bold;
-        }
-    }
-}
-
-.sub-two {
-    height: 100vh;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    background: linear-gradient(50deg, $lightPink 40%, $beige 40%);
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        width: 45%;
-        height: 85%;
-
-        h2 {
-            font-size: 100px;
-            text-transform: uppercase;
-            text-shadow: 0 0.06em 0 $lightPink;
-        }
-
-        .box {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            height: 70%;
-
-            img {
-                position: relative;
-                width: 45%;
-                height: 100%;
-                border: 1px solid black;
-
-                &.img-one::before {
-                    content: "";
-                    position: absolute;
-                    border-top: 5px solid $deepBlue;
-                    border-left: 5px solid $deepBlue;
-                    width: 100%;
-                    height: 25%;
-                    top: -20px;
-                    left: -20px;
-                }
-
-                &.img-two::after {
-                    content: "";
-                    position: absolute;
-                    border-bottom: 5px solid $deepBlue;
-                    border-right: 5px solid $deepBlue;
-                    width: 100%;
-                    height: 25%;
-                    bottom: -20px;
-                    right: -20px;
-                }
-            }
-
-            .text {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-evenly;
-                height: 100%;
-                width: 45%;
-
-                p {
-                    font-size: 30px;
-                    text-align: center;
-
-                    &.price {
-                        display: flex;
-                        flex-direction: column;
-                        font-size: 40px;
-
-                        span {
-                            font-size: 50px;
-                            font-weight: bold;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
 // Product page
 
 .product-one {
-    height: 110vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
 
     .container {
+        margin-bottom: 5vh;
         display: flex;
         justify-content: space-between;
-        height: 70%;
-        margin-bottom: 6vh;
+        height: 75%;
 
         .imgs {
             transition: 0.2s ease;
@@ -686,13 +592,14 @@ section {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        background: rgba(0, 0, 0, 0.8);
+                        background: rgba(0, 0, 0, 0.2);
 
                         p {
                             transition: 0.2s ease;
                             text-transform: capitalize;
                             font-size: 30px;
                             text-align: center;
+                            border: none;
                         }
                     }
 
@@ -748,6 +655,149 @@ section {
                 }
 
             }
+        }
+    }
+}
+
+
+// Subscription
+
+.sub-one {
+    height: 100vh;
+    background-image: url(./../media/img/sub1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+
+        h1 {
+            text-shadow: 0 0.05em 0 rgb(104, 54, 52);
+        }
+
+        p {
+            text-align: center;
+            margin-top: 0.5em;
+            font-size: 39px;
+            font-weight: bold;
+        }
+    }
+}
+
+.sub-two {
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(50deg, $lightPink 40%, $beige 40%);
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 45%;
+        height: 85%;
+
+        h2 {
+            font-size: 100px;
+            text-transform: uppercase;
+            text-shadow: 0 0.06em 0 $lightPink;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 70%;
+
+            img {
+                position: relative;
+                width: 45%;
+                height: 100%;
+                border: 1px solid black;
+
+                &.img-one::before {
+                    content: "";
+                    position: absolute;
+                    border-top: 5px solid $deepBlue;
+                    border-left: 5px solid $deepBlue;
+                    width: 100%;
+                    height: 25%;
+                    top: -20px;
+                    left: -20px;
+                }
+
+                &.img-two::after {
+                    content: "";
+                    position: absolute;
+                    border-bottom: 5px solid $deepBlue;
+                    border-right: 5px solid $deepBlue;
+                    width: 100%;
+                    height: 25%;
+                    bottom: -20px;
+                    right: -20px;
+                }
+            }
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 100%;
+                width: 45%;
+
+                p {
+                    font-size: 30px;
+                    text-align: center;
+
+                    &.price {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 40px;
+
+                        span {
+                            font-size: 50px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Account Page
+
+.account-one {
+    height: 100vh;
+
+    .text {
+
+        .title {
+            font-size: 80px;
+            text-shadow: 0 0.06em 0 $lightPink;
+        }
+
+        p {
+            font-size: 35px;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+
+        .btn {
+            font-size: 35px;
+            width: 600px;
+            margin: 0.3em;
         }
     }
 }
