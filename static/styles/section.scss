@@ -9,8 +9,9 @@ $pinkOrange: #e84a5f;
 main {
     position: relative;
     overflow: hidden;
+    margin-top: 8vh;
 
-    &.home {
+    &.homePage {
         .leaf {
             z-index: 3;
             position: absolute;
@@ -126,6 +127,20 @@ section {
                 }
             }
         }
+
+        &.btn-pinkOrange {
+            border-color: $pinkOrange;
+
+            &:hover {
+                background: transparent;
+                color: $pinkOrange;
+                box-shadow: none;
+
+                i {
+                    color: $pinkOrange;
+                }
+            }
+        }
     }
 
     .btn-quantity {
@@ -151,7 +166,6 @@ section {
 }
 
 .home-one {
-    margin-top: 8vh;
     height: 100vh;
     justify-content: flex-start;
     align-items: flex-start;
@@ -312,7 +326,6 @@ section {
     background-size: cover;
 
     .text {
-        margin-top: 100px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -419,16 +432,16 @@ section {
 // Product page
 
 .product-one {
-    height: 110vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
 
     .container {
+        margin-bottom: 5vh;
         display: flex;
         justify-content: space-between;
-        height: 70%;
-        margin-bottom: 6vh;
+        height: 75%;
 
         .imgs {
             transition: 0.2s ease;

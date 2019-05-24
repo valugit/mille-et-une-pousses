@@ -1,6 +1,6 @@
 <?php include "./inc/head.php";?>
 
-<main class="home">
+<main class="homePage">
 
     <img class="leaf leaf-1" src="./../media/img/leaf2.png" alt="leaf1">
     <img class="leaf leaf-2" src="./../media/img/leaf1-reverse.png" alt="leaf1">

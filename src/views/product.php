@@ -1,6 +1,6 @@
 <?php include "./inc/head.php";?>
 
-<main>
+<main class="productPage">
     <section class="product-one">
         <div class="container">
 

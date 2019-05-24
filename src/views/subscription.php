@@ -1,6 +1,6 @@
 <?php include "./inc/head.php";?>
 
-<main class="subscription">
+<main class="subscriptionPage">
     <section class="sub-one">
         <div class="text">
 
