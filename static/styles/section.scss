@@ -10,6 +10,7 @@ main {
     position: relative;
     overflow: hidden;
     margin-top: 8vh;
+    min-height: 100vh;
 
     &.homePage {
         .leaf {

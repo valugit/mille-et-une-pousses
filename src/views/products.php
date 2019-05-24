@@ -2,7 +2,7 @@
 
 <main class="productsPage">
     <section class="products-one">
-
+        <?php var_dump($products)?>
     </section>
 </main>
 

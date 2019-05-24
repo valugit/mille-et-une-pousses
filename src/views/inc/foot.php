@@ -31,9 +31,6 @@
                 <a href="" class="c-white">rejoignez-nous !</a>
             </li>
             <li>
-                <a href="" class="c-white">parainage</a>
-            </li>
-            <li>
                 <a href="" class="c-white">faq</a>
             </li>
             <li>
