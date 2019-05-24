@@ -873,7 +873,7 @@ section .btn-quantity {
   justify-content: space-around;
   align-items: center;
 }
-.connexion section span {
+.connexion section .circle {
   z-index: -1;
   position: absolute;
   height: 700px;
@@ -884,27 +884,52 @@ section .btn-quantity {
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
 }
 .connexion section h1 {
-  font-size: 70px;
-  text-shadow: 0 0.05em 0 #FF847C;
-  text-transform: uppercase;
+  font-size: 60px;
+  text-shadow: 0 0.05em 0 #ff847c;
+  text-transform: capitalize;
 }
 .connexion section form {
   height: 65%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 .connexion section form .text {
-  font-size: 40px;
+  font-size: 37px;
   text-transform: capitalize;
-  border: 3px solid #FF847C;
-  padding: 0.25em 1em;
-  max-width: 80%;
+  border: 3px solid #ff847c;
+  padding: 0.25em 0 0.25em 1em;
+  max-width: 100%;
 }
 .connexion section form p {
+  font-size: 20px;
   text-align: center;
   width: 80%;
+}
+.connexion section form a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+.connexion section form a .underline {
+  transition: 0.2s ease;
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  border-radius: 10px;
+}
+.connexion section form a:hover .underline {
+  width: 100%;
+}
+.connexion section form .btn {
+  width: 100%;
 }
 
 footer {

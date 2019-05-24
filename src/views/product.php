@@ -102,7 +102,7 @@
                         </a>
                     </div>
                     <div class="info">
-                        <h4 class="c-deepBlue">aglaonéma</h4>
+                        <h4 class="c-deepBlue">aglaonema</h4>
                         <h5 class="c-lightPink">18€</h5>
                     </div>
                 </div>
