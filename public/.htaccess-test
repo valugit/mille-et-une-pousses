@@ -1,20 +1,4 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !index
 RewriteRule ^ index.php [L]
-
-# add various mime types
-AddType text/html .html .htm
-AddType image/x-icon .ico
-AddType text/css .css
-AddType text/javascript .js
-AddType audio/mpeg .mp3
-AddType audio/mp4 .m4a
-AddType audio/ogg .ogg
-AddType audio/ogg .oga
-AddType audio/webm .webma
-AddType audio/wav .wav
-AddType video/mp4 .mp4
-AddType video/webm .webm
-AddType video/ogg .oggù`
