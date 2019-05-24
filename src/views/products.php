@@ -1,7 +1,6 @@
 <?php include "./inc/head.php";?>
 
-<main>
-    <h1><?php var_dump(dirname(__FILE__))?></h1>
+<main style="min-height: 100vh; display: flex; justify-content: center; align-items: center;">
     <h3><?php var_dump($products)?></h3>
 </main>
 

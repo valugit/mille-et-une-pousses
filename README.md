@@ -9,5 +9,5 @@ visuel et/ou auditif.
 
 # Important
 
-Pour avoir l'accès à la base de données, il faut renommer le fichier de "dbconfig.php.dist" et enlever le ".dist".
-Et installer composer pour avoir l'autoload et faire fonctionner le projet.
+ - Installer composer.
+ - Renommer le fichier "dbconfig.php.dist" en enlevant le ".dist"

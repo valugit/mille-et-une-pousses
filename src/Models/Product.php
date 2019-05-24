@@ -14,6 +14,6 @@ class Product {
 
     $q = $pdo->prepare($sql);
     $all = $q->execute();
-    return $q->fetch();
+    return $q->fetchAll();
   }
 }

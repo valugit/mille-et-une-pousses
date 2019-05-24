@@ -84,7 +84,7 @@
 
 </footer>
 
-<script src="./scripts/style.js"></script>
+<script src="/scripts/style.js"></script>
 
 </body>
 
