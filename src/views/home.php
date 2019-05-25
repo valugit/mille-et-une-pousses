@@ -2,17 +2,20 @@
 
 <main class="homePage">
 
-    <img class="leaf leaf-1" src="./../media/img/leaf2.png" alt="leaf1">
-    <img class="leaf leaf-2" src="./../media/img/leaf1-reverse.png" alt="leaf1">
-    <img class="leaf leaf-3" src="./../media/img/leaf1.png" alt="leaf1">
-    <img class="leaf leaf-4" src="./../media/img/leaf1.png" alt="leaf1-reverse">
-    <img class="leaf leaf-5" src="./../media/img/leaf1-reverse.png" alt="leaf2">
-    <img class="leaf leaf-6" src="./../media/img/leaf2.png" alt="leaf2">
+    <img class="leaf leaf-1 leaf2_1" src="./../media/leafs/leaf2_1.png" alt="leaf">
+    <img class="leaf leaf-2 leaf1_1" src="./../media/leafs/leaf1_1.png" alt="leaf">
+    <img class="leaf leaf-3 leaf1_1" src="./../media/leafs/leaf1_1.png" alt="leaf">
+    <img class="leaf leaf-4 leaf1_1" src="./../media/leafs/leaf1_1.png" alt="leaf">
+    <img class="leaf leaf-5 leaf1_1" src="./../media/leafs/leaf1_1.png" alt="leaf">
+    <img class="leaf leaf-6 leaf2_1" src="./../media/leafs/leaf2_1.png" alt="leaf">
 
-    <img class="leaf leaf-7" src="./../media/img/leaf1-reverse.png" alt="leaf1">
-    <img class="leaf leaf-8" src="./../media/img/leaf1-reverse.png" alt="leaf1">
+    <img class="leaf leaf-7 leaf1_1" src="./../media/leafs/leaf1_1.png" alt="leaf">
+    <img class="leaf leaf-8 leaf1_3" src="./../media/leafs/leaf1_3.png" alt="leaf">
+    <img class="leaf leaf-9 leaf1_3" src="./../media/leafs/leaf1_3.png" alt="leaf">
+    <img class="leaf leaf-10 leaf1_3" src="./../media/leafs/leaf1_3.png" alt="leaf">
+    <img class="leaf leaf-11 leaf1_1" src="./../media/leafs/leaf1_1.png" alt="leaf">
 
-    <section class="home-one parallax parallax-one">
+    <section class="home-one parallax">
 
         <div class="container">
 
@@ -42,7 +45,7 @@
 
     </section>
 
-    <section class="home-three parallax parallax-two">
+    <section class="home-three">
 
         <div class="container">
 
@@ -62,22 +65,14 @@
 
     </section>
 
-    <section class="b-beige home-four static static-two">
-
-        <h2 class="title c-lightPink">mille et une pousses</h2>
+    <section class="home-four static static-two">
 
         <div class="container">
 
-            <p class="c-deepBlue">Derrière Mille et une pousses se cache une équipe jeune et passionnée prête à relever
-                tous les défis pour vous satisfaire !</p>
+            <h2 class="c-deepBlue"> Mille et une pousse c’est avant tout
+                une équipe de passionnés…</h2>
 
-            <div class="img">
-
-                <img src="./../media/img/youri.png" alt="Youri">
-                <img src="./../media/img/souni.png" alt="Souni">
-                <img src="./../media/img/schelson.png" alt="Schelson">
-
-            </div>
+            <img class="b-white" src="./../media/img/team.png" alt="team mille et une pousses">
 
         </div>
 

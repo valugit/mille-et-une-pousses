@@ -191,47 +191,75 @@ main.homePage .leaf {
   z-index: 3;
   position: absolute;
 }
+main.homePage .leaf1_1 {
+  height: 600px;
+}
+main.homePage .leaf2_1 {
+  height: 300px;
+}
+main.homePage .leaf1_3 {
+  z-index: 4;
+  height: 450px;
+}
 main.homePage .leaf-1 {
-  top: 108vh;
-  left: -130px;
-  transform: rotate(220deg);
+  top: 98vh;
+  left: -25px;
+  transform: rotate(160deg);
 }
 main.homePage .leaf-2 {
-  top: 136vh;
-  left: -100px;
+  top: 120vh;
+  left: -25px;
+  transform: rotate(50deg) scaleX(-1);
 }
 main.homePage .leaf-3 {
   z-index: 2;
-  top: 146vh;
-  left: -80px;
-  transform: rotate(180deg);
+  top: 125vh;
+  left: 25px;
+  transform: rotate(55deg);
 }
 main.homePage .leaf-4 {
   z-index: 2;
-  top: 98vh;
-  right: -150px;
-  transform: rotate(40deg);
+  top: 90vh;
+  right: 0;
+  transform: rotate(-80deg);
 }
 main.homePage .leaf-5 {
   z-index: 2;
-  top: 108vh;
+  top: 98vh;
   right: -80px;
-  transform: rotate(210deg);
+  transform: rotate(-100deg) scaleX(-1);
 }
 main.homePage .leaf-6 {
   z-index: 1;
-  top: 148vh;
-  right: -100px;
+  top: 140vh;
+  right: 0;
+  transform: rotate(-70deg);
 }
 main.homePage .leaf-7 {
-  top: 250vh;
-  left: -130px;
-  transform: rotate(15deg);
+  height: 700px;
+  top: 240vh;
+  left: -50px;
+  transform: rotate(35deg) scaleX(-1);
 }
 main.homePage .leaf-8 {
-  top: 250vh;
-  right: -80px;
-  transform: rotate(-145deg);
+  top: 265vh;
+  left: 25px;
+  transform: rotate(50deg) scaleX(-1);
+}
+main.homePage .leaf-9 {
+  top: 275vh;
+  left: 25px;
+  transform: rotate(75deg) scaleX(-1);
+}
+main.homePage .leaf-10 {
+  top: 285vh;
+  left: 25px;
+  transform: rotate(95deg) scaleX(-1);
+}
+main.homePage .leaf-11 {
+  top: 290vh;
+  left: 0;
+  transform: rotate(140deg) scaleX(-1);
 }
 
 section {
@@ -305,20 +333,14 @@ section .btn-quantity {
 .parallax {
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.parallax-one {
-  background-image: url(./../media/img/home1.png);
-}
-
-.parallax-two {
-  background-image: url(./../media/img/home2.jpg);
+  background-attachment: fixed;
 }
 
 .home-one {
   height: 100vh;
   justify-content: flex-start;
   align-items: flex-start;
+  background-image: url(./../media/img/home1.png);
 }
 .home-one .container {
   display: flex;
@@ -421,32 +443,32 @@ section .btn-quantity {
 
 .home-four {
   position: relative;
+  height: 100vh;
   justify-content: flex-start;
   align-items: center;
   overflow: hidden;
-}
-.home-four .title {
-  margin: 0.3em 0 0.5em 0;
-  text-shadow: 0 0.05em 0 white;
+  background: linear-gradient(-50deg, #ff847c 28%, #fecea8 28%);
 }
 .home-four .container {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
-  margin: 0 0 50px 0;
+  justify-content: space-between;
+  height: 75%;
+  width: 60%;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
 }
-.home-four .container p {
+.home-four .container h2 {
   text-align: center;
-  font-size: 39px;
+  font-size: 70px;
+  text-shadow: 0 0.05em 0 #ff847c;
 }
-.home-four .container .img {
-  display: flex;
-  margin: 100px 0;
-}
-.home-four .container .img img {
-  height: 450px;
-  margin: 25px;
+.home-four .container img {
+  height: 500px;
+  width: 950px;
 }
 
 .product-one {
@@ -472,8 +494,8 @@ section .btn-quantity {
 }
 .product-one .container .imgs .otherImg {
   position: relative;
-  height: 30%;
-  padding: 5px;
+  height: 28%;
+  padding: 8px;
 }
 .product-one .container .imgs .otherImg img {
   height: 100%;

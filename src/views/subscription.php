@@ -1,7 +1,7 @@
 <?php include "./inc/head.php";?>
 
 <main class="subscriptionPage">
-    <section class="sub-one">
+    <section class="sub-one parallax">
         <div class="text">
 
             <h1 class="title c-lightPink">abonnements</h1>
