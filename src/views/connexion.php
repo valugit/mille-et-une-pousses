@@ -2,12 +2,15 @@
 
 <main class="connexion b-beige">
 
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
+<img class="leaf leaf-1 leaf_1" src="./../media/leafs/leaf1_1.png" alt="leaf">
+<img class="leaf leaf-2 leaf_1" src="./../media/leafs/leaf1_1.png" alt="leaf">
+<img class="leaf leaf-3 leaf_1" src="./../media/leafs/leaf1_2.png" alt="leaf">
+<img class="leaf leaf-4 leaf_1" src="./../media/leafs/leaf1_2.png" alt="leaf">
+<img class="leaf leaf-5 leaf_2" src="./../media/leafs/leaf2_2.png" alt="leaf">
+<img class="leaf leaf-6 leaf_2" src="./../media/leafs/leaf2_2.png" alt="leaf">
+<img class="leaf leaf-7 leaf_3" src="./../media/leafs/leaf3_1.png" alt="leaf">
+<img class="leaf leaf-8 leaf_3" src="./../media/leafs/leaf3_2.png" alt="leaf">
+
 
     <section class="b-white">
         <span class="circle b-lightPink"></span>

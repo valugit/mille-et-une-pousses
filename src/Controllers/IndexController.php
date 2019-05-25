@@ -4,7 +4,7 @@ namespace Controllers;
 class IndexController {
 
   public function indexAction() {
-    include "./home.php";
+    include "./connexion.php";
   }
 
 }

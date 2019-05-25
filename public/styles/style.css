@@ -881,6 +881,65 @@ section .btn-quantity {
   width: 100vw;
   margin: 0;
 }
+.connexion .leaf {
+  z-index: 3;
+  position: absolute;
+}
+.connexion .leaf_1 {
+  height: 1000px;
+}
+.connexion .leaf_2 {
+  height: 600px;
+}
+.connexion .leaf_3 {
+  height: 1100px;
+}
+.connexion .leaf-1 {
+  z-index: 2;
+  top: -15vh;
+  left: 100px;
+  transform: rotate(130deg) scaleX(-1);
+}
+.connexion .leaf-2 {
+  top: 30vh;
+  left: -100px;
+  transform: rotate(0deg);
+}
+.connexion .leaf-3 {
+  top: 35vh;
+  left: 0;
+  transform: rotate(10deg);
+}
+.connexion .leaf-4 {
+  z-index: 2;
+  top: -30vh;
+  left: 100px;
+  transform: rotate(110deg) scaleX(-1);
+}
+.connexion .leaf-5 {
+  z-index: 1;
+  top: -15vh;
+  left: 300px;
+  transform: rotate(140deg) scaleX(-1);
+}
+.connexion .leaf-6 {
+  z-index: 1;
+  top: 20vh;
+  left: -100px;
+  transform: rotate(110deg);
+}
+.connexion .leaf-7 {
+  z-index: 2;
+  top: 45vh;
+  left: 0;
+  transform: rotate(25deg);
+}
+.connexion .leaf-8 {
+  z-index: 2;
+  top: 42vh;
+  left: 50px;
+  transform: rotate(25deg);
+}
 .connexion section {
   overflow: hidden;
   position: absolute;
