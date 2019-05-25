@@ -1070,6 +1070,7 @@ section .btn-quantity {
   text-transform: capitalize;
   border: 3px solid #ff847c;
   padding: 0.25em 0 0.25em 1em;
+  width: 93%;
   max-width: 100%;
 }
 .connexion section form p {
