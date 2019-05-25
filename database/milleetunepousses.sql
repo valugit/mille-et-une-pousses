@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: May 20, 2019 at 08:50 AM
+-- Generation Time: May 25, 2019 at 09:56 PM
 -- Server version: 5.7.25
 -- PHP Version: 7.3.1
 
@@ -100,7 +100,10 @@ INSERT INTO `categories` (`id`, `name`) VALUES
 (3, 'fleurs'),
 (4, 'arbres'),
 (5, 'buissons'),
-(6, 'outils');
+(6, 'outils'),
+(7, 'entretien_facile'),
+(8, 'peu_de_lumière'),
+(9, 'pet_friendly');
 
 -- --------------------------------------------------------
 
@@ -201,7 +204,11 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `price`, `description`, `options`, `maintenance`) VALUES
-(1, 'Calathéa', 1800, 'Les calathéas sont des plantes très appréciées pour leur feuillage coloré qui lui donne un côté très décoratif.', NULL, 'Elle saura vous séduire par son entretien simple et facile. De l’humidité et votre petite calathéas resplendit ! En ce qui concerne le soleil, notre amie l’apprécie, cependant prenez garde à ne pas l’exposer directement aux rayon de celui-ci.');
+(1, 'Calathéa', 1800, 'Les calathéas sont des plantes très appréciées pour leur feuillage coloré qui lui donne un côté très décoratif.', NULL, 'Elle saura vous séduire par son entretien simple et facile. De l’humidité et votre petite calathéas resplendit ! En ce qui concerne le soleil, notre amie l’apprécie, cependant prenez garde à ne pas l’exposer directement aux rayon de celui-ci.'),
+(2, 'Sansevieria', 3000, 'Bien que surnommée “Langue de belle-mère”, la sansevieria reste une plante magnifique qui saura vous séduire. Non seulement esthétique elle est aussi d’une simplicité folle à entretenir et saura s’adapter à n’importe quel environnement.', NULL, ' Elle demande très peu d’eau, en été et printemps tous les 10 à 14 jours arrosez là afin que la terre reste humide. En hivers, arrosez là une fois par mois en vous assurant que la terre est bien sèche avant de le faire. '),
+(4, 'Piléa', 1100, 'La piléa est une plante multi-fonction ! Elle deviendra rapidement votre meilleure amie. Son côté esthétique saura sublimer votre intérieur mais pas que ! La piléa est reconnu pour éliminer les odeurs en purifiant l’air. ', NULL, 'En ce qui concerne son entretien elle demande seulement à ne pas recevoir son ami le soleil directement, préservez la donc de ses rayons. Pour ce qui est de l’eau laissez la terre sécher entre chaque arrosage et le tour est joué !\r\n'),
+(5, 'Aloe Vera', 900, 'En plus d’apporter une adorable touche de décoration d’intérieur, l’aloe vera a bien d’autres tours dans son sac. En effet, il est accordé à notre plusieurs bienfaits. \r\nNotamment sa pulpe qui regorge de vertus médicinales. Sans compter que l’aloe vera est une plante qui vous aidera à purifier l’air de votre chez vous. ', NULL, 'Pour ce qui est de l’entretien de votre ami à branches il suffit de laisser la terre redevenir sèche avant de l’arroser de nouveau.'),
+(6, 'Aglaonema', 1800, 'Vous succomberez au charme de l’Aglaonema grâce à son feuillage resplendissant !', NULL, 'L’aglaonema étant une plante tropicale il ne faut que son environnement soit en dessous d’une certaine chaleur. Elle demande à être humidifié en permanence. Prenez garde à ne pas laisser votre Aglaonema sans surveillance pour vos amis à quatre pattes.');
 
 -- --------------------------------------------------------
 
@@ -220,7 +227,11 @@ CREATE TABLE `product_category` (
 
 INSERT INTO `product_category` (`product_id`, `category_id`) VALUES
 (1, 2),
-(1, 5);
+(1, 5),
+(2, 2),
+(4, 2),
+(5, 2),
+(6, 2);
 
 -- --------------------------------------------------------
 
@@ -262,8 +273,26 @@ CREATE TABLE `product_images` (
 --
 
 INSERT INTO `product_images` (`id`, `path`, `alt`, `sort_order`, `product_id`) VALUES
-(1, '../database/products/calathea/calathea.jpeg', 'calathea', 1, 1),
-(2, '../database/products/calathea/calathea1.jpeg', 'calathea', 2, 1);
+(1, './../../../media/products/calathea/calathea.jpg', 'calathea', 1, 1),
+(2, './../../../media/products/calathea/calathea1.jpg', 'calathea', 2, 1),
+(3, './../../../media/products/calathea/calathea2.jpg', 'calathéa', 2, 1),
+(4, './../../../media/products/calathea/calathea3.jpg', 'calathéa', 2, 1),
+(5, './../../../media/products/sansevieria/sansevieria.jpg', 'sansevieria', 1, 2),
+(6, './../../../media/products/pilea/pilea.jpg', 'piléa', 1, 4),
+(7, './../../../media/products/aloe_vera/aloe_vera.jpg', 'aloe vera', 1, 5),
+(8, './../../../media/products/aglaonema/aglaonema.jpg', 'aglaonema', 1, 6),
+(9, './../../../media/products/sansevieria/sansevieria1.jpg', 'sansevieria', 2, 2),
+(10, './../../../media/products/sansevieria/sansevieria2.jpg', 'sansevieria', 2, 2),
+(11, './../../../media/products/sansevieria/sansevieria3.jpg', 'sansevieria', 2, 2),
+(12, './../../../media/products/pilea/pilea1.jpg', 'piléa', 2, 4),
+(13, './../../../media/products/pilea/pilea2.jpg', 'piléa', 2, 4),
+(14, './../../../media/products/pilea/pilea3.jpg', 'piléa', 2, 4),
+(15, './../../../media/products/aloe_vera/aloe_vera1.jpg', 'aloe vera', 2, 5),
+(16, './../../../media/products/aloe_vera/aloe_vera2.jpg', 'aloe vera', 2, 5),
+(17, './../../../media/products/aloe_vera/aloe_vera3.jpg', 'aloe vera', 2, 5),
+(18, './../../../media/products/aglaonema/aglaonema1.jpg', 'aglaonema', 2, 6),
+(19, './../../../media/products/aglaonema/aglaonema2.jpg', 'aglaonema', 2, 6),
+(20, './../../../media/products/aglaonema/aglaonema3.jpg', 'aglaonema', 2, 6);
 
 -- --------------------------------------------------------
 
@@ -458,7 +487,7 @@ ALTER TABLE `blog_articles`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `cities`
@@ -482,13 +511,13 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `product_images`
 --
 ALTER TABLE `product_images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `roles`
