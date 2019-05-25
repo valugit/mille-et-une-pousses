@@ -5,38 +5,26 @@
         <div class="container">
 
             <div class="imgs">
-                <div class="otherImg">
-                    <img class="imgsProduct" src="./../../../media/products/calathea/calathea1.jpg" alt="calathea">
-                    <span class="bar top-bar b-pinkOrange"></span>
-                    <span class="bar right-bar b-pinkOrange"></span>
-                    <span class="bar bottom-bar b-pinkOrange"></span>
-                    <span class="bar left-bar b-pinkOrange"></span>
-                </div>
-                <div class="otherImg">
-                    <img class="imgsProduct" src="./../../../media/products/calathea/calathea2.jpg" alt="calathea">
-                    <span class="bar top-bar b-pinkOrange"></span>
-                    <span class="bar right-bar b-pinkOrange"></span>
-                    <span class="bar bottom-bar b-pinkOrange"></span>
-                    <span class="bar left-bar b-pinkOrange"></span>
-                </div>
-                <div class="otherImg">
-                    <img class="imgsProduct" src="./../../../media/products/calathea/calathea3.jpg" alt="calathea">
-                    <span class="bar top-bar b-pinkOrange"></span>
-                    <span class="bar right-bar b-pinkOrange"></span>
-                    <span class="bar bottom-bar b-pinkOrange"></span>
-                    <span class="bar left-bar b-pinkOrange"></span>
-                </div>
+                <?php foreach ($images as $image): ?>
+                    <div class="otherImg">
+                        <img class="imgsProduct" src="<?php echo $image["path"] ?>" alt="<?php echo $image["alt"] ?>">
+                        <span class="bar top-bar b-pinkOrange"></span>
+                        <span class="bar right-bar b-pinkOrange"></span>
+                        <span class="bar bottom-bar b-pinkOrange"></span>
+                        <span class="bar left-bar b-pinkOrange"></span>
+                    </div>
+                <?php endforeach?>
             </div>
 
             <div  class="imgPrincipal">
-                <img id="imgProduct" src="./../../../media/products/calathea/calathea.jpg" alt="calathea">
+                <img id="imgProduct" src="<?php echo $product["path"] ?>" alt="<?php echo $product["alt"] ?>">
             </div>
 
             <div class="text">
 
                 <header>
-                    <h1 class="title c-deepBlue">calathéa</h1>
-                    <p class="price c-deepBlue">18€</p>
+                    <h1 class="title c-deepBlue"><?php echo $name ?></h1>
+                    <p class="price c-deepBlue"><?php echo floatval($product["price"]) / 100 ?>&euro;</p>
                 </header>
 
                 <div class="quantity">
@@ -61,14 +49,9 @@
 
                     <h4 class="c-deepBlue">description</h4>
 
-                    <p class="c-deepBlue">Les calathéas sont des plantes très appréciées pour leur feuillage coloré qui
-                        lui donne un côté
-                        très décoratif.</p>
+                    <p class="c-deepBlue"><?php echo $product["description"] ?></p>
 
-                    <p class="c-deepBlue">Elle saura vous séduire par son entretien simple et facile. De l’humidité et
-                        votre petite
-                        calathéas resplendit ! En ce qui concerne le soleil, notre amie l’apprécie, cependant prenez
-                        garde à ne pas l’exposer directement aux rayon de celui-ci.</p>
+                    <p class="c-deepBlue"><?php echo $product["maintenance"] ?></p>
 
                 </div>
 
