@@ -109,7 +109,7 @@
                 <div>
                     <div class="frame">
                         <a href="">
-                            <img src="./../media/products/aloe_vera/aloe_vera.jpeg" alt="">
+                            <img src="./../media/products/aloe_vera/aloe_vera.jpg" alt="">
                             <span>
                                 <p class="btn b-lightPink c-white">en savoir plus</p>
                             </span>
@@ -123,7 +123,7 @@
                 <div>
                     <div class="frame">
                         <a href="">
-                            <img src="./../media/products/pilea/pilea.jpeg" alt="">
+                            <img src="./../media/products/pilea/pilea.jpg" alt="">
                             <span>
                                 <p class="btn b-lightPink c-white">en savoir plus</p>
                             </span>
