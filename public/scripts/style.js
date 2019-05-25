@@ -10,6 +10,18 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             navbar.classList.remove('navbar-scroll')
         }
+
+        let leafHome = document.querySelectorAll('.leaf-home')
+
+        leafHome.forEach(leaf => {
+
+            if (scroll.scrollTop >= 2000) {
+                leaf.classList.add('leaf_animation')
+            } else {
+                leaf.classList.remove('leaf_animation')
+            }
+
+        })
     })
 
     let imgsProduct = document.querySelectorAll('.imgsProduct'),
@@ -27,22 +39,26 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     });
 
-    let less = document.querySelector('#less'),
-        more = document.querySelector('#more'),
-        quantity = document.querySelector('#quantity'),
-        q = parseInt(quantity.value, 10)
 
 
-    less.addEventListener('click', () => {
+    if (document.querySelector('#quantity')) {
 
-        if (q > 1) {
-            q -= 1
+        let less = document.querySelector('#less'),
+            more = document.querySelector('#more'),
+            quantity = document.querySelector('#quantity'),
+            q = parseInt(quantity.value, 10)
+
+        less.addEventListener('click', () => {
+
+            if (q > 1) {
+                q -= 1
+                quantity.value = q
+            }
+        })
+
+        more.addEventListener('click', () => {
+            q += 1
             quantity.value = q
-        }
-    })
-
-    more.addEventListener('click', () => {
-        q += 1
-        quantity.value = q
-    })
+        })
+    }
 })

@@ -153,66 +153,157 @@ main {
   position: relative;
   overflow: hidden;
   margin-top: 8vh;
-  min-height: 100vh; }
-  main.homePage .leaf {
-    z-index: 3;
-    position: absolute; }
-  main.homePage .leaf1_1 {
-    height: 600px; }
-  main.homePage .leaf2_1 {
-    height: 300px; }
-  main.homePage .leaf1_2 {
-    z-index: 4;
-    height: 450px; }
-  main.homePage .leaf-1 {
-    top: 98vh;
-    left: -25px;
-    transform: rotate(160deg); }
-  main.homePage .leaf-2 {
-    top: 120vh;
-    left: -25px;
-    transform: rotate(50deg) scaleX(-1); }
-  main.homePage .leaf-3 {
-    z-index: 2;
-    top: 125vh;
-    left: 25px;
-    transform: rotate(55deg); }
-  main.homePage .leaf-4 {
-    z-index: 2;
-    top: 90vh;
-    right: 0;
-    transform: rotate(-80deg); }
-  main.homePage .leaf-5 {
-    z-index: 2;
-    top: 98vh;
-    right: -80px;
-    transform: rotate(-100deg) scaleX(-1); }
-  main.homePage .leaf-6 {
-    z-index: 1;
-    top: 140vh;
-    right: 0;
-    transform: rotate(-70deg); }
-  main.homePage .leaf-7 {
-    height: 700px;
+  min-height: 100vh;
+}
+@keyframes homeAnimationLeaf-7 {
+  0% {
+    top: 230vh;
+    left: -250px;
+    transform: rotate(0deg) scaleX(-1);
+  }
+  100% {
     top: 240vh;
     left: -50px;
-    transform: rotate(35deg) scaleX(-1); }
-  main.homePage .leaf-8 {
+    transform: rotate(35deg) scaleX(-1);
+  }
+}
+@keyframes homeAnimationLeaf-8 {
+  0% {
+    top: 230vh;
+    left: -250px;
+    transform: rotate(0deg) scaleX(-1);
+  }
+  100% {
     top: 265vh;
     left: 25px;
-    transform: rotate(50deg) scaleX(-1); }
-  main.homePage .leaf-9 {
+    transform: rotate(50deg) scaleX(-1);
+  }
+}
+@keyframes homeAnimationLeaf-9 {
+  0% {
+    top: 230vh;
+    left: -250px;
+    transform: rotate(0deg) scaleX(-1);
+  }
+  100% {
     top: 275vh;
     left: 25px;
-    transform: rotate(75deg) scaleX(-1); }
-  main.homePage .leaf-10 {
+    transform: rotate(75deg) scaleX(-1);
+  }
+}
+@keyframes homeAnimationLeaf-10 {
+  0% {
+    top: 230vh;
+    left: -250px;
+    transform: rotate(0deg) scaleX(-1);
+  }
+  100% {
     top: 285vh;
     left: 25px;
-    transform: rotate(95deg) scaleX(-1); }
-  main.homePage .leaf-11 {
+    transform: rotate(95deg) scaleX(-1);
+  }
+}
+@keyframes homeAnimationLeaf-11 {
+  0% {
+    top: 230vh;
+    left: -250px;
+    transform: rotate(0deg) scaleX(-1);
+  }
+  100% {
     top: 290vh;
     left: 0;
-    transform: rotate(140deg) scaleX(-1); }
+    transform: rotate(140deg) scaleX(-1);
+  }
+}
+main.homePage .leaf {
+  z-index: 3;
+  position: absolute;
+}
+main.homePage .leaf1_1 {
+  height: 600px;
+}
+main.homePage .leaf2_1 {
+  height: 300px;
+}
+main.homePage .leaf1_2 {
+  z-index: 4;
+  height: 450px;
+}
+main.homePage .leaf-1 {
+  top: 98vh;
+  left: -25px;
+  transform: rotate(160deg);
+}
+main.homePage .leaf-2 {
+  top: 120vh;
+  left: -25px;
+  transform: rotate(50deg) scaleX(-1);
+}
+main.homePage .leaf-3 {
+  z-index: 2;
+  top: 125vh;
+  left: 25px;
+  transform: rotate(55deg);
+}
+main.homePage .leaf-4 {
+  z-index: 2;
+  top: 90vh;
+  right: 0;
+  transform: rotate(-80deg);
+}
+main.homePage .leaf-5 {
+  z-index: 2;
+  top: 98vh;
+  right: -80px;
+  transform: rotate(-100deg) scaleX(-1);
+}
+main.homePage .leaf-6 {
+  z-index: 1;
+  top: 140vh;
+  right: 0;
+  transform: rotate(-70deg);
+}
+main.homePage .leaf-7 {
+  height: 700px;
+  top: 230vh;
+  left: -250px;
+  transform: rotate(0deg) scaleX(-1);
+}
+main.homePage .leaf-7.leaf_animation {
+  animation: homeAnimationLeaf-7 2s ease forwards;
+}
+main.homePage .leaf-8 {
+  top: 230vh;
+  left: -250px;
+  transform: rotate(0deg) scaleX(-1);
+}
+main.homePage .leaf-8.leaf_animation {
+  animation: homeAnimationLeaf-8 2.2s ease forwards;
+}
+main.homePage .leaf-9 {
+  top: 230vh;
+  left: -250px;
+  transform: rotate(0deg) scaleX(-1);
+}
+main.homePage .leaf-9.leaf_animation {
+  animation: homeAnimationLeaf-9 2.4s ease forwards;
+}
+main.homePage .leaf-10 {
+  top: 230vh;
+  left: -250px;
+  transform: rotate(0deg) scaleX(-1);
+}
+main.homePage .leaf-10.leaf_animation {
+  animation: homeAnimationLeaf-10 2.6s ease forwards;
+}
+main.homePage .leaf-11 {
+  top: 230vh;
+  left: -250px;
+  transform: rotate(0deg) scaleX(-1);
+}
+main.homePage .leaf-11.leaf_animation {
+  animation: homeAnimationLeaf-11 3s ease forwards;
+}
 
 section {
   display: flex;
@@ -781,124 +872,29 @@ section {
     transform: rotate(40deg); }
   100% {
     top: 42vh;
-    transform: rotate(25deg); } }
-  .connexion .leaf {
-    z-index: 3;
-    position: absolute; }
-  .connexion .leaf_1 {
-    height: 1000px; }
-  .connexion .leaf_2 {
-    height: 600px; }
-  .connexion .leaf_3 {
-    height: 1100px; }
-  .connexion .leaf-1 {
-    animation: connexionAnimationLeaf-1 2s ease forwards;
-    z-index: 2;
-    top: -15vh;
-    left: 100px;
-    transform: rotate(130deg) scaleX(-1); }
-  .connexion .leaf-2 {
-    animation: connexionAnimationLeaf-2 2s ease forwards;
-    top: 30vh;
-    left: -100px;
-    transform: rotate(0deg); }
-  .connexion .leaf-3 {
-    animation: connexionAnimationLeaf-3 2s ease forwards;
-    top: 35vh;
-    left: 0;
-    transform: rotate(10deg); }
-  .connexion .leaf-4 {
-    animation: connexionAnimationLeaf-4 2s ease forwards;
-    z-index: 2;
-    top: -30vh;
-    left: 100px;
-    transform: rotate(110deg) scaleX(-1); }
-  .connexion .leaf-5 {
-    animation: connexionAnimationLeaf-5 2s ease forwards;
-    z-index: 1;
-    top: -15vh;
-    left: 300px;
-    transform: rotate(140deg) scaleX(-1); }
-  .connexion .leaf-6 {
-    animation: connexionAnimationLeaf-6 2s ease forwards;
-    z-index: 1;
-    top: 20vh;
-    left: -100px;
-    transform: rotate(110deg); }
-  .connexion .leaf-7 {
-    animation: connexionAnimationLeaf-7 2s ease forwards;
-    z-index: 2;
-    top: 45vh;
-    left: 0;
-    transform: rotate(25deg); }
-  .connexion .leaf-8 {
-    animation: connexionAnimationLeaf-8 2s ease forwards;
-    z-index: 2;
-    top: 42vh;
-    left: 50px;
-    transform: rotate(25deg); }
-  .connexion section {
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    height: 70%;
-    width: 35%;
-    padding: 1em;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-    .connexion section .circle {
-      z-index: -1;
-      position: absolute;
-      height: 700px;
-      width: 700px;
-      border-radius: 50%;
-      top: -350px;
-      right: -350px;
-      background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)); }
-    .connexion section h1 {
-      font-size: 60px;
-      text-shadow: 0 0.05em 0 #ff847c;
-      text-transform: capitalize; }
-    .connexion section form {
-      height: 65%;
-      width: 75%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between; }
-      .connexion section form .text {
-        font-size: 37px;
-        text-transform: capitalize;
-        border: 3px solid #ff847c;
-        padding: 0.25em 0 0.25em 1em;
-        max-width: 100%; }
-      .connexion section form p {
-        font-size: 20px;
-        text-align: center;
-        width: 80%; }
-      .connexion section form a {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        text-transform: capitalize;
-        font-size: 25px; }
-        .connexion section form a .underline {
-          transition: 0.2s ease;
-          position: absolute;
-          bottom: -2px;
-          height: 2px;
-          width: 0;
-          border-radius: 10px; }
-        .connexion section form a:hover .underline {
-          width: 100%; }
-      .connexion section form .btn {
-        width: 100%; }
+.connexion section form a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+.connexion section form a .underline {
+  transition: 0.2s ease;
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  border-radius: 10px;
+}
+.connexion section form a:hover .underline {
+  width: 100%;
+}
+.connexion section form .btn {
+  width: 100%;
+}
 
 footer {
   display: flex;
