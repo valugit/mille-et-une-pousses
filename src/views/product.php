@@ -6,21 +6,21 @@
 
             <div class="imgs">
                 <div class="otherImg">
-                    <img class="imgsProduct" src="./../media/products/calathea/calathea1.jpg" alt="calathea">
+                    <img class="imgsProduct" src="./../../../media/products/calathea/calathea1.jpg" alt="calathea">
                     <span class="bar top-bar b-pinkOrange"></span>
                     <span class="bar right-bar b-pinkOrange"></span>
                     <span class="bar bottom-bar b-pinkOrange"></span>
                     <span class="bar left-bar b-pinkOrange"></span>
                 </div>
                 <div class="otherImg">
-                    <img class="imgsProduct" src="./../media/products/calathea/calathea2.jpg" alt="calathea">
+                    <img class="imgsProduct" src="./../../../media/products/calathea/calathea2.jpg" alt="calathea">
                     <span class="bar top-bar b-pinkOrange"></span>
                     <span class="bar right-bar b-pinkOrange"></span>
                     <span class="bar bottom-bar b-pinkOrange"></span>
                     <span class="bar left-bar b-pinkOrange"></span>
                 </div>
                 <div class="otherImg">
-                    <img class="imgsProduct" src="./../media/products/calathea/calathea3.jpg" alt="calathea">
+                    <img class="imgsProduct" src="./../../../media/products/calathea/calathea3.jpg" alt="calathea">
                     <span class="bar top-bar b-pinkOrange"></span>
                     <span class="bar right-bar b-pinkOrange"></span>
                     <span class="bar bottom-bar b-pinkOrange"></span>
@@ -29,7 +29,7 @@
             </div>
 
             <div  class="imgPrincipal">
-                <img id="imgProduct" src="./../media/products/calathea/calathea.jpg" alt="calathea">
+                <img id="imgProduct" src="./../../../media/products/calathea/calathea.jpg" alt="calathea">
             </div>
 
             <div class="text">

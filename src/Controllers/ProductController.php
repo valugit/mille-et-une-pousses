@@ -20,10 +20,10 @@ class ProductController {
     include "./products.php";
   }
 
-  public function productAction($id) {
+  public function detailsAction($name) {
 
     $pdo = Connexion::getInstance();
-    $product = Product::getProductById($pdo, $id);
+    $product = Product::getProductByName($pdo, $name);
 
     include "./product.php";
   }

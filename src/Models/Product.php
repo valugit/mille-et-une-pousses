@@ -13,11 +13,14 @@ class Product {
     return $q->fetchAll();
   }
 
-  public static function getProductById($pdo, $id) {
-    $sql = "SELECT name, price, description, maintenance FROM products WHERE id = :id";
+  public static function getProductByName($pdo, $name) {
+    $sql = "SELECT products.id, products.price, products.description, products.maintenance, product_images.path, product_images.alt
+            FROM products
+            LEFT JOIN product_images ON product_images.product_id = products.id
+            WHERE name = :name AND product_images.sort_order = 1";
 
     $q = $pdo->prepare($sql);
-    $q->bindParam("id", $id);
+    $q->bindParam("name", $name);
     $q->execute();
     return $q->fetch();
   }
