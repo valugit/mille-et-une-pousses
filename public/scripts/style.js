@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let leafHome = document.querySelectorAll('.leaf-home')
 
-        console.log(scroll.scrollTop)
         leafHome.forEach(leaf => {
 
             if (scroll.scrollTop >= 2000) {
