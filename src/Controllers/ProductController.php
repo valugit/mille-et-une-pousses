@@ -27,6 +27,8 @@ class ProductController {
     $pdo = Connexion::getInstance();
     $product = Product::getProductByName($pdo, $name);
     $images = Image::getByName($pdo, $name);
+    $otherProducts = Product::getOtherProducts($pdo, $name);
+    shuffle($otherProducts);
 
     include "./product.php";
   }

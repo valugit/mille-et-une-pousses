@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="/styles/style.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./../../../favicon.ico" type="image/x-icon">
   <script src="/scripts/style.js"></script>
   <title>Mille Et Une Pousses</title>
 </head>
@@ -17,7 +17,7 @@
 
   <nav id="navbar" class="b-beige">
 
-    <a class="logo b-white" href="">
+    <a class="logo b-white" href="http://milleetunepousses.loc">
       <img src="./../../../media/img/logo.png" alt="logo">
     </a>
 

@@ -75,21 +75,23 @@
             <h2 class="c-deepBlue">D’autres plantes susceptible de vous intéresser</h2>
 
             <div class="other-products">
+                <?php foreach ($otherProducts as $product): ?>
                 <div>
                     <div class="frame">
-                        <a href="">
-                            <img src="./../media/products/aglaonema/aglaonema.jpg" alt="">
+                        <a href="http://milleetunepousses.loc/product/details/<?php echo urlencode($product["name"]) ?>">
+                            <img src="<?php echo $product["path"] ?>" alt="<?php echo $product["alt"] ?>">
                             <span>
                                 <p class="btn b-lightPink c-white">en savoir plus</p>
                             </span>
                         </a>
                     </div>
                     <div class="info">
-                        <h4 class="c-deepBlue">aglaonema</h4>
-                        <h5 class="c-lightPink">18€</h5>
+                        <h4 class="c-deepBlue"><?php echo $product["name"] ?></h4>
+                        <h5 class="c-lightPink"><?php echo floatval($product["price"]) / 100 ?>&euro;</h5>
                     </div>
                 </div>
-                <div>
+                <?php endforeach?>
+                <!-- <div>
                     <div class="frame">
                         <a href="">
                             <img src="./../media/products/aloe_vera/aloe_vera.jpg" alt="">
@@ -130,7 +132,7 @@
                         <h4 class="c-deepBlue">sansevieria</h4>
                         <h5 class="c-lightPink">30€</h5>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
