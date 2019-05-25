@@ -187,6 +187,66 @@ main {
   margin-top: 8vh;
   min-height: 100vh;
 }
+@keyframes homeAnimationLeaf-7 {
+  0% {
+    top: 230vh;
+    left: -250px;
+    transform: rotate(0deg) scaleX(-1);
+  }
+  100% {
+    top: 240vh;
+    left: -50px;
+    transform: rotate(35deg) scaleX(-1);
+  }
+}
+@keyframes homeAnimationLeaf-8 {
+  0% {
+    top: 230vh;
+    left: -250px;
+    transform: rotate(0deg) scaleX(-1);
+  }
+  100% {
+    top: 265vh;
+    left: 25px;
+    transform: rotate(50deg) scaleX(-1);
+  }
+}
+@keyframes homeAnimationLeaf-9 {
+  0% {
+    top: 230vh;
+    left: -250px;
+    transform: rotate(0deg) scaleX(-1);
+  }
+  100% {
+    top: 275vh;
+    left: 25px;
+    transform: rotate(75deg) scaleX(-1);
+  }
+}
+@keyframes homeAnimationLeaf-10 {
+  0% {
+    top: 230vh;
+    left: -250px;
+    transform: rotate(0deg) scaleX(-1);
+  }
+  100% {
+    top: 285vh;
+    left: 25px;
+    transform: rotate(95deg) scaleX(-1);
+  }
+}
+@keyframes homeAnimationLeaf-11 {
+  0% {
+    top: 230vh;
+    left: -250px;
+    transform: rotate(0deg) scaleX(-1);
+  }
+  100% {
+    top: 290vh;
+    left: 0;
+    transform: rotate(140deg) scaleX(-1);
+  }
+}
 main.homePage .leaf {
   z-index: 3;
   position: absolute;
@@ -237,29 +297,44 @@ main.homePage .leaf-6 {
 }
 main.homePage .leaf-7 {
   height: 700px;
-  top: 240vh;
-  left: -50px;
-  transform: rotate(35deg) scaleX(-1);
+  top: 230vh;
+  left: -250px;
+  transform: rotate(0deg) scaleX(-1);
+}
+main.homePage .leaf-7.leaf_animation {
+  animation: homeAnimationLeaf-7 2s ease forwards;
 }
 main.homePage .leaf-8 {
-  top: 265vh;
-  left: 25px;
-  transform: rotate(50deg) scaleX(-1);
+  top: 230vh;
+  left: -250px;
+  transform: rotate(0deg) scaleX(-1);
+}
+main.homePage .leaf-8.leaf_animation {
+  animation: homeAnimationLeaf-8 2.2s ease forwards;
 }
 main.homePage .leaf-9 {
-  top: 275vh;
-  left: 25px;
-  transform: rotate(75deg) scaleX(-1);
+  top: 230vh;
+  left: -250px;
+  transform: rotate(0deg) scaleX(-1);
+}
+main.homePage .leaf-9.leaf_animation {
+  animation: homeAnimationLeaf-9 2.4s ease forwards;
 }
 main.homePage .leaf-10 {
-  top: 285vh;
-  left: 25px;
-  transform: rotate(95deg) scaleX(-1);
+  top: 230vh;
+  left: -250px;
+  transform: rotate(0deg) scaleX(-1);
+}
+main.homePage .leaf-10.leaf_animation {
+  animation: homeAnimationLeaf-10 2.6s ease forwards;
 }
 main.homePage .leaf-11 {
-  top: 290vh;
-  left: 0;
-  transform: rotate(140deg) scaleX(-1);
+  top: 230vh;
+  left: -250px;
+  transform: rotate(0deg) scaleX(-1);
+}
+main.homePage .leaf-11.leaf_animation {
+  animation: homeAnimationLeaf-11 3s ease forwards;
 }
 
 section {
