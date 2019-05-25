@@ -10,9 +10,9 @@
     <img class="leaf leaf-6 leaf2_1" src="./../media/leafs/leaf2_1.png" alt="leaf">
 
     <img class="leaf leaf-7 leaf1_1" src="./../media/leafs/leaf1_1.png" alt="leaf">
-    <img class="leaf leaf-8 leaf1_3" src="./../media/leafs/leaf1_3.png" alt="leaf">
-    <img class="leaf leaf-9 leaf1_3" src="./../media/leafs/leaf1_3.png" alt="leaf">
-    <img class="leaf leaf-10 leaf1_3" src="./../media/leafs/leaf1_3.png" alt="leaf">
+    <img class="leaf leaf-8 leaf1_2" src="./../media/leafs/leaf1_2.png" alt="leaf">
+    <img class="leaf leaf-9 leaf1_2" src="./../media/leafs/leaf1_2.png" alt="leaf">
+    <img class="leaf leaf-10 leaf1_2" src="./../media/leafs/leaf1_2.png" alt="leaf">
     <img class="leaf leaf-11 leaf1_1" src="./../media/leafs/leaf1_1.png" alt="leaf">
 
     <section class="home-one parallax">
