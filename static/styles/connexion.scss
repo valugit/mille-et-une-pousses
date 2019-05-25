@@ -11,6 +11,102 @@ $pinkOrange: #e84a5f;
 	width: 100vw;
 	margin: 0;
 
+	@keyframes connexionAnimationLeaf-1 {
+		0% {
+			left: -100px;
+			transform: rotate(60deg) scaleX(-1);
+		}
+
+		100% {
+			left: 100px;
+			transform: rotate(130deg) scaleX(-1);
+		}
+	}
+
+	@keyframes connexionAnimationLeaf-2 {
+		0% {
+			top: 40vh;
+			transform: rotate(60deg);
+		}
+
+		100% {
+			top: 30vh;
+			transform: rotate(0deg);
+		}
+	}
+
+	@keyframes connexionAnimationLeaf-3 {
+		0% {
+			top: 45vh;
+			transform: rotate(70deg);
+		}
+
+		100% {
+			top: 35vh;
+			transform: rotate(10deg);
+		}
+	}
+
+	@keyframes connexionAnimationLeaf-4 {
+		0% {
+			left: -100px;
+			transform: rotate(60deg) scaleX(-1);
+		}
+
+		100% {
+			left: 100px;
+			transform: rotate(110deg) scaleX(-1);
+		}
+	}
+
+	@keyframes connexionAnimationLeaf-5 {
+		0% {
+			top: -30vh;
+			left: 200px;
+			transform: rotate(80deg) scaleX(-1);
+		}
+
+		100% {
+			top: -15vh;
+			left: 300px;
+			transform: rotate(140deg) scaleX(-1);
+		}
+	}
+
+	@keyframes connexionAnimationLeaf-6 {
+		0% {
+			left: -300px;
+		}
+
+		100% {
+			left: -100px;
+		}
+	}
+
+	@keyframes connexionAnimationLeaf-7 {
+		0% {
+			top: 70vh;
+			transform: rotate(40deg);
+		}
+
+		100% {
+			top: 45vh;
+			transform: rotate(25deg);
+		}
+	}
+
+	@keyframes connexionAnimationLeaf-8 {
+		0% {
+			top: 67vh;
+			transform: rotate(40deg);
+		}
+
+		100% {
+			top: 42vh;
+			transform: rotate(25deg);
+		}
+	}
+
 	.leaf {
 		z-index: 3;
 		position: absolute;
@@ -29,6 +125,7 @@ $pinkOrange: #e84a5f;
 	}
 
 	.leaf-1 {
+		animation: connexionAnimationLeaf-1 2s ease forwards;
 		z-index: 2;
 		top: -15vh;
 		left: 100px;
@@ -36,18 +133,21 @@ $pinkOrange: #e84a5f;
 	}
 
 	.leaf-2 {
+		animation: connexionAnimationLeaf-2 2s ease forwards;
 		top: 30vh;
 		left: -100px;
 		transform: rotate(0deg);
 	}
 
 	.leaf-3 {
+		animation: connexionAnimationLeaf-3 2s ease forwards;
 		top: 35vh;
 		left: 0;
 		transform: rotate(10deg);
 	}
 
 	.leaf-4 {
+		animation: connexionAnimationLeaf-4 2s ease forwards;
 		z-index: 2;
 		top: -30vh;
 		left: 100px;
@@ -55,6 +155,7 @@ $pinkOrange: #e84a5f;
 	}
 
 	.leaf-5 {
+		animation: connexionAnimationLeaf-5 2s ease forwards;
 		z-index: 1;
 		top: -15vh;
 		left: 300px;
@@ -62,6 +163,7 @@ $pinkOrange: #e84a5f;
 	}
 
 	.leaf-6 {
+		animation: connexionAnimationLeaf-6 2s ease forwards;
 		z-index: 1;
 		top: 20vh;
 		left: -100px;
@@ -69,6 +171,7 @@ $pinkOrange: #e84a5f;
 	}
 
 	.leaf-7 {
+		animation: connexionAnimationLeaf-7 2s ease forwards;
 		z-index: 2;
 		top: 45vh;
 		left: 0;
@@ -76,6 +179,7 @@ $pinkOrange: #e84a5f;
 	}
 
 	.leaf-8 {
+		animation: connexionAnimationLeaf-8 2s ease forwards;
 		z-index: 2;
 		top: 42vh;
 		left: 50px;
