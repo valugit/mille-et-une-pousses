@@ -226,12 +226,18 @@ $pinkOrange: #e84a5f;
 			justify-content: space-between;
 
 			.text {
-				font-size: 37px;
-				text-transform: capitalize;
+				font-size: 30px;
 				border: 3px solid $lightPink;
-				padding: 0.25em 0 0.25em 1em;
+				padding: 0.5em 0 0.5em 1.5em;
 				width: 93%;
 				max-width: 100%;
+
+				&::placeholder {
+					font-size: 37px;
+					text-transform: capitalize;
+					color: $blue;
+					opacity: 0.6;
+				}
 			}
 
 			p {

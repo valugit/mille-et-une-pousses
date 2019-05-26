@@ -52,12 +52,21 @@ nav {
             transition: 0.6s ease;
             margin: 0 1.5em;
 
-            a {
+            .rout {
                 position: relative;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 text-transform: capitalize;
+
+                .deconnexion {
+                    font-size: 30px;
+                    text-transform: capitalize;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
 
                 .underline {
                     transition: 0.2s ease;
@@ -113,11 +122,17 @@ nav {
         width: 75%;
 
         li {
-            margin: 0 3em;
+            margin: 0 2.5em;
 
-            .underline {
-                height: 2px;
-                bottom: -2px;
+            .rout {
+                .deconnexion {
+                    font-size: 25px;
+                }
+
+                .underline {
+                    height: 2px;
+                    bottom: -2px;
+                }
             }
 
             .cart {

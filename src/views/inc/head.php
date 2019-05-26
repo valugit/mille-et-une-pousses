@@ -35,21 +35,21 @@
           </a>
         </li>
         <li>
-          <a class="c-deepBlue rout" value="produits" href="">blog
-            <span class="underline b-deepBlue"></span>
-          </a>
-        </li>
-      </div>
-
-      <div>
-        <li>
-
           <a class="rout" value="blog" href="">
             <p class="c-deepBlue">panier</p>
             <span class="underline b-deepBlue"></span>
             <span class="cartValue">10</span>
           </a>
           <img class="cart" src="./../../../media/img/cart-icone.png" alt="panier">
+        </li>
+      </div>
+
+      <div>
+        <li>
+
+          <a class="c-deepBlue rout" value="produits" href="">blog
+            <span class="underline b-deepBlue"></span>
+          </a>
         </li>
         <?php if (isset($_SESSION["connected"])): ?>
         <li>
@@ -58,12 +58,12 @@
           </a>
         </li>
         <li>
-          <form action="/user/disconnect" class="c-deepBlue rout">
-            <input type="submit" value="se déconnecter">
+          <form action="/user/disconnect" class="rout">
+            <input class="c-deepBlue deconnexion" type="submit" value="se déconnecter">
             <span class="underline b-deepBlue"></span>
           </form>
         </li>
-<?php else: ?>
+        <?php else: ?>
         <li>
           <a class="c-deepBlue rout" value="signin" href="/user/identification">s'enregistrer&nbsp;/&nbsp;se&nbsp;connecter
             <span class="underline b-deepBlue"></span>

@@ -68,11 +68,11 @@
         <div class="container">
             <?php foreach ($products as $product): ?>
             <div class="product <?php foreach ($categories as $key => $category) {
-  if ($product["id"] == $key) {
-    foreach ($category as $value) {
-      echo $value["name"] . " ";
-    }
-  }}?>">
+                if ($product["id"] == $key) {
+                    foreach ($category as $value) {
+                    echo $value["name"] . " ";
+                    }
+                }}?>">
                 <div class="frame">
                     <a href="/product/details/<?php echo urlencode($product["name"]) ?>">
                         <img src="<?php echo $product["path"] ?>" alt="<?php echo $product["alt"] ?>">

@@ -40,7 +40,7 @@
                 </a>
                 <?php if (isset($validation) && is_string($validation)): ?>
                 <p class="c-lightPink"><?php echo "&#9888; " . $validation ?></p>
-<?php elseif (isset($validation) && is_array($validation)): ?>
+                <?php elseif (isset($validation) && is_array($validation)): ?>
                 <p class="c-deepBlue"><?php echo "User ID: " . $validation["id"] ?></p>
                 <?php endif?>
             </form>

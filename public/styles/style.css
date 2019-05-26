@@ -106,14 +106,21 @@ nav ul li {
   transition: 0.6s ease;
   margin: 0 1.5em;
 }
-nav ul li a {
+nav ul li .rout {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: capitalize;
 }
-nav ul li a .underline {
+nav ul li .rout .deconnexion {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+nav ul li .rout .deconnexion:hover {
+  cursor: pointer;
+}
+nav ul li .rout .underline {
   transition: 0.2s ease;
   position: absolute;
   bottom: -4px;
@@ -121,7 +128,7 @@ nav ul li a .underline {
   width: 0;
   border-radius: 10px;
 }
-nav ul li a:hover .underline {
+nav ul li .rout:hover .underline {
   width: 100%;
 }
 nav ul li .cart {
@@ -157,9 +164,12 @@ nav ul li .cartValue {
   width: 75%;
 }
 .navbar-scroll ul li {
-  margin: 0 3em;
+  margin: 0 2.5em;
 }
-.navbar-scroll ul li .underline {
+.navbar-scroll ul li .rout .deconnexion {
+  font-size: 25px;
+}
+.navbar-scroll ul li .rout .underline {
   height: 2px;
   bottom: -2px;
 }
@@ -1377,12 +1387,17 @@ section .btn-quantity {
   justify-content: space-between;
 }
 .connexion section form .text {
-  font-size: 37px;
-  text-transform: capitalize;
+  font-size: 30px;
   border: 3px solid #ff847c;
-  padding: 0.25em 0 0.25em 1em;
+  padding: 0.5em 0 0.5em 1.5em;
   width: 93%;
   max-width: 100%;
+}
+.connexion section form .text::placeholder {
+  font-size: 37px;
+  text-transform: capitalize;
+  color: #007791;
+  opacity: 0.6;
 }
 .connexion section form p {
   font-size: 20px;
