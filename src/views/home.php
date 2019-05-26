@@ -25,7 +25,7 @@
 
             <p class="c-deepBlue">Nous vous avons préparé une sélection de plantes spécialement pour l'occasion</p>
 
-            <button class="btn btn-lightPink b-lightPink c-white">découvrez la sélection</button>
+            <a href="" class="btn btn-lightPink b-lightPink c-white">découvrez la sélection</a>
 
         </div>
 
@@ -39,7 +39,7 @@
                 il nous tient à coeur de vous offrir une qualité irréprochable mais également des produits respectueux
                 de l’environnement.</p>
 
-            <a href="http://milleetunepousses.loc/product/listall" class="btn btn-deepBlue b-deepBlue c-white">découvrez nos plantes</a>
+            <a href="/product/listall" class="btn btn-deepBlue b-deepBlue c-white">découvrez nos plantes</a>
 
         </div>
 
@@ -57,7 +57,7 @@
 
             <p class="c-deepBlue">@élisabeth</p>
 
-            <button class="btn btn-deepBlue c-white b-deepBlue">découvrez nos abonnements</button>
+            <a href="/subscription/info" class="btn btn-deepBlue c-white b-deepBlue">découvrez nos abonnements</a>
 
         </div>
 
