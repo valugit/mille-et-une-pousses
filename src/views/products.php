@@ -74,7 +74,7 @@
     }
   }}?>">
                 <div class="frame">
-                    <a href="http://milleetunepousses.loc/product/details/<?php echo urlencode($product["name"]) ?>">
+                    <a href="/product/details/<?php echo urlencode($product["name"]) ?>">
                         <img src="<?php echo $product["path"] ?>" alt="<?php echo $product["alt"] ?>">
                         <span>
                             <p class="btn b-lightPink c-white">acheter</p>

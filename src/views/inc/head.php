@@ -17,7 +17,7 @@
 
   <nav id="navbar" class="b-beige">
 
-    <a class="logo b-white" href="http://milleetunepousses.loc">
+    <a class="logo b-white" href="/">
       <img src="./../../../media/img/logo.png" alt="logo">
     </a>
 
@@ -30,7 +30,7 @@
           </a>
         </li>
         <li>
-          <a class="c-deepBlue rout" value="profile" href="">abonnements
+          <a class="c-deepBlue rout" value="profile" href="/subscription/info">abonnements
             <span class="underline b-deepBlue"></span>
           </a>
         </li>
@@ -52,7 +52,7 @@
           <img class="cart" src="./../../../media/img/cart-icone.png" alt="panier">
         </li>
         <li>
-          <a class="c-deepBlue rout" value="profile" href="">s'enregistrer&nbsp;/&nbsp;se&nbsp;connecter
+          <a class="c-deepBlue rout" value="profile" href="/user/identification">s'enregistrer&nbsp;/&nbsp;se&nbsp;connecter
             <span class="underline b-deepBlue"></span>
           </a>
         </li>
