@@ -16,7 +16,7 @@
 
     <section class="products-two">
 
-        <div id="fakeTags"></div>
+        <span id="fakeTags"></span>
 
         <div id="tags" class="tags">
 
