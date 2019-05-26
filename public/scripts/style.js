@@ -21,8 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (scroll.scrollTop >= 2000) {
                 leaf.classList.add('leaf_animation')
-            } else {
-                leaf.classList.remove('leaf_animation')
             }
 
         })
