@@ -91,48 +91,6 @@
                     </div>
                 </div>
                 <?php endforeach?>
-                <!-- <div>
-                    <div class="frame">
-                        <a href="">
-                            <img src="./../media/products/aloe_vera/aloe_vera.jpg" alt="">
-                            <span>
-                                <p class="btn b-lightPink c-white">en savoir plus</p>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="info">
-                        <h4 class="c-deepBlue">aloe vera</h4>
-                        <h5 class="c-lightPink">9€</h5>
-                    </div>
-                </div>
-                <div>
-                    <div class="frame">
-                        <a href="">
-                            <img src="./../media/products/pilea/pilea.jpg" alt="">
-                            <span>
-                                <p class="btn b-lightPink c-white">en savoir plus</p>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="info">
-                        <h4 class="c-deepBlue">pilea</h4>
-                        <h5 class="c-lightPink">11€</h5>
-                    </div>
-                </div>
-                <div>
-                    <div class="frame">
-                        <a href="">
-                            <img src="./../media/products/sansevieria/sansevieria.jpg" alt="">
-                            <span>
-                                <p class="btn b-lightPink c-white">en savoir plus</p>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="info">
-                        <h4 class="c-deepBlue">sansevieria</h4>
-                        <h5 class="c-lightPink">30€</h5>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>

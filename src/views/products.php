@@ -66,76 +66,27 @@
         </div>
 
         <div class="container">
-            <div class="product">
+            <?php foreach ($products as $product): ?>
+            <div class="product <?php foreach ($categories as $key => $category) {
+  if ($product["id"] == $key) {
+    foreach ($category as $value) {
+      echo $value["name"] . " ";
+    }
+  }}?>">
                 <div class="frame">
-                    <a href="">
-                        <img src="./../media/products/aglaonema/aglaonema.jpg" alt="">
+                    <a href="http://milleetunepousses.loc/product/details/<?php echo urlencode($product["name"]) ?>">
+                        <img src="<?php echo $product["path"] ?>" alt="<?php echo $product["alt"] ?>">
                         <span>
                             <p class="btn b-lightPink c-white">acheter</p>
                         </span>
                     </a>
                 </div>
                 <div class="info">
-                    <h4 class="c-deepBlue">aglaonema</h4>
-                    <h5 class="c-lightPink">18€</h5>
+                    <h4 class="c-deepBlue"><?php echo $product["name"] ?></h4>
+                    <h5 class="c-lightPink"><?php echo floatval($product["price"]) / 100 ?>&euro;</h5>
                 </div>
             </div>
-            <div class="product">
-                <div class="frame">
-                    <a href="">
-                        <img src="./../media/products/aloe_vera/aloe_vera.jpg" alt="">
-                        <span>
-                            <p class="btn b-lightPink c-white">acheter</p>
-                        </span>
-                    </a>
-                </div>
-                <div class="info">
-                    <h4 class="c-deepBlue">aloe vera</h4>
-                    <h5 class="c-lightPink">9€</h5>
-                </div>
-            </div>
-            <div class="product">
-                <div class="frame">
-                    <a href="">
-                        <img src="./../media/products/pilea/pilea.jpg" alt="">
-                        <span>
-                            <p class="btn b-lightPink c-white">acheter</p>
-                        </span>
-                    </a>
-                </div>
-                <div class="info">
-                    <h4 class="c-deepBlue">pilea</h4>
-                    <h5 class="c-lightPink">11€</h5>
-                </div>
-            </div>
-            <div class="product">
-                <div class="frame">
-                    <a href="">
-                        <img src="./../media/products/sansevieria/sansevieria.jpg" alt="">
-                        <span>
-                            <p class="btn b-lightPink c-white">acheter</p>
-                        </span>
-                    </a>
-                </div>
-                <div class="info">
-                    <h4 class="c-deepBlue">sansevieria</h4>
-                    <h5 class="c-lightPink">30€</h5>
-                </div>
-            </div>
-            <div class="product">
-                <div class="frame">
-                    <a href="">
-                        <img src="./../media/products/sansevieria/sansevieria.jpg" alt="">
-                        <span>
-                            <p class="btn b-lightPink c-white">acheter</p>
-                        </span>
-                    </a>
-                </div>
-                <div class="info">
-                    <h4 class="c-deepBlue">sansevieria</h4>
-                    <h5 class="c-lightPink">30€</h5>
-                </div>
-            </div>
+            <?php endforeach?>
         </div>
     </section>
 </main>

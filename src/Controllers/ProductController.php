@@ -12,11 +12,14 @@ class ProductController {
 
     $pdo = Connexion::getInstance();
     $products = Product::getAll($pdo);
-
     $categories = [];
+
     foreach ($products as $product) {
-      $categories[$product['id']] = Category::getById($pdo, $product['id']);
+      $categories[$product["id"]] = Category::getById($pdo, $product["id"]);
     }
+
+    $names = array_column($products, "name");
+    array_multisort($names, SORT_ASC, $products);
 
     include "./products.php";
   }
@@ -29,6 +32,7 @@ class ProductController {
     $images = Image::getByName($pdo, $name);
     $otherProducts = Product::getOtherProducts($pdo, $name);
     shuffle($otherProducts);
+    array_slice($otherProducts, 0, 4);
 
     include "./product.php";
   }

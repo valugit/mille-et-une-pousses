@@ -39,7 +39,7 @@
                 il nous tient à coeur de vous offrir une qualité irréprochable mais également des produits respectueux
                 de l’environnement.</p>
 
-            <button class="btn btn-deepBlue b-deepBlue c-white">découvrez nos plantes</button>
+            <a href="http://milleetunepousses.loc/product/listall" class="btn btn-deepBlue b-deepBlue c-white">découvrez nos plantes</a>
 
         </div>
 
