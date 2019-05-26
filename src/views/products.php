@@ -16,9 +16,9 @@
 
     <section class="products-two">
 
-        <div id="fakeTags" class="fakeTags"></div>
+        <div id="fakeTags"></div>
 
-        <div id="tags" class="tags tagsFixed">
+        <div id="tags" class="tags">
 
             <div class="block">
                 <h2 class="title c-deepBlue">catégories</h2>
