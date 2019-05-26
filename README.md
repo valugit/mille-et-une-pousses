@@ -10,4 +10,4 @@ visuel et/ou auditif.
 # Important
 
  - Installer composer.
- - Renommer le fichier "dbconfig.php.dist" en enlevant le ".dist"
+ - Renommer le fichier "dbconfig.php.dist" en enlevant le ".dist" et modifier les identifiants.

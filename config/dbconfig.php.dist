@@ -1,7 +1,7 @@
 <?php
 $config = [
   "host" => "mysql:host=localhost:8889;dbname=mille_et_une_pousses",
-  "user" => "root",
-  "password" => "root"
+  "user" => "YOUR USERNAME HERE",
+  "password" => "YOUR PASSWORD HERE"
 ];
 return $config;
