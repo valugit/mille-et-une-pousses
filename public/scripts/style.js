@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.addEventListener('scroll', () => {
 
+        // NavBar Scroll
+
         let navbar = document.querySelector('#navbar'),
             scroll = document.documentElement
 
@@ -10,6 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             navbar.classList.remove('navbar-scroll')
         }
+
+        // LeafAnimation Scroll HomePage
 
         let leafHome = document.querySelectorAll('.leaf-home')
 
@@ -22,6 +26,21 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
         })
+
+        // Tags Scroll Fixed ProductsPage
+        console.log(scroll.scrollTop)
+
+        let tags = document.querySelector('#tags'),
+            fakeTags = document.querySelector('#fakeTags')
+
+        if (scroll.scrollTop >= 820) {
+            fakeTags.classList.add('fakeTags')
+            tags.classList.add('tagsFixed')
+        } else {
+            fakeTags.classList.remove('fakeTags')
+            tags.classList.remove('tagsFixed')
+        }
+
     })
 
     let imgsProduct = document.querySelectorAll('.imgsProduct'),

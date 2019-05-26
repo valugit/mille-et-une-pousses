@@ -6,6 +6,7 @@ $pinkOrange: #E84A5F;
 $test: #FECEA8;
 
 nav {
+    transition: 0.4s ease;
     z-index: 10;
     top: 0;
     height: 13vh;
@@ -56,7 +57,6 @@ nav {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                position: relative;
                 text-transform: capitalize;
 
                 .underline {
