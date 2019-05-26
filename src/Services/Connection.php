@@ -1,7 +1,7 @@
 <?php
 namespace Services;
 
-class Connexion {
+class Connection {
 
   private static $_instance = null;
 

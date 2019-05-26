@@ -51,11 +51,25 @@
           </a>
           <img class="cart" src="./../../../media/img/cart-icone.png" alt="panier">
         </li>
+        <?php if (isset($_SESSION["connected"])): ?>
         <li>
-          <a class="c-deepBlue rout" value="profile" href="/user/identification">s'enregistrer&nbsp;/&nbsp;se&nbsp;connecter
+          <a class="c-deepBlue rout" value="profile" href="">mon&nbsp;profile
             <span class="underline b-deepBlue"></span>
           </a>
         </li>
+        <li>
+          <form action="/user/disconnect" class="c-deepBlue rout">
+            <input type="submit" value="se déconnecter">
+            <span class="underline b-deepBlue"></span>
+          </form>
+        </li>
+<?php else: ?>
+        <li>
+          <a class="c-deepBlue rout" value="signin" href="/user/identification">s'enregistrer&nbsp;/&nbsp;se&nbsp;connecter
+            <span class="underline b-deepBlue"></span>
+          </a>
+        </li>
+        <?php endif?>
       </div>
 
     </ul>

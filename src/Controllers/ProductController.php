@@ -4,13 +4,13 @@ namespace Controllers;
 use Models\Category;
 use Models\Image;
 use Models\Product;
-use Services\Connexion;
+use Services\Connection;
 
 class ProductController {
 
   public function listallAction() {
 
-    $pdo = Connexion::getInstance();
+    $pdo = Connection::getInstance();
     $products = Product::getAll($pdo);
     $categories = [];
 
@@ -27,7 +27,7 @@ class ProductController {
   public function detailsAction($name) {
 
     $name = urldecode($name);
-    $pdo = Connexion::getInstance();
+    $pdo = Connection::getInstance();
     $product = Product::getProductByName($pdo, $name);
     $images = Image::getByName($pdo, $name);
     $otherProducts = Product::getOtherProducts($pdo, $name);

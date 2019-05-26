@@ -2,20 +2,36 @@
 namespace Controllers;
 
 use Models\User;
-use Services\Connexion;
+use Services\Connection;
 
 class UserController {
 
   public function identificationAction() {
-    include "./connexion.php";
+
+    include "./connection.php";
   }
 
   public function verificationAction() {
     $email = $_POST["email"];
     $password = $_POST["password"];
 
-    $pdo = Connexion::getInstance();
-    $validation = User::signin();
+    $pdo = Connection::getInstance();
+    $validation = User::signin($pdo, $email, $password);
+
+    if (is_string($validation)) {
+      include "./connection.php";
+    } elseif (is_array($validation)) {
+      $_SESSION["connected"] = $validation["id"];
+
+      header("Location: http://milleetunepousses.loc");
+      exit();
+    }
   }
 
+  public function disconnectAction() {
+    unset($_SESSION["connected"]);
+
+    header("Location: http://milleetunepousses.loc");
+    exit();
+  }
 }

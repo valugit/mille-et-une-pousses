@@ -1,6 +1,8 @@
 <?php
 require_once "../vendor/autoload.php";
 
+session_start();
+
 $request_url = $_SERVER['REQUEST_URI'];
 
 $path = parse_url($request_url, PHP_URL_PATH);
