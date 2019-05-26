@@ -499,12 +499,24 @@ section {
             width: 70%;
 
             .title {
+                position: relative;
                 font-size: 65px;
                 width: 100%;
                 text-align: center;
                 text-transform: capitalize;
                 text-shadow: 0 0.05em 0 $lightPink;
                 margin: 0 0 1em 0;
+                background: linear-gradient(45deg, $lightPink 4%, $beige 4% 96%, $lightPink 96%);
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: linear-gradient(-45deg, $lightPink 4%, transparent 4% 96%, $lightPink 96%);
+                }
             }
 
             .check {

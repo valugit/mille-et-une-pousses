@@ -599,12 +599,23 @@ section .btn-quantity {
   width: 70%;
 }
 .products-two .tags .block .title {
+  position: relative;
   font-size: 65px;
   width: 100%;
   text-align: center;
   text-transform: capitalize;
   text-shadow: 0 0.05em 0 #ff847c;
   margin: 0 0 1em 0;
+  background: linear-gradient(45deg, #ff847c 4%, #fecea8 4% 96%, #ff847c 96%);
+}
+.products-two .tags .block .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(-45deg, #ff847c 4%, transparent 4% 96%, #ff847c 96%);
 }
 .products-two .tags .block .check {
   width: 80%;
