@@ -4,9 +4,8 @@ $beige: #fecea8;
 $lightPink: #ff847c;
 $pinkOrange: #e84a5f;
 
-.connexion {
+.connexionPage {
 	position: relative;
-	z-index: 15;
 	height: 100vh;
 	width: 100vw;
 	margin: 0;
@@ -186,19 +185,40 @@ $pinkOrange: #e84a5f;
 		transform: rotate(25deg);
 	}
 
-	section {
+	.back {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		font-size: 25px;
+		top: 1.5em;
+		right: 2em;
+		padding-left: 1.5em;
+
+		.fas {
+			margin-right: 0.5em;
+		}
+
+		&:hover {
+			.fas {
+				color: $pinkOrange;
+			}
+
+			p {
+				color: $pinkOrange;
+			}
+		}
+	}
+
+	.connexion {
 		overflow: hidden;
 		position: absolute;
 		top: 50%;
 		left: 70%;
 		transform: translate(-50%, -50%);
-		height: 70%;
 		width: 35%;
-		padding: 1em;
 		border-radius: 10px;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
+		padding: 50px 25px;
+		max-height: 70%;
 
 		.circle {
 			z-index: -1;
@@ -215,6 +235,7 @@ $pinkOrange: #e84a5f;
 			font-size: 60px;
 			text-shadow: 0 0.05em 0 $lightPink;
 			text-transform: capitalize;
+			margin-bottom: 0.5em;
 		}
 
 		form {
@@ -223,7 +244,6 @@ $pinkOrange: #e84a5f;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			justify-content: space-between;
 
 			.text {
 				font-size: 30px;
@@ -231,6 +251,7 @@ $pinkOrange: #e84a5f;
 				padding: 0.5em 0 0.5em 1.5em;
 				width: 93%;
 				max-width: 100%;
+				margin: 0.5em 0;
 
 				&::placeholder {
 					font-size: 37px;
@@ -244,6 +265,7 @@ $pinkOrange: #e84a5f;
 				font-size: 20px;
 				text-align: center;
 				width: 80%;
+				margin: 0.5em 0;
 			}
 
 			a {
@@ -253,7 +275,8 @@ $pinkOrange: #e84a5f;
 				align-items: center;
 				position: relative;
 				text-transform: capitalize;
-				font-size: 25px;
+				font-size: 20px;
+				margin: 0.8em 0;
 
 				.underline {
 					transition: 0.2s ease;
@@ -273,6 +296,81 @@ $pinkOrange: #e84a5f;
 
 			.btn {
 				width: 100%;
+				margin: 0.5em 0 0;
+			}
+		}
+
+		.newAccount {
+			font-size: 25px;
+			margin: 0.8em 0;
+		}
+	}
+
+	.connexion-one {
+		transition: 1s ease;
+
+		&.out {
+			left: 200%;
+		}
+	}
+
+	.connexion-two {
+		transition: 1s ease;
+		top: 200%;
+		min-height: 60%;
+		max-height: 60%;
+
+		&.in {
+			top: 50%;
+		}
+
+		form {
+			.container {
+				width: 100%;
+				margin: 25px 0;
+
+				.text {
+					font-size: 25px;
+					margin: 0.3em 0;
+					padding: 0.5em 0 0.5em 1.2em;
+
+					&::placeholder {
+						font-size: 30px;
+					}
+				}
+
+				.btns {
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+
+					.btn {
+						width: initial;
+						font-size: 35px;
+					}
+				}
+
+				@keyframes animationFormConnexion {
+					0% {
+						opacity: 1;
+					}
+
+					100% {
+						opacity: 0;
+					}
+				}
+
+				.opacityOut {
+					animation: animationFormConnexion 0.5s ease forwards;
+				}
+
+				.opacityIn {
+					animation: animationFormConnexion 0.5s reverse ease forwards;
+				}
+
+				.none {
+					display: none;
+				}
 			}
 		}
 	}

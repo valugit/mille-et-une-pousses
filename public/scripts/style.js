@@ -41,6 +41,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     })
 
+
+    // Change image on ProductPage
+
     let imgsProduct = document.querySelectorAll('.imgsProduct'),
         imgProduct = document.querySelector('#imgProduct')
 
@@ -57,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
+    // Quantity on ProductPage
 
     if (document.querySelector('#quantity')) {
 
@@ -76,6 +80,60 @@ document.addEventListener("DOMContentLoaded", () => {
         more.addEventListener('click', () => {
             q += 1
             quantity.value = q
+        })
+    }
+
+
+    // Animation Form ConnexionPage
+
+    if (document.querySelector('#createAccount')) {
+
+        let createAccount = document.querySelector('#createAccount'),
+            connexionOne = document.querySelector('#connexion-one'),
+            connexionTwo = document.querySelector('#connexion-two'),
+            backToConnexion = document.querySelector('#backToConnexion'),
+            createAccount1 = document.querySelector('#createAccount1'),
+            createAccount2 = document.querySelector('#createAccount2'),
+            PartOneCreateAcount = document.querySelector('#PartOneCreateAcount'),
+            PartTwoCreateAcount = document.querySelector('#PartTwoCreateAcount')
+
+
+        createAccount.addEventListener('click', () => {
+
+            connexionOne.classList.add('out')
+            connexionTwo.classList.add('in')
+
+        })
+
+        backToConnexion.addEventListener('click', () => {
+
+            connexionOne.classList.remove('out')
+            connexionTwo.classList.remove('in')
+
+        })
+
+        PartOneCreateAcount.addEventListener('click', () => {
+
+            createAccount1.classList.add('opacityOut')
+
+            setTimeout(() => {
+                createAccount1.classList.add('none')
+                createAccount2.classList.remove('none')
+                createAccount2.classList.add('opacityIn')
+            }, 300);
+
+        })
+
+        PartTwoCreateAcount.addEventListener('click', () => {
+
+            createAccount2.classList.add('opacityOut')
+
+            setTimeout(() => {
+                createAccount2.classList.add('none')
+                createAccount1.classList.remove('none')
+                createAccount1.classList.add('opacityIn')
+            }, 300);
+
         })
     }
 })

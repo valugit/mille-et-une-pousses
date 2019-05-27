@@ -62,6 +62,61 @@
   background: #E84A5F;
 }
 
+.btn {
+  transition: 0.2s ease;
+  font-family: "Roboto Condensed";
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  border: 2px solid;
+  padding: 0.2em 1.5em;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn.btn-lightPink {
+  border-color: #FF847C;
+}
+.btn.btn-lightPink:hover {
+  background: transparent;
+  color: #FF847C;
+  box-shadow: none;
+}
+.btn.btn-lightPink:hover i {
+  color: #FF847C;
+}
+.btn.btn-deepBlue {
+  border-color: #005C78;
+}
+.btn.btn-deepBlue:hover {
+  background: transparent;
+  color: #005C78;
+  box-shadow: none;
+}
+.btn.btn-deepBlue:hover i {
+  color: #005C78;
+}
+.btn.btn-pinkOrange {
+  border-color: #E84A5F;
+}
+.btn.btn-pinkOrange:hover {
+  background: transparent;
+  color: #E84A5F;
+  box-shadow: none;
+}
+.btn.btn-pinkOrange:hover i {
+  color: #E84A5F;
+}
+
+.btn-quantity {
+  padding: 0;
+  font-size: 25px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
 nav {
   transition: 0.4s ease;
   z-index: 10;
@@ -360,59 +415,6 @@ section .title {
 }
 section .container {
   width: 85%;
-}
-section .btn {
-  transition: 0.2s ease;
-  font-family: "Roboto Condensed";
-  text-transform: uppercase;
-  font-size: 40px;
-  font-weight: bold;
-  border: 2px solid;
-  padding: 0.2em 1.5em;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-}
-section .btn:hover {
-  cursor: pointer;
-}
-section .btn.btn-lightPink {
-  border-color: #ff847c;
-}
-section .btn.btn-lightPink:hover {
-  background: transparent;
-  color: #ff847c;
-  box-shadow: none;
-}
-section .btn.btn-lightPink:hover i {
-  color: #ff847c;
-}
-section .btn.btn-deepBlue {
-  border-color: #005c78;
-}
-section .btn.btn-deepBlue:hover {
-  background: transparent;
-  color: #005c78;
-  box-shadow: none;
-}
-section .btn.btn-deepBlue:hover i {
-  color: #005c78;
-}
-section .btn.btn-pinkOrange {
-  border-color: #e84a5f;
-}
-section .btn.btn-pinkOrange:hover {
-  background: transparent;
-  color: #e84a5f;
-  box-shadow: none;
-}
-section .btn.btn-pinkOrange:hover i {
-  color: #e84a5f;
-}
-section .btn-quantity {
-  padding: 0;
-  font-size: 25px;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
 }
 
 .parallax {
@@ -1195,9 +1197,8 @@ section .btn-quantity {
   margin: 0.3em;
 }
 
-.connexion {
+.connexionPage {
   position: relative;
-  z-index: 15;
   height: 100vh;
   width: 100vw;
   margin: 0;
@@ -1282,88 +1283,103 @@ section .btn-quantity {
     transform: rotate(25deg);
   }
 }
-.connexion .leaf {
+.connexionPage .leaf {
   z-index: 3;
   position: absolute;
 }
-.connexion .leaf_1 {
+.connexionPage .leaf_1 {
   height: 1000px;
 }
-.connexion .leaf_2 {
+.connexionPage .leaf_2 {
   height: 600px;
 }
-.connexion .leaf_3 {
+.connexionPage .leaf_3 {
   height: 1100px;
 }
-.connexion .leaf-1 {
+.connexionPage .leaf-1 {
   animation: connexionAnimationLeaf-1 2s ease forwards;
   z-index: 2;
   top: -15vh;
   left: 100px;
   transform: rotate(130deg) scaleX(-1);
 }
-.connexion .leaf-2 {
+.connexionPage .leaf-2 {
   animation: connexionAnimationLeaf-2 2s ease forwards;
   top: 30vh;
   left: -100px;
   transform: rotate(0deg);
 }
-.connexion .leaf-3 {
+.connexionPage .leaf-3 {
   animation: connexionAnimationLeaf-3 2s ease forwards;
   top: 35vh;
   left: 0;
   transform: rotate(10deg);
 }
-.connexion .leaf-4 {
+.connexionPage .leaf-4 {
   animation: connexionAnimationLeaf-4 2s ease forwards;
   z-index: 2;
   top: -30vh;
   left: 100px;
   transform: rotate(110deg) scaleX(-1);
 }
-.connexion .leaf-5 {
+.connexionPage .leaf-5 {
   animation: connexionAnimationLeaf-5 2s ease forwards;
   z-index: 1;
   top: -15vh;
   left: 300px;
   transform: rotate(140deg) scaleX(-1);
 }
-.connexion .leaf-6 {
+.connexionPage .leaf-6 {
   animation: connexionAnimationLeaf-6 2s ease forwards;
   z-index: 1;
   top: 20vh;
   left: -100px;
   transform: rotate(110deg);
 }
-.connexion .leaf-7 {
+.connexionPage .leaf-7 {
   animation: connexionAnimationLeaf-7 2s ease forwards;
   z-index: 2;
   top: 45vh;
   left: 0;
   transform: rotate(25deg);
 }
-.connexion .leaf-8 {
+.connexionPage .leaf-8 {
   animation: connexionAnimationLeaf-8 2s ease forwards;
   z-index: 2;
   top: 42vh;
   left: 50px;
   transform: rotate(25deg);
 }
-.connexion section {
+.connexionPage .back {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  top: 1.5em;
+  right: 2em;
+  padding-left: 1.5em;
+}
+.connexionPage .back .fas {
+  margin-right: 0.5em;
+}
+.connexionPage .back:hover .fas {
+  color: #e84a5f;
+}
+.connexionPage .back:hover p {
+  color: #e84a5f;
+}
+.connexionPage .connexion {
   overflow: hidden;
   position: absolute;
   top: 50%;
   left: 70%;
   transform: translate(-50%, -50%);
-  height: 70%;
   width: 35%;
-  padding: 1em;
   border-radius: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  padding: 50px 25px;
+  max-height: 70%;
 }
-.connexion section .circle {
+.connexionPage .connexion .circle {
   z-index: -1;
   position: absolute;
   height: 700px;
@@ -1373,47 +1389,50 @@ section .btn-quantity {
   right: -350px;
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
 }
-.connexion section h1 {
+.connexionPage .connexion h1 {
   font-size: 60px;
   text-shadow: 0 0.05em 0 #ff847c;
   text-transform: capitalize;
+  margin-bottom: 0.5em;
 }
-.connexion section form {
+.connexionPage .connexion form {
   height: 65%;
   width: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
-.connexion section form .text {
+.connexionPage .connexion form .text {
   font-size: 30px;
   border: 3px solid #ff847c;
   padding: 0.5em 0 0.5em 1.5em;
   width: 93%;
   max-width: 100%;
+  margin: 0.5em 0;
 }
-.connexion section form .text::placeholder {
+.connexionPage .connexion form .text::placeholder {
   font-size: 37px;
   text-transform: capitalize;
   color: #007791;
   opacity: 0.6;
 }
-.connexion section form p {
+.connexionPage .connexion form p {
   font-size: 20px;
   text-align: center;
   width: 80%;
+  margin: 0.5em 0;
 }
-.connexion section form a {
+.connexionPage .connexion form a {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   text-transform: capitalize;
-  font-size: 25px;
+  font-size: 20px;
+  margin: 0.8em 0;
 }
-.connexion section form a .underline {
+.connexionPage .connexion form a .underline {
   transition: 0.2s ease;
   position: absolute;
   bottom: -2px;
@@ -1421,11 +1440,69 @@ section .btn-quantity {
   width: 0;
   border-radius: 10px;
 }
-.connexion section form a:hover .underline {
+.connexionPage .connexion form a:hover .underline {
   width: 100%;
 }
-.connexion section form .btn {
+.connexionPage .connexion form .btn {
   width: 100%;
+  margin: 0.5em 0 0;
+}
+.connexionPage .connexion .newAccount {
+  font-size: 25px;
+  margin: 0.8em 0;
+}
+.connexionPage .connexion-one {
+  transition: 1s ease;
+}
+.connexionPage .connexion-one.out {
+  left: 200%;
+}
+.connexionPage .connexion-two {
+  transition: 1s ease;
+  top: 200%;
+  min-height: 60%;
+  max-height: 60%;
+}
+.connexionPage .connexion-two.in {
+  top: 50%;
+}
+.connexionPage .connexion-two form .container {
+  width: 100%;
+  margin: 25px 0;
+}
+.connexionPage .connexion-two form .container .text {
+  font-size: 25px;
+  margin: 0.3em 0;
+  padding: 0.5em 0 0.5em 1.2em;
+}
+.connexionPage .connexion-two form .container .text::placeholder {
+  font-size: 30px;
+}
+.connexionPage .connexion-two form .container .btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.connexionPage .connexion-two form .container .btns .btn {
+  width: initial;
+  font-size: 35px;
+}
+@keyframes animationFormConnexion {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.connexionPage .connexion-two form .container .opacityOut {
+  animation: animationFormConnexion 0.5s ease forwards;
+}
+.connexionPage .connexion-two form .container .opacityIn {
+  animation: animationFormConnexion 0.5s reverse ease forwards;
+}
+.connexionPage .connexion-two form .container .none {
+  display: none;
 }
 
 footer {
