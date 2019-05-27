@@ -1293,8 +1293,95 @@ section {
 
         .btn {
             font-size: 35px;
-            width: 600px;
             margin: 0.3em;
+            text-align: center;
+        }
+    }
+}
+
+// Orders Page 
+
+.ordersPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 0;
+
+    .circle {
+        z-index: -1;
+        position: absolute;
+        top: -2000px;
+        right: -2750px;
+        height: 3500px;
+        width: 3500px;
+        border-radius: 50%;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    }
+
+    hr {
+        height: 3px;
+        width: 55%;
+        border-radius: 3px;
+        margin: 50px 0;
+    }
+
+    .orders {
+        width: 75%;
+        align-items: flex-start;
+
+        .title {
+            font-size: 68px;
+            text-shadow: 0 0.05em 0 $lightPink;
+            text-transform: capitalize;
+        }
+
+        .product {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin: 50px 0;
+
+            .img {
+                position: relative;
+                height: 200px;
+
+                img {
+                    height: 100%;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 85%;
+                    width: 75%;
+                    border-bottom: 5px solid $deepBlue;
+                    border-left: 5px solid $deepBlue;
+                    bottom: -15px;
+                    left: -15px;
+                }
+            }
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 100%;
+                width: 70%;
+                margin: 0 1em;
+
+                h3 {
+                    font-size: 42px;
+                    text-transform: capitalize;
+                }
+
+                p {
+                    font-size: 25px;
+                }
+            }
+
+            .btn {
+                font-size: 30px;
+            }
         }
     }
 }

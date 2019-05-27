@@ -13,7 +13,7 @@
         </div>
 
         <div class="buttons">
-            <button class="btn btn-deepBlue b-deepBlue c-white">mes commandes</button>
+            <a href="/user/orders" class="btn btn-deepBlue b-deepBlue c-white">mes commandes</a>
             <button class="btn btn-deepBlue b-deepBlue c-white">mes abonnements</button>
             <button class="btn btn-deepBlue b-deepBlue c-white">informations personnels</button>
         </div>

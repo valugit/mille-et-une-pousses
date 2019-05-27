@@ -35,6 +35,11 @@ class UserController {
     exit();
   }
 
+  public function cartAction() {
+
+    include "./cart.php";
+  }
+
   public function profileAction() {
     $userId = $_SESSION["connected"];
     $pdo = Connection::getInstance();
@@ -43,8 +48,8 @@ class UserController {
     include "./account.php";
   }
 
-  public function cartAction() {
+  public function ordersAction() {
 
-    include "./cart.php";
+    include "./orders.php";
   }
 }

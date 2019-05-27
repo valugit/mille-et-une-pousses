@@ -52,10 +52,10 @@
             <p class="c-white">Ne ratez plus aucunes actualités de notre blog
                 et les nouvelles offres de Mille et une pousses.</p>
 
-            <div class="form">
+            <form method="POST" action="">
                 <input class="text b-white" type="text" placeholder="votre adresse email">
-                <input class="submit c-white b-lightPink" type="submit" value="envoyer">
-            </div>
+                <input class="btn btn-lightPink b-lightPink c-white" type="submit" value="envoyer">
+            </form>
 
             <p class="c-white">Suivez nous sur nos réseaux sociaux :</p>
 
