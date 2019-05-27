@@ -1422,30 +1422,12 @@ section .container {
   width: 80%;
   margin: 0.5em 0;
 }
-.connexionPage .connexion form a {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  text-transform: capitalize;
-  font-size: 20px;
-  margin: 0.8em 0;
-}
-.connexionPage .connexion form a .underline {
-  transition: 0.2s ease;
-  position: absolute;
-  bottom: -2px;
-  height: 2px;
-  width: 0;
-  border-radius: 10px;
-}
-.connexionPage .connexion form a:hover .underline {
-  width: 100%;
-}
 .connexionPage .connexion form .btn {
   width: 100%;
   margin: 0.5em 0 0;
+}
+.connexionPage .connexion form .forgotPassword {
+  font-size: 25px;
 }
 .connexionPage .connexion .newAccount {
   font-size: 25px;

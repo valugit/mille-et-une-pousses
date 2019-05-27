@@ -39,16 +39,14 @@
                 <input class="text b-white c-deepBlue" type="password" name="password" placeholder="mot de passe">
                 <p class="c-deepBlue">Rentrez votre adresse mail ainsi que votre mot de passe afin de vous connecter</p>
                 <input class="btn btn-pinkOrange b-pinkOrange c-white" type="submit" value="valider">
-                <a class="c-lightPink" href="">mot de passe oublié ?
-                    <span class="underline b-lightPink"></span>
-                </a>
+                <button class="forgotPassword btn btn-pinkOrange b-pinkOrange c-white" type="button">mot de passe oublié ?</button>
+                <button id="createAccount" class="newAccount btn btn-pinkOrange b-pinkOrange c-white" type="button">pas encore de compte ?</button>
                 <?php if (isset($validation) && is_string($validation)): ?>
                 <p class="c-lightPink"><?php echo "&#9888; " . $validation ?></p>
                 <?php elseif (isset($validation) && is_array($validation)): ?>
                 <p class="c-deepBlue"><?php echo "User ID: " . $validation["id"] ?></p>
                 <?php endif?>
             </form>
-            <button id="createAccount" class="newAccount btn btn-pinkOrange b-pinkOrange c-white">pas encore de compte?</button>
         </section>
 
         <section id="connexion-two" class="connexion connexion-two b-white height">
@@ -62,9 +60,9 @@
                         <input class="text b-white c-deepBlue" type="phone" name="email" placeholder="téléphone">
                         <input class="text b-white c-deepBlue" type="email" name="email" placeholder="adresse">
                         <div class="btns">
-                            <span id="backToConnexion" class="btn btn-pinkOrange b-pinkOrange c-white">retour</span>
-                            <span id="PartOneCreateAcount"
-                                class="btn btn-pinkOrange b-pinkOrange c-white">suivant</span>
+                            <button id="backToConnexion" class="btn btn-pinkOrange b-pinkOrange c-white" type="button">retour</button>
+                            <button id="PartOneCreateAcount"
+                                class="btn btn-pinkOrange b-pinkOrange c-white" type="button">suivant</button>
                         </div>
                     </div>
                     <div id="createAccount2" class="none">
@@ -73,7 +71,7 @@
                         <input class="text b-white c-deepBlue" type="email" name="email"
                             placeholder="confirmation mot de passe *">
                         <div class="btns">
-                            <span id="PartTwoCreateAcount" class="btn btn-pinkOrange b-pinkOrange c-white">retour</span>
+                            <button id="PartTwoCreateAcount" class="btn btn-pinkOrange b-pinkOrange c-white" type="button">retour</button>
                             <input class="btn btn-pinkOrange b-pinkOrange c-white" type="submit" value="valider">
                         </div>
                     </div>
