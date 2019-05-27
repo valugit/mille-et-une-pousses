@@ -75,4 +75,9 @@ class UserController {
 
     include "./cart.php";
   }
+
+  public function ordersAction() {
+
+    include "./orders.php";
+  }
 }
