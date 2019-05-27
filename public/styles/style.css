@@ -423,6 +423,7 @@ section .container {
 }
 
 .home-one {
+  height: 100vh;
   justify-content: flex-start;
   align-items: flex-start;
   background-image: url(./../media/img/home1.png);
