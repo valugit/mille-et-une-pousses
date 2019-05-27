@@ -69,7 +69,7 @@
 
         <div class="container">
 
-            <h2 class="c-deepBlue"> Mille et une pousse c’est avant tout
+            <h2 class="c-deepBlue"> Mille et une pousses c’est avant tout
                 une équipe de passionnés…</h2>
 
             <img class="b-white" src="./../media/img/team.png" alt="team mille et une pousses">
