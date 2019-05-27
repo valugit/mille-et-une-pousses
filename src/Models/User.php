@@ -31,4 +31,13 @@ class User {
 
     return $message;
   }
+
+  public static function getUserInfo($pdo, $id) {
+    $sql = "SELECT firstname, lastname, email, phone, first_adress_id, second_adress_id, role_id FROM users WHERE id = :id";
+
+    $q = $pdo->prepare($sql);
+    $q->bindParam("id", $id);
+    $q->execute();
+    return $q->fetch();
+  }
 }

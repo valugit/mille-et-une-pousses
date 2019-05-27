@@ -34,4 +34,12 @@ class UserController {
     header("Location: http://milleetunepousses.loc");
     exit();
   }
+
+  public function profileAction() {
+    $userId = $_SESSION["connected"];
+    $pdo = Connection::getInstance();
+    $profile = User::getUserInfo($pdo, $userId);
+
+    include "./account.php";
+  }
 }

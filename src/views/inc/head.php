@@ -53,7 +53,7 @@
         </li>
         <?php if (isset($_SESSION["connected"])): ?>
         <li>
-          <a class="c-deepBlue rout" value="profile" href="">mon&nbsp;profile
+          <a class="c-deepBlue rout" value="profile" href="/user/profile">mon&nbsp;profil
             <span class="underline b-deepBlue"></span>
           </a>
         </li>
