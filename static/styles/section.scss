@@ -1318,6 +1318,30 @@ section {
         background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
     }
 
+    .back {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        top: 5em;
+        right: 2em;
+        padding-left: 1.5em;
+
+        .fas {
+            margin-right: 0.5em;
+        }
+
+        &:hover {
+            .fas {
+                color: $pinkOrange;
+            }
+
+            p {
+                color: $pinkOrange;
+            }
+        }
+    }
+
     hr {
         height: 3px;
         width: 55%;

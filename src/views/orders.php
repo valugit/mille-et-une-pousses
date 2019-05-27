@@ -3,6 +3,12 @@
 <main class="ordersPage">
 
     <span class="circle b-lightPink"></span>
+
+    <a href="/user/profile" class="back btn btn-pinkOrange b-pinkOrange">
+        <i class="fas fa-arrow-left c-white"></i>
+        <p class="c-white">retour</p>
+    </a>
+
     <section class="orders order-one">
         <h2 class="title c-deepBlue">Commandes en cours</h2>
         <div class="product">
