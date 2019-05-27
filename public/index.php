@@ -9,6 +9,7 @@ $path = parse_url($request_url, PHP_URL_PATH);
 $query = parse_url($request_url, PHP_URL_QUERY);
 
 $url_composants = explode("/", $path, 4);
+
 if (isset($url_composants[3])) {
   $argument = $url_composants[3];
 } else {

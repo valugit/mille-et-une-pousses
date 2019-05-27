@@ -23,10 +23,10 @@ class User {
         return $q->fetch();
 
       } else {
-        $message = "Le mot de passe est invalide";
+        $message = "L'adresse mail ou le mot de passe est invalide.";
       }
     } else {
-      $message = "L'adresse mail est invalide.";
+      $message = "L'adresse mail ou le mot de passe est invalide.";
     }
 
     return $message;

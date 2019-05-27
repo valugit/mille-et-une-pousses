@@ -23,7 +23,7 @@ class UserController {
     } elseif (is_array($validation)) {
       $_SESSION["connected"] = $validation["id"];
 
-      header("Location: http://milleetunepousses.loc");
+      header("Location: /");
       exit();
     }
   }
@@ -31,7 +31,7 @@ class UserController {
   public function disconnectAction() {
     unset($_SESSION["connected"]);
 
-    header("Location: http://milleetunepousses.loc");
+    header("Location: /");
     exit();
   }
 
