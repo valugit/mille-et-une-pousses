@@ -2,6 +2,6 @@
 
 namespace Services\Exception;
 
-class ActionNotFound extends Exception {
+class ActionNotFound extends \Exception {
 
 }

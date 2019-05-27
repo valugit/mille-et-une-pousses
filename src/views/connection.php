@@ -43,8 +43,6 @@
                 <button id="createAccount" class="newAccount btn btn-pinkOrange b-pinkOrange c-white" type="button">pas encore de compte ?</button>
                 <?php if (isset($validation) && is_string($validation)): ?>
                 <p class="c-lightPink"><?php echo "&#9888; " . $validation ?></p>
-                <?php elseif (isset($validation) && is_array($validation)): ?>
-                <p class="c-deepBlue"><?php echo "User ID: " . $validation["id"] ?></p>
                 <?php endif?>
             </form>
         </section>
@@ -52,24 +50,29 @@
         <section id="connexion-two" class="connexion connexion-two b-white height">
             <span class="circle b-lightPink"></span>
             <h1 class="title c-deepBlue">créer ton compte</h1>
-            <form method="POST" action="">
+            <form method="POST" action="/user/createnew">
                 <div class="container">
                     <div id="createAccount1">
                         <input class="text b-white c-deepBlue" type="text" name="lastname" placeholder="nom *">
                         <input class="text b-white c-deepBlue" type="text" name="firstname" placeholder="prénom *">
-                        <input class="text b-white c-deepBlue" type="tel" name="email" placeholder="téléphone">
-                        <input class="text b-white c-deepBlue" type="email" name="email" placeholder="adresse">
+                        <input class="text b-white c-deepBlue" type="tel" name="phone" placeholder="téléphone">
+                        <input class="text b-white c-deepBlue" type="text" name="address" placeholder="adresse">
                         <div class="btns">
                             <button class="btn btn-pinkOrange b-pinkOrange c-white backToConnexion"
                                 type="button">retour</button>
                             <button id="PartOneCreateAcount" class="btn btn-pinkOrange b-pinkOrange c-white"
                                 type="button">suivant</button>
                         </div>
+                        <?php if (isset($createAccount) && is_string($createAccount)): ?>
+                        <p class="c-lightPink"><?php echo "&#9888; " . $createAccount ?></p>
+                        <?php elseif (isset($createAccount)): ?>
+                        <p class="c-deepBlue"><?php var_dump($createAccount)?></p>
+                        <?php endif?>
                     </div>
                     <div id="createAccount2" class="none">
                         <input class="text b-white c-deepBlue" type="email" name="email" placeholder="adresse mail *">
-                        <input class="text b-white c-deepBlue" type="email" name="email" placeholder="mot de passe *">
-                        <input class="text b-white c-deepBlue" type="email" name="email"
+                        <input class="text b-white c-deepBlue" type="password" name="password" placeholder="mot de passe *">
+                        <input class="text b-white c-deepBlue" type="password" name="password_confirmation"
                             placeholder="confirmation mot de passe *">
                         <div class="btns">
                             <button id="PartTwoCreateAcount" class="btn btn-pinkOrange b-pinkOrange c-white"
