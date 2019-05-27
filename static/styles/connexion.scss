@@ -273,6 +273,17 @@ $pinkOrange: #e84a5f;
 				margin: 0.5em 0 0;
 			}
 
+			.btns {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+
+				.btn {
+					width: initial;
+					font-size: 35px;
+				}
+			}
+
 			.forgotPassword {
 				font-size: 25px;
 			}
@@ -317,17 +328,6 @@ $pinkOrange: #e84a5f;
 					}
 				}
 
-				.btns {
-					width: 100%;
-					display: flex;
-					justify-content: space-between;
-
-					.btn {
-						width: initial;
-						font-size: 35px;
-					}
-				}
-
 				@keyframes animationFormConnexion {
 					0% {
 						opacity: 1;
@@ -350,6 +350,15 @@ $pinkOrange: #e84a5f;
 					display: none;
 				}
 			}
+		}
+	}
+
+	.connexion-three {
+		transition: 1s ease;
+		top: 200%;
+
+		&.in {
+			top: 50%;
 		}
 	}
 }

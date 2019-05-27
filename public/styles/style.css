@@ -1426,6 +1426,15 @@ section .container {
   width: 100%;
   margin: 0.5em 0 0;
 }
+.connexionPage .connexion form .btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.connexionPage .connexion form .btns .btn {
+  width: initial;
+  font-size: 35px;
+}
 .connexionPage .connexion form .forgotPassword {
   font-size: 25px;
 }
@@ -1460,15 +1469,6 @@ section .container {
 .connexionPage .connexion-two form .container .text::placeholder {
   font-size: 30px;
 }
-.connexionPage .connexion-two form .container .btns {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.connexionPage .connexion-two form .container .btns .btn {
-  width: initial;
-  font-size: 35px;
-}
 @keyframes animationFormConnexion {
   0% {
     opacity: 1;
@@ -1485,6 +1485,13 @@ section .container {
 }
 .connexionPage .connexion-two form .container .none {
   display: none;
+}
+.connexionPage .connexion-three {
+  transition: 1s ease;
+  top: 200%;
+}
+.connexionPage .connexion-three.in {
+  top: 50%;
 }
 
 footer {

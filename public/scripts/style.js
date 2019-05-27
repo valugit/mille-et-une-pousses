@@ -90,8 +90,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let createAccount = document.querySelector('#createAccount'),
             connexionOne = document.querySelector('#connexion-one'),
+            forgotPassword = document.querySelector('#forgotPassword'),
             connexionTwo = document.querySelector('#connexion-two'),
-            backToConnexion = document.querySelector('#backToConnexion'),
+            connexionThree = document.querySelector('#connexion-three'),
+            backToConnexion = document.querySelectorAll('.backToConnexion'),
             createAccount1 = document.querySelector('#createAccount1'),
             createAccount2 = document.querySelector('#createAccount2'),
             PartOneCreateAcount = document.querySelector('#PartOneCreateAcount'),
@@ -105,12 +107,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
         })
 
-        backToConnexion.addEventListener('click', () => {
+        forgotPassword.addEventListener('click', () => {
 
-            connexionOne.classList.remove('out')
-            connexionTwo.classList.remove('in')
+            connexionOne.classList.add('out')
+            connexionThree.classList.add('in')
 
         })
+
+        backToConnexion.forEach(back => {
+            back.addEventListener('click', () => {
+
+                connexionOne.classList.remove('out')
+                connexionTwo.classList.remove('in')
+                connexionThree.classList.remove('in')
+
+            })
+        });
+
 
         PartOneCreateAcount.addEventListener('click', () => {
 

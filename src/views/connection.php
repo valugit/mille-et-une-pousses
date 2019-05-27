@@ -39,7 +39,7 @@
                 <input class="text b-white c-deepBlue" type="password" name="password" placeholder="mot de passe">
                 <p class="c-deepBlue">Rentrez votre adresse mail ainsi que votre mot de passe afin de vous connecter</p>
                 <input class="btn btn-pinkOrange b-pinkOrange c-white" type="submit" value="valider">
-                <button class="forgotPassword btn btn-pinkOrange b-pinkOrange c-white" type="button">mot de passe oublié ?</button>
+                <button id="forgotPassword" class="forgotPassword btn btn-pinkOrange b-pinkOrange c-white" type="button">mot de passe oublié ?</button>
                 <button id="createAccount" class="newAccount btn btn-pinkOrange b-pinkOrange c-white" type="button">pas encore de compte ?</button>
                 <?php if (isset($validation) && is_string($validation)): ?>
                 <p class="c-lightPink"><?php echo "&#9888; " . $validation ?></p>
@@ -57,12 +57,13 @@
                     <div id="createAccount1">
                         <input class="text b-white c-deepBlue" type="text" name="lastname" placeholder="nom *">
                         <input class="text b-white c-deepBlue" type="text" name="firstname" placeholder="prénom *">
-                        <input class="text b-white c-deepBlue" type="phone" name="email" placeholder="téléphone">
+                        <input class="text b-white c-deepBlue" type="tel" name="email" placeholder="téléphone">
                         <input class="text b-white c-deepBlue" type="email" name="email" placeholder="adresse">
                         <div class="btns">
-                            <button id="backToConnexion" class="btn btn-pinkOrange b-pinkOrange c-white" type="button">retour</button>
-                            <button id="PartOneCreateAcount"
-                                class="btn btn-pinkOrange b-pinkOrange c-white" type="button">suivant</button>
+                            <button class="btn btn-pinkOrange b-pinkOrange c-white backToConnexion"
+                                type="button">retour</button>
+                            <button id="PartOneCreateAcount" class="btn btn-pinkOrange b-pinkOrange c-white"
+                                type="button">suivant</button>
                         </div>
                     </div>
                     <div id="createAccount2" class="none">
@@ -71,12 +72,28 @@
                         <input class="text b-white c-deepBlue" type="email" name="email"
                             placeholder="confirmation mot de passe *">
                         <div class="btns">
-                            <button id="PartTwoCreateAcount" class="btn btn-pinkOrange b-pinkOrange c-white" type="button">retour</button>
+                            <button id="PartTwoCreateAcount" class="btn btn-pinkOrange b-pinkOrange c-white"
+                                type="button">retour</button>
                             <input class="btn btn-pinkOrange b-pinkOrange c-white" type="submit" value="valider">
                         </div>
                     </div>
                 </div>
                 <p class="c-lightPink">* Champs obligatoire</p>
+            </form>
+        </section>
+
+        <section id="connexion-three" class="connexion connexion-three b-white">
+            <span class="circle b-lightPink"></span>
+            <h1 class="title c-deepBlue">mot de passe oublié ?</h1>
+            <form action="POST">
+                <input class="text b-white c-deepBlue" type="email" name="email" placeholder="adresse">
+                <p class="c-deepBlue">Rentrez votre adresse mail, nous vous enverrons un mail afin de réinitialiser
+                    votre mot de passe</p>
+                <div class="btns">
+                    <button class="btn btn-pinkOrange b-pinkOrange c-white backToConnexion"
+                        type="button">retour</button>
+                    <input class="btn btn-pinkOrange b-pinkOrange c-white" type="submit" value="valider">
+                </div>
             </form>
         </section>
     </main>
