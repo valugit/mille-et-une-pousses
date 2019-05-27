@@ -42,4 +42,9 @@ class UserController {
 
     include "./account.php";
   }
+
+  public function cartAction() {
+
+    include "./cart.php";
+  }
 }

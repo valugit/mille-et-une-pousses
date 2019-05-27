@@ -52,7 +52,7 @@
         <section id="connexion-two" class="connexion connexion-two b-white height">
             <span class="circle b-lightPink"></span>
             <h1 class="title c-deepBlue">créer ton compte</h1>
-            <form action="POST">
+            <form method="POST" action="">
                 <div class="container">
                     <div id="createAccount1">
                         <input class="text b-white c-deepBlue" type="text" name="lastname" placeholder="nom *">
@@ -85,7 +85,7 @@
         <section id="connexion-three" class="connexion connexion-three b-white">
             <span class="circle b-lightPink"></span>
             <h1 class="title c-deepBlue">mot de passe oublié ?</h1>
-            <form action="POST">
+            <form method="POST" action="">
                 <input class="text b-white c-deepBlue" type="email" name="email" placeholder="adresse">
                 <p class="c-deepBlue">Rentrez votre adresse mail, nous vous enverrons un mail afin de réinitialiser
                     votre mot de passe</p>

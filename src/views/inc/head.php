@@ -35,7 +35,7 @@
           </a>
         </li>
         <li>
-          <a class="rout" value="blog" href="">
+          <a class="rout" value="blog" href="/user/cart">
             <p class="c-deepBlue">panier</p>
             <span class="underline b-deepBlue"></span>
             <span class="cartValue">10</span>
