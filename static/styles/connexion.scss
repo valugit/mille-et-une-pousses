@@ -268,35 +268,13 @@ $pinkOrange: #e84a5f;
 				margin: 0.5em 0;
 			}
 
-			a {
-				position: relative;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				position: relative;
-				text-transform: capitalize;
-				font-size: 20px;
-				margin: 0.8em 0;
-
-				.underline {
-					transition: 0.2s ease;
-					position: absolute;
-					bottom: -2px;
-					height: 2px;
-					width: 0;
-					border-radius: 10px;
-				}
-
-				&:hover {
-					.underline {
-						width: 100%;
-					}
-				}
-			}
-
 			.btn {
 				width: 100%;
 				margin: 0.5em 0 0;
+			}
+
+			.forgotPassword {
+				font-size: 25px;
 			}
 		}
 
