@@ -25,7 +25,7 @@
 
             <p class="c-deepBlue">Nous vous avons préparé une sélection de plantes spécialement pour l'occasion</p>
 
-            <button class="btn btn-lightPink b-lightPink c-white">découvrez la sélection</button>
+            <a href="" class="btn btn-lightPink b-lightPink c-white">découvrez la sélection</a>
 
         </div>
 
@@ -57,7 +57,7 @@
 
             <p class="c-deepBlue">@élisabeth</p>
 
-            <button class="btn btn-deepBlue c-white b-deepBlue">découvrez nos abonnements</button>
+            <a href="/subscription/info" class="btn btn-deepBlue c-white b-deepBlue">découvrez nos abonnements</a>
 
         </div>
 
