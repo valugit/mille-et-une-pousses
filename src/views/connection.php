@@ -65,8 +65,6 @@
                         </div>
                         <?php if (isset($createAccount) && is_string($createAccount)): ?>
                         <p class="c-lightPink"><?php echo "&#9888; " . $createAccount ?></p>
-                        <?php elseif (isset($createAccount)): ?>
-                        <p class="c-deepBlue"><?php var_dump($createAccount)?></p>
                         <?php endif?>
                     </div>
                     <div id="createAccount2" class="none">
