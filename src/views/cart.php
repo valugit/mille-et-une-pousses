@@ -33,7 +33,7 @@
 
                         <?php foreach ($quantities as $itemName => $itemQuantity): ?>
                             <?php if ($itemName == $item["name"]): ?>
-                            <input id="quantity" class="c-deepBlue" type="text" name="quantity" value="<?php echo $itemQuantity ?>" title="nombre d'articles sélectionnés" disabled>
+                            <input id="quantity" class="c-deepBlue" type="text" name="quantity" value="<?php echo $itemQuantity ?>" title="nombre d'articles sélectionnés">
                             <?php endif?>
                         <?php endforeach?>
 
