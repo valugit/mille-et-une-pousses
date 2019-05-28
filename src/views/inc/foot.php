@@ -60,13 +60,14 @@
             <p class="c-white">Suivez nous sur nos réseaux sociaux :</p>
 
             <div class="icons">
-                <a href="">
+                <a href="https://twitter.com/MPousses">
                     <i class="fab fa-twitter c-white"></i>
                 </a>
-                <a href="">
+                <a
+                    href="https://www.facebook.com/Mille-et-une-Pousses-2145077578938412/?__tn__=%2Cd%2CP-R&eid=ARB9eiiG4ekQSJ96eTsXzYjcig96vRcSDihJdGkwMMBkYWgVs_St4meOAEXoemU6PFo080G1cbeApSse">
                     <i class="fab fa-facebook-square c-white"></i>
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/milleetunepousses/">
                     <i class="fab fa-instagram c-white"></i>
 
                 </a>

@@ -375,7 +375,7 @@ section {
 // Products Page
 
 .products-one {
-    height: 70vh;
+    height: 60vh;
     background-image: url(./../media/img/products.png);
     background-size: contain;
     align-items: flex-end;
@@ -440,7 +440,6 @@ section {
                 text-transform: capitalize;
                 text-shadow: 0 0.05em 0 $lightPink;
                 margin: 0 0 1em 0;
-                background: linear-gradient(55deg, $lightPink 15%, $beige 15% 85%, $lightPink 85%);
             }
 
             .check {
@@ -1011,6 +1010,37 @@ section {
 
 // Subscription
 
+
+.subscriptionPage {
+
+    .leaf {
+        z-index: 2;
+        position: absolute;
+        height: 520px;
+    }
+
+    .leaf-1 {
+        top: 195vh;
+        left: 50px;
+        transform: rotate(110deg);
+    }
+
+    .leaf-2 {
+        top: 195vh;
+        right: -50px;
+        transform: rotate(-60deg);
+    }
+
+    .leaf-3 {
+        z-index: 1;
+        top: 190vh;
+        right: 0;
+        transform: rotate(-110deg) scaleX(-1);
+    }
+}
+
+
+
 .sub-one {
     height: 100vh;
     background-image: url(./../media/img/sub.png);
@@ -1018,29 +1048,32 @@ section {
     background-size: cover;
 
     .text {
+        margin-right: 100px;
+        align-self: flex-end;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 45%;
+        width: 40%;
 
         h1 {
+            font-size: 100px;
             text-shadow: 0 0.05em 0 rgb(104, 54, 52);
         }
 
         p {
             text-align: center;
             margin-top: 0.5em;
-            font-size: 39px;
+            font-size: 35px;
             font-weight: bold;
         }
     }
 }
 
 .sub-two {
-    height: 100vh;
+    height: 125vh;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
     background: linear-gradient(50deg, $lightPink 40%, $beige 40%);
 
@@ -1064,11 +1097,13 @@ section {
             justify-content: space-evenly;
             height: 70%;
 
-            img {
+            .img {
                 position: relative;
                 width: 45%;
-                height: 100%;
-                border: 1px solid black;
+
+                img {
+                    width: 100%;
+                }
 
                 &.img-one::before {
                     content: "";

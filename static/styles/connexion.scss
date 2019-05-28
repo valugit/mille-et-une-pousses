@@ -295,8 +295,19 @@ $pinkOrange: #e84a5f;
 		}
 	}
 
+	@keyframes cardEntranceConnexionPage {
+		0% {
+			left: 200%;
+		}
+
+		100% {
+			left: 70%;
+		}
+	}
+
 	.connexion-one {
 		transition: 1s ease;
+		animation: cardEntranceConnexionPage 2s ease;
 
 		&.out {
 			left: 200%;

@@ -1,6 +1,11 @@
 <?php include "./inc/head.php";?>
 
 <main class="subscriptionPage">
+
+<img class="leaf leaf-1 leaf1_1" src="./../media/leafs/leaf1_1.png" alt="leaf">
+<img class="leaf leaf-2 leaf1_1" src="./../media/leafs/leaf1_1.png" alt="leaf">
+<img class="leaf leaf-3 leaf1_2" src="./../media/leafs/leaf1_2.png" alt="leaf">
+
     <section class="sub-one parallax">
         <div class="text">
 
@@ -25,15 +30,17 @@
                     <p class="description c-deepBlue">Offrez-vous un abonnement mensuel et profitez de nouvelles
                         surprises chaque mois.</p>
 
-                        <p class="price c-deepBlue"><span class="c-deepBlue">17.90€</span>/mois</p>
+                    <p class="price c-deepBlue"><span class="c-deepBlue">17.90€</span>/mois</p>
 
-                        <p class="c-deepBlue">Sans engagement</p>
+                    <p class="c-deepBlue">Sans engagement</p>
 
-                        <button class="btn btn-deepBlue b-deepBlue c-white">s'abonner</button>
+                    <button class="btn btn-deepBlue b-deepBlue c-white">s'abonner</button>
 
                 </div>
 
-                <img class="img-one" src="./../media/img/" alt="box mensuel">
+                <div class="img img-one">
+                    <img src="./../media/img/box_mensuel.jpg" alt="box mensuel">
+                </div>
 
             </div>
 
@@ -45,7 +52,9 @@
 
             <div class="box">
 
-                <img class="img-two" src="./../media/img/" alt="box annuel">
+                <div class="img img-two">
+                    <img class="img-two" src="./../media/img/box_annuel.jpg" alt="box annuel">
+                </div>
 
                 <div class="text">
 

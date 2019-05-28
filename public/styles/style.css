@@ -558,7 +558,7 @@ section .container {
 }
 
 .products-one {
-  height: 70vh;
+  height: 60vh;
   background-image: url(./../media/img/products.png);
   background-size: contain;
   align-items: flex-end;
@@ -617,7 +617,6 @@ section .container {
   text-transform: capitalize;
   text-shadow: 0 0.05em 0 #ff847c;
   margin: 0 0 1em 0;
-  background: linear-gradient(55deg, #ff847c 15%, #fecea8 15% 85%, #ff847c 85%);
 }
 .products-two .tags .block .check {
   width: 80%;
@@ -1082,6 +1081,28 @@ section .container {
   font-size: 25px;
 }
 
+.subscriptionPage .leaf {
+  z-index: 2;
+  position: absolute;
+  height: 520px;
+}
+.subscriptionPage .leaf-1 {
+  top: 195vh;
+  left: 50px;
+  transform: rotate(110deg);
+}
+.subscriptionPage .leaf-2 {
+  top: 195vh;
+  right: -50px;
+  transform: rotate(-60deg);
+}
+.subscriptionPage .leaf-3 {
+  z-index: 1;
+  top: 190vh;
+  right: 0;
+  transform: rotate(-110deg) scaleX(-1);
+}
+
 .sub-one {
   height: 100vh;
   background-image: url(./../media/img/sub.png);
@@ -1089,26 +1110,29 @@ section .container {
   background-size: cover;
 }
 .sub-one .text {
+  margin-right: 100px;
+  align-self: flex-end;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 45%;
+  width: 40%;
 }
 .sub-one .text h1 {
+  font-size: 100px;
   text-shadow: 0 0.05em 0 #683634;
 }
 .sub-one .text p {
   text-align: center;
   margin-top: 0.5em;
-  font-size: 39px;
+  font-size: 35px;
   font-weight: bold;
 }
 
 .sub-two {
-  height: 100vh;
+  height: 125vh;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
   background: linear-gradient(50deg, #ff847c 40%, #fecea8 40%);
 }
@@ -1131,13 +1155,14 @@ section .container {
   justify-content: space-evenly;
   height: 70%;
 }
-.sub-two .container .box img {
+.sub-two .container .box .img {
   position: relative;
   width: 45%;
-  height: 100%;
-  border: 1px solid black;
 }
-.sub-two .container .box img.img-one::before {
+.sub-two .container .box .img img {
+  width: 100%;
+}
+.sub-two .container .box .img.img-one::before {
   content: "";
   position: absolute;
   border-top: 5px solid #005c78;
@@ -1147,7 +1172,7 @@ section .container {
   top: -20px;
   left: -20px;
 }
-.sub-two .container .box img.img-two::after {
+.sub-two .container .box .img.img-two::after {
   content: "";
   position: absolute;
   border-bottom: 5px solid #005c78;
@@ -1862,8 +1887,17 @@ section .container {
   font-size: 25px;
   margin: 0.8em 0;
 }
+@keyframes cardEntranceConnexionPage {
+  0% {
+    left: 200%;
+  }
+  100% {
+    left: 70%;
+  }
+}
 .connexionPage .connexion-one {
   transition: 1s ease;
+  animation: cardEntranceConnexionPage 2s ease;
 }
 .connexionPage .connexion-one.out {
   left: 200%;

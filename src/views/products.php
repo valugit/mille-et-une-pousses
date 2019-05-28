@@ -21,7 +21,7 @@
         <div id="tags" class="tags">
 
             <div class="block">
-                <h2 class="title c-deepBlue">catégories</h2>
+                <h2 class="title c-deepBlue b-beige">catégories</h2>
 
                 <div class="check">
                     <input type="checkbox" id="tagOne" class="checkbox">
