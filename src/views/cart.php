@@ -59,8 +59,11 @@
 
             <p class="text c-deepBlue">Remplissez votre panier et votre intérieur vous remerciera !</p>
 
-            <!-- <input class="confirm btn btn-lightPink b-lightPink c-white" type="submit" value="valider ma commande"> -->
+            <?php if (!$_SESSION["connected"]): ?>
             <a class="confirm btn btn-lightPink b-lightPink c-white" href="/user/identification" title="valider ma commande">valider ma commande</a>
+            <?php else: ?>
+            <input class="confirm btn btn-lightPink b-lightPink c-white" type="submit" value="valider ma commande">
+            <?php endif?>
         </form>
     </section>
 </main>
