@@ -190,6 +190,7 @@ nav ul li .cart {
   transition: 0.6s ease;
   margin-left: 10px;
   width: 40px;
+  max-height: 42px;
 }
 nav ul li .cartValue {
   transition: 0.6s ease;
@@ -231,6 +232,7 @@ nav ul li .cartValue {
 }
 .navbar-scroll ul li .cart {
   width: 33px;
+  max-height: 35px;
 }
 .navbar-scroll ul li .cartValue {
   position: absolute;
