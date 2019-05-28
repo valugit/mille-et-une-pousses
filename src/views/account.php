@@ -76,18 +76,22 @@
         <div class=container>
             <div class="info">
                 <h3 class='c-deepBlue'>mails</h3>
+                <input type="text" placeholder="mail">
                 <button class="btn btn-deepBlue b-deepBlue c-white" title="modifier l'adresse mail">modifier</button>
             </div>
             <div class="info">
                 <h3 class='c-deepBlue'>adresse</h3>
+                <input type="text" placeholder="mail">
                 <button class="btn btn-deepBlue b-deepBlue c-white" title="modifier l'adresse">modifier</button>
             </div>
             <div class="info">
                 <h3 class='c-deepBlue'>téléphone</h3>
+                <input type="text" placeholder="mail">
                 <button class="btn btn-deepBlue b-deepBlue c-white" title="modifier le numéro de téléphone">modifier</button>
             </div>
             <div class="info">
                 <h3 class='c-deepBlue'>mot de passe</h3>
+                <input type="text" placeholder="mail">
                 <button class="btn btn-deepBlue b-deepBlue c-white" title="modifier le mot de passe">modifier</button>
             </div>
         </div>

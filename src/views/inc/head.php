@@ -41,8 +41,8 @@
             <?php if (count($_SESSION["cart"]) > 0): ?>
             <span class="cartValue">
               <?php echo $count = array_sum(array_map(function ($cart) {
-  return $cart["quantity"];
-}, $_SESSION["cart"])) ?>
+                return $cart["quantity"];
+              }, $_SESSION["cart"])) ?>
             </span>
           </a>
           <?php endif?>
@@ -80,7 +80,8 @@
         </li>
         <?php else: ?>
         <li>
-          <a class="c-deepBlue rout" value="signin" href="/user/identification">s'enregistrer&nbsp;/&nbsp;se&nbsp;connecter
+          <a class="c-deepBlue rout" value="signin"
+            href="/user/identification">s'enregistrer&nbsp;/&nbsp;se&nbsp;connecter
             <span class="underline b-deepBlue"></span>
           </a>
         </li>
