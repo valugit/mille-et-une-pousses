@@ -25,6 +25,18 @@ class Product {
     return $q->fetch();
   }
 
+  public static function getCartProduct($pdo, $name) {
+    $sql = "SELECT products.id, products.name, products.price, product_images.path, product_images.alt
+            FROM products
+            LEFT JOIN product_images ON product_images.product_id = products.id
+            WHERE name = :name AND product_images.sort_order = 1";
+
+    $q = $pdo->prepare($sql);
+    $q->bindParam("name", $name);
+    $q->execute();
+    return $q->fetch();
+  }
+
   public static function getOtherProducts($pdo, $name) {
     $sql = "SELECT products.id, products.name, products.price, product_images.path, product_images.alt
             FROM products

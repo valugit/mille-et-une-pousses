@@ -16,13 +16,14 @@
                     <h3 class="col col-three c-deepBlue">prix</h3>
                 </header>
 
+                <?php foreach ($items as $item): ?>
                 <div class="product">
 
                     <div class="col col-one c-deepBlue">
                         <div class="img">
-                            <img src="/media/products/aglaonema/aglaonema.jpg" alt="">
+                            <img src="<?php echo $item["path"] ?>" alt="<?php echo $item["alt"] ?>">
                         </div>
-                        <p class="name c-deepBlue">aglaoneama</p>
+                        <p class="name c-deepBlue"><?php echo $item["name"] ?></p>
                     </div>
 
                     <div class="col col-two">
@@ -30,112 +31,21 @@
                             <i class="fas fa-minus c-white"></i>
                         </button>
 
-                        <input class="c-deepBlue" type="text" value="1" disabled>
+                        <?php foreach ($quantities as $itemName => $itemQuantity): ?>
+                            <?php if ($itemName == $item["name"]): ?>
+                            <input id="quantity" class="c-deepBlue" type="text" name="quantity" value="<?php echo $itemQuantity ?>" disabled>
+                            <?php endif?>
+                        <?php endforeach?>
 
                         <button type="button" class="btn btn-quantity btn-lightPink b-lightPink">
                             <i class="fas fa-plus c-white"></i>
                         </button>
                     </div>
-                    
-                    <p class="col col-three c-lightPink">17€</p>
+
+                    <p class="col col-three c-lightPink"><?php echo floatval($item["price"]) / 100 ?>&euro;</p>
 
                 </div>
-                <div class="product">
-
-                    <div class="col col-one c-deepBlue">
-                        <div class="img">
-                            <img src="/media/products/aglaonema/aglaonema.jpg" alt="">
-                        </div>
-                        <p class="name c-deepBlue">aglaoneama</p>
-                    </div>
-
-                    <div class="col col-two">
-                        <button type="button" class="btn btn-quantity btn-lightPink b-lightPink">
-                            <i class="fas fa-minus c-white"></i>
-                        </button>
-
-                        <input class="c-deepBlue" type="text" value="1" disabled>
-
-                        <button type="button" class="btn btn-quantity btn-lightPink b-lightPink">
-                            <i class="fas fa-plus c-white"></i>
-                        </button>
-                    </div>
-                    
-                    <p class="col col-three c-lightPink">17€</p>
-
-                </div>
-                <div class="product">
-
-                    <div class="col col-one c-deepBlue">
-                        <div class="img">
-                            <img src="/media/products/aglaonema/aglaonema.jpg" alt="">
-                        </div>
-                        <p class="name c-deepBlue">aglaoneama</p>
-                    </div>
-
-                    <div class="col col-two">
-                        <button type="button" class="btn btn-quantity btn-lightPink b-lightPink">
-                            <i class="fas fa-minus c-white"></i>
-                        </button>
-
-                        <input class="c-deepBlue" type="text" value="1" disabled>
-
-                        <button type="button" class="btn btn-quantity btn-lightPink b-lightPink">
-                            <i class="fas fa-plus c-white"></i>
-                        </button>
-                    </div>
-                    
-                    <p class="col col-three c-lightPink">17€</p>
-
-                </div>
-                <div class="product">
-
-                    <div class="col col-one c-deepBlue">
-                        <div class="img">
-                            <img src="/media/products/aglaonema/aglaonema.jpg" alt="">
-                        </div>
-                        <p class="name c-deepBlue">aglaoneama</p>
-                    </div>
-
-                    <div class="col col-two">
-                        <button type="button" class="btn btn-quantity btn-lightPink b-lightPink">
-                            <i class="fas fa-minus c-white"></i>
-                        </button>
-
-                        <input class="c-deepBlue" type="text" value="1" disabled>
-
-                        <button type="button" class="btn btn-quantity btn-lightPink b-lightPink">
-                            <i class="fas fa-plus c-white"></i>
-                        </button>
-                    </div>
-                    
-                    <p class="col col-three c-lightPink">17€</p>
-
-                </div>
-                <div class="product">
-
-                    <div class="col col-one c-deepBlue">
-                        <div class="img">
-                            <img src="/media/products/aglaonema/aglaonema.jpg" alt="">
-                        </div>
-                        <p class="name c-deepBlue">aglaoneama</p>
-                    </div>
-
-                    <div class="col col-two">
-                        <button type="button" class="btn btn-quantity btn-lightPink b-lightPink">
-                            <i class="fas fa-minus c-white"></i>
-                        </button>
-
-                        <input class="c-deepBlue" type="text" value="1" disabled>
-
-                        <button type="button" class="btn btn-quantity btn-lightPink b-lightPink">
-                            <i class="fas fa-plus c-white"></i>
-                        </button>
-                    </div>
-                    
-                    <p class="col col-three c-lightPink">17€</p>
-
-                </div>
+                <?php endforeach?>
             </div>
 
             <p class="text c-deepBlue">Remplissez votre panier et votre intérieur vous remerciera !</p>

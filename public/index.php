@@ -3,6 +3,10 @@ require_once "../vendor/autoload.php";
 
 session_start();
 
+if (!isset($_SESSION["cart"])) {
+  $_SESSION["cart"] = [];
+}
+
 $request_url = $_SERVER['REQUEST_URI'];
 
 $path = parse_url($request_url, PHP_URL_PATH);

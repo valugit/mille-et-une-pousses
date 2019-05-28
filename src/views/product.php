@@ -20,7 +20,7 @@
                 <img id="imgProduct" src="<?php echo $product["path"] ?>" alt="<?php echo $product["alt"] ?>">
             </div>
 
-            <form method="POST" action="" class="text">
+            <form method="POST" action="/user/addtocart" class="text">
 
                 <header>
                     <h1 class="title c-deepBlue"><?php echo $name ?></h1>
@@ -36,7 +36,7 @@
                             <i class="fas fa-minus c-white"></i>
                         </button>
 
-                        <input id="quantity" class="c-deepBlue" type="text" value="1" disabled>
+                        <input id="quantity" class="c-deepBlue" type="text" name="quantity" value="1" disabled>
 
                         <button id="more" type="button" class="btn btn-quantity btn-lightPink b-lightPink">
                             <i class="fas fa-plus c-white"></i>
@@ -66,6 +66,7 @@
                     </div>
                 </div>
 
+                <input type="hidden" name="name" value="<?php echo $name ?>">
                 <input class="btn btn-lightPink b-lightPink c-white" type="submit" value="ajouter au panier">
             </form>
         </div>

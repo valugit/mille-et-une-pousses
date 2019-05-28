@@ -1,6 +1,7 @@
 <?php
 namespace Controllers;
 
+use Models\Product;
 use Models\User;
 use Services\Connection;
 
@@ -71,7 +72,37 @@ class UserController {
     }
   }
 
+  public function addtocartAction() {
+    $item = ["name" => $_POST["name"], "quantity" => $_POST["quantity"]];
+    array_push($_SESSION["cart"], $item);
+
+    header("location: /product/details/" . $_POST["name"]);
+    exit();
+  }
+
   public function cartAction() {
+
+    $pdo = Connection::getInstance();
+    $items = [];
+
+    foreach ($_SESSION["cart"] as $product) {
+      $getProduct = Product::getCartProduct($pdo, $product["name"]);
+
+      if (!in_array($getProduct, $items)) {
+        array_push($items, $getProduct);
+      }
+    }
+
+    foreach ($items as $item) {
+
+      $quantity = 0;
+
+      foreach ($_SESSION["cart"] as $product) {
+        $quantity += $product["quantity"];
+      }
+
+      $quantities[$item["name"]] = $quantity;
+    }
 
     include "./cart.php";
   }
