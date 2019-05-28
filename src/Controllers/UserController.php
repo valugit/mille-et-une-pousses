@@ -108,6 +108,17 @@ class UserController {
       $quantities[$item["name"]] = $quantity;
     }
 
+    $total = 0;
+
+    foreach ($items as $item) {
+
+      foreach ($quantities as $name => $quantity) {
+        if ($name == $item["name"]) {
+          $total += $item["price"] * $quantity;
+        }
+      }
+    }
+
     include "./cart.php";
   }
 
