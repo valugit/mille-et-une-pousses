@@ -1297,32 +1297,233 @@ section .container {
   margin: 1em 0;
 }
 
-.account-one {
-  height: 100vh;
+.account {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.account-one .text {
+.account .circle {
+  z-index: -1;
+  position: absolute;
+  height: 808px;
+  width: 808px;
+  border-radius: 50%;
+  top: -550px;
+  right: -150px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+}
+.account .leaf {
+  position: absolute;
+  height: 600px;
+}
+.account .leaf.leaf-1 {
+  top: 55vh;
+  left: -25px;
+  transform: rotate(55deg) scaleX(-1);
+}
+.account .leaf.leaf-2 {
+  top: 65vh;
+  left: 0;
+  transform: rotate(70deg) scaleX(-1);
+}
+@keyframes inOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.account .opacityOut {
+  animation: inOut 0.4s ease forwards;
+}
+.account .opacityIn {
+  animation: inOut 0.4s reverse ease forwards;
+}
+.account .none {
+  display: none;
+}
+.account .account-one {
+  height: 100vh;
+  transition: 0.3s ease;
+}
+.account .account-one .text {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.account-one .text .title {
+.account .account-one .text .title {
   font-size: 80px;
   text-shadow: 0 0.06em 0 #ff847c;
   margin: 0.5em;
 }
-.account-one .text p {
+.account .account-one .text p {
   font-size: 35px;
 }
-.account-one .buttons {
+.account .account-one .buttons {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
 }
-.account-one .buttons .btn {
+.account .account-one .buttons .btn {
   font-size: 35px;
   margin: 0.3em;
   text-align: center;
+}
+.account .account-two {
+  width: 80%;
+  height: 105vh;
+  transition: 0.3s ease;
+}
+.account .account-two .text {
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+}
+.account .account-two .container {
+  margin: 25px 0 75px 0;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.account .account-two .container .button {
+  transition: 0.2s ease;
+  position: relative;
+  height: 180px;
+  width: 272px;
+}
+.account .account-two .container .button .img {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.account .account-two .container .button .img img {
+  height: 100%;
+}
+.account .account-two .container .button:first-of-type .img {
+  position: absolute;
+  height: 100%;
+}
+.account .account-two .container .button:first-of-type .img img {
+  transform: scaleY(-1);
+}
+.account .account-two .container .button form {
+  z-index: 3;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.account .account-two .container .button form input {
+  transition: 0.2s ease;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.account .account-two .container .button form input:hover {
+  cursor: pointer;
+  color: white;
+}
+.account .account-two .container .button .bar {
+  transition: 0.5s ease;
+  position: absolute;
+}
+.account .account-two .container .button .top-bar {
+  top: -15px;
+  left: -15px;
+  height: 4px;
+  width: 80%;
+}
+.account .account-two .container .button .left-bar {
+  top: -15px;
+  left: -15px;
+  height: 80%;
+  width: 4px;
+}
+.account .account-two .container .button .right-bar {
+  bottom: -15px;
+  right: -15px;
+  height: 55%;
+  width: 4px;
+}
+.account .account-two .container .button .bottom-bar {
+  bottom: -15px;
+  right: -15px;
+  height: 4px;
+  width: 55%;
+}
+.account .account-two .container .button:hover {
+  background-color: #e84a5f;
+}
+.account .account-two .container .button:hover .top-bar {
+  left: 50%;
+  width: 55%;
+}
+.account .account-two .container .button:hover .left-bar {
+  top: 53%;
+  height: 55%;
+}
+.account .account-two .container .button:hover .right-bar {
+  bottom: 28%;
+  height: 80%;
+}
+.account .account-two .container .button:hover .bottom-bar {
+  right: 25%;
+  width: 80%;
+}
+.account .account-three {
+  width: 80%;
+  height: 105vh;
+  transition: 0.3s ease;
+}
+.account .account-three .text {
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+}
+.account .account-three .container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 75px;
+}
+.account .account-three .container .info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+.account .account-three .container .info h3 {
+  position: relative;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  width: 28%;
+  padding: 0 1em;
+  text-align: center;
+}
+.account .account-three .container .info h3::after {
+  content: ":";
+  position: absolute;
+  right: 0;
+}
+.account .account-three .container .info .btn {
+  text-transform: capitalize;
+  font-size: 25px;
 }
 
 .ordersPage {
