@@ -39,17 +39,30 @@
             <p class="c-deepBlue">panier</p>
             <span class="underline b-deepBlue"></span>
             <?php if (count($_SESSION["cart"]) > 0): ?>
-            <span class="cartValue"><?php echo count($_SESSION["cart"]) ?></span>
-            <?php endif?>
+            <span class="cartValue">
+              <?php echo $count = array_sum(array_map(function ($cart) {
+  return $cart["quantity"];
+}, $_SESSION["cart"])) ?>
+            </span>
           </a>
+          <?php endif?>
+          <?php if (count($_SESSION["cart"]) == 0): ?>
           <img class="cart" src="./../../../media/img/cart-icone.png" alt="panier">
+          <?php elseif ($count == 1): ?>
+          <img class="cart" src="./../../../media/img/cart-icone-1.png" alt="panier">
+          <?php elseif ($count == 2): ?>
+          <img class="cart" src="./../../../media/img/cart-icone-2.png" alt="panier">
+          <?php elseif ($count == 3): ?>
+          <img class="cart" src="./../../../media/img/cart-icone-3.png" alt="panier">
+          <?php elseif ($count >= 4): ?>
+          <img class="cart" src="./../../../media/img/cart-icone-4.png" alt="panier">
+          <?php endif?>
         </li>
       </div>
 
       <div>
         <li>
-
-          <a class="c-deepBlue rout" value="produits" href="">blog
+          <a class="c-deepBlue rout" value="produits" href="/blog/listall">blog
             <span class="underline b-deepBlue"></span>
           </a>
         </li>

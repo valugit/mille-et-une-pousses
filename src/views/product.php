@@ -36,7 +36,7 @@
                             <i class="fas fa-minus c-white"></i>
                         </button>
 
-                        <input id="quantity" class="c-deepBlue" type="number" name="quantity" min="1" value="1" disabled>
+                        <input id="quantity" class="c-deepBlue" type="number" name="quantity" min="1" value="1">
 
                         <button id="more" type="button" class="btn btn-quantity btn-lightPink b-lightPink">
                             <i class="fas fa-plus c-white"></i>

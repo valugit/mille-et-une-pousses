@@ -98,7 +98,9 @@ class UserController {
       $quantity = 0;
 
       foreach ($_SESSION["cart"] as $product) {
-        $quantity += $product["quantity"];
+        if ($product["name"] == $item["name"]) {
+          $quantity += $product["quantity"];
+        }
       }
 
       $quantities[$item["name"]] = $quantity;

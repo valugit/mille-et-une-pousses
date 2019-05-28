@@ -7,6 +7,7 @@
     <img class="leaf leaf-1" src="/media/leafs/leaf1_2.png" alt="leaf">
     <img class="leaf leaf-2" src="/media/leafs/leaf1_1.png" alt="leaf">
 
+    <?php if ($profile["role_id"] == 2): ?>
     <section id="account-one" class="account-one">
 
         <div class="text">
@@ -92,6 +93,14 @@
         </div>
         <button class="btn btn-lightPink b-lightPink c-white backToProfile">retour</button>
     </section>
+    <?php else: ?>
+    <section id="account-one" class="account-one">
+        <div class="buttons">
+            <a href="/admin" class="btn btn-deepBlue b-deepBlue c-white">gestion du site</a>
+            <p><?php var_dump($profile)?></p>
+        </div>
+    </section>
+    <?php endif?>
 </main>
 
 <?php include "./inc/foot.php";?>

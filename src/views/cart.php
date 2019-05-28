@@ -34,15 +34,15 @@
                         <?php foreach ($quantities as $itemName => $itemQuantity): ?>
                             <?php if ($itemName == $item["name"]): ?>
                             <input id="quantity" class="c-deepBlue" type="text" name="quantity" value="<?php echo $itemQuantity ?>" disabled>
-                            <?php endif?>
-                        <?php endforeach?>
 
                         <button type="button" class="btn btn-quantity btn-lightPink b-lightPink">
                             <i class="fas fa-plus c-white"></i>
                         </button>
                     </div>
 
-                    <p class="col col-three c-lightPink"><?php echo floatval($item["price"]) / 100 ?>&euro;</p>
+                    <p class="col col-three c-lightPink"><?php echo $itemQuantity * (floatval($item["price"]) / 100) ?>&euro;</p>
+                        <?php endif?>
+                    <?php endforeach?>
 
                 </div>
                 <?php endforeach?>
