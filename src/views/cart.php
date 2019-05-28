@@ -33,13 +33,7 @@
 
                         <?php foreach ($quantities as $itemName => $itemQuantity): ?>
                             <?php if ($itemName == $item["name"]): ?>
-<<<<<<< HEAD
-                            <input id="quantity" class="c-deepBlue" type="text" name="quantity" value="<?php echo $itemQuantity ?>" disabled>
-=======
                             <input id="quantity" class="c-deepBlue" type="text" name="quantity" value="<?php echo $itemQuantity ?>" title="nombre d'articles sélectionnés">
-                            <?php endif?>
-                        <?php endforeach?>
->>>>>>> 981823d9c1a925bffdd9398b4986142af51d8d35
 
                         <button type="button" class="btn btn-quantity btn-lightPink b-lightPink" title="ajouter un article">
                             <i class="fas fa-plus c-white"></i>
