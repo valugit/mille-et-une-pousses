@@ -50,7 +50,8 @@
 
             <p class="text c-deepBlue">Remplissez votre panier et votre intérieur vous remerciera !</p>
 
-            <input class="confirm btn btn-lightPink b-lightPink c-white" type="submit" value="valider ma commande">
+            <!-- <input class="confirm btn btn-lightPink b-lightPink c-white" type="submit" value="valider ma commande"> -->
+            <a class="confirm btn btn-lightPink b-lightPink c-white" href="/user/identification">valider ma commande</a>
         </form>
     </section>
 </main>

@@ -65,7 +65,7 @@
                 <span class="bar left-bar b-deepBlue"></span>
             </div>
         </div>
-        <button class="btn btn-lightPink b-lightPink c-white backToProfile">retour</button>
+        <button class="back btn btn-lightPink b-lightPink c-white backToProfile">retour</button>
     </section>
 
     <section id="account-three" class="account-three none">
@@ -90,7 +90,7 @@
                 <button class="btn btn-deepBlue b-deepBlue c-white">modifier</button>
             </div>
         </div>
-        <button class="btn btn-lightPink b-lightPink c-white backToProfile">retour</button>
+        <button class="back btn btn-lightPink b-lightPink c-white backToProfile">retour</button>
     </section>
 </main>
 

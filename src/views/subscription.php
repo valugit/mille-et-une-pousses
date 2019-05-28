@@ -58,7 +58,7 @@
 
                 <div class="text">
 
-                    <p class="description c-deepBlue">Offrez-vous 12 mois d’abonnement pour un prix de 11 box !</p>
+                    <p class="description c-deepBlue">Offrez-vous 12 box pour un prix de 11 box !</p>
 
                     <p class="price c-deepBlue"><span class="c-deepBlue">195€</span>/ans</p>
 

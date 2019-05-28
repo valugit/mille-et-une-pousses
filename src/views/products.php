@@ -28,7 +28,7 @@
 
                     <label for="tagOne" class="lab labName">
                         <h4 class="c-deepBlue">Facile d'entretien</h4>
-                        <span class="underline b-lightPink"></span>
+                        <span class="underline b-deepBlue"></span>
                     </label>
 
                     <label for="tagOne" class="lab labCheck one">
@@ -41,7 +41,7 @@
 
                     <label for="tagTwo" class="lab labName">
                         <h4 class="c-deepBlue">Peu de lumière</h4>
-                        <span class="underline b-lightPink"></span>
+                        <span class="underline b-deepBlue"></span>
                     </label>
 
                     <label for="tagTwo" class="lab labCheck two">
@@ -54,7 +54,7 @@
 
                     <label for="tagThree" class="lab labName">
                         <h4 class="c-deepBlue">Pet friendly</h4>
-                        <span class="underline b-lightPink"></span>
+                        <span class="underline b-deepBlue"></span>
                     </label>
 
                     <label for="tagThree" class="lab labCheck three">
@@ -77,7 +77,7 @@
                     <a href="/product/details/<?php echo urlencode($product["name"]) ?>">
                         <img src="<?php echo $product["path"] ?>" alt="<?php echo $product["alt"] ?>">
                         <span>
-                            <p class="btn b-lightPink c-white">acheter</p>
+                            <p class="btn b-lightPink c-white">voir plus</p>
                         </span>
                     </a>
                 </div>

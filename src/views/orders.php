@@ -29,7 +29,7 @@
     <hr class="b-deepBlue">
 
     <section class="orders orders-two">
-        <h2 class="title c-deepBlue">historique</h2>
+        <h2 class="title c-deepBlue">Historique</h2>
         <div class="product">
             <div class="img">
                 <img src="/media/products/calathea/calathea.jpg" alt="">

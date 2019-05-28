@@ -49,7 +49,7 @@
       <div>
         <li>
 
-          <a class="c-deepBlue rout" value="produits" href="">blog
+          <a class="c-deepBlue rout" value="produits" href="/blog/listall">blog
             <span class="underline b-deepBlue"></span>
           </a>
         </li>
