@@ -11,7 +11,7 @@
     <section id="account-one" class="account-one">
 
         <div class="text">
-            <h1 class="title c-deepBlue">Bienvenue sur votre compte !</h1>
+            <h1 class="title c-deepBlue">Bienvenue <?php echo $profile["firstname"] ?> !</h1>
             <p class="c-deepBlue">Vous pouvez organiser vos abonnements, vos commandes mais aussi vos informations
                 personnelles !</p>
         </div>
@@ -75,7 +75,7 @@
             le souhaitez ! </p>
         <div class=container>
             <div class="info">
-                <h3 class='c-deepBlue'>mails</h3>
+                <h3 class='c-deepBlue'>mail</h3>
                 <button class="btn btn-deepBlue b-deepBlue c-white" title="modifier l'adresse mail">modifier</button>
             </div>
             <div class="info">
@@ -95,9 +95,12 @@
     </section>
     <?php else: ?>
     <section id="account-one" class="account-one">
+        <div class="text">
+            <h1 class="title c-deepBlue">Bienvenue <?php echo $profile["firstname"] ?> !</h1>
+        </div>
+
         <div class="buttons">
             <a href="/admin" class="btn btn-deepBlue b-deepBlue c-white">gestion du site</a>
-            <p><?php var_dump($profile)?></p>
         </div>
     </section>
     <?php endif?>

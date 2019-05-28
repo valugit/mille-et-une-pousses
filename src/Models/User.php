@@ -7,7 +7,7 @@ class User {
     $sql = "SELECT password FROM users WHERE email = :email";
 
     $q = $pdo->prepare($sql);
-    $q->bindParam("email", $email);
+    $q->bindParam(":email", $email);
     $q->execute();
     $hash = $q->fetch();
 
@@ -18,7 +18,7 @@ class User {
         $sql = "SELECT id FROM users WHERE email = :email";
 
         $q = $pdo->prepare($sql);
-        $q->bindParam("email", $email);
+        $q->bindParam(":email", $email);
         $q->execute();
         return $q->fetch();
 
@@ -86,10 +86,10 @@ class User {
   }
 
   public static function getUserInfo($pdo, $id) {
-    $sql = "SELECT firstname, lastname, email, phone, first_adress_id, second_adress_id, role_id FROM users WHERE id = :id";
+    $sql = "SELECT firstname, lastname, email, role_id FROM users WHERE id = :id";
 
     $q = $pdo->prepare($sql);
-    $q->bindParam("id", $id);
+    $q->bindParam(":id", $id);
     $q->execute();
     return $q->fetch();
   }

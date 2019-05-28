@@ -9,5 +9,6 @@ visuel et/ou auditif.
 
 # Important
 
+ - Ouvrir le projet en utilisant `php -S 0.0.0.0:3008 -t public` ou dans un environnement apache.
  - Installer composer.
  - Renommer le fichier "dbconfig.php.dist" en enlevant le ".dist" et modifier les identifiants.
