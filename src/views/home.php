@@ -25,7 +25,7 @@
 
             <p class="c-deepBlue">Nous vous avons préparé une sélection de plantes spécialement pour l'occasion</p>
 
-            <a href="" class="btn btn-lightPink b-lightPink c-white">découvrez la sélection</a>
+            <a href="/product/listall" class="btn btn-lightPink b-lightPink c-white">découvrez la sélection</a>
 
         </div>
 
