@@ -24,15 +24,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		// Tags Scroll Fixed ProductsPage
 		console.log(scroll.scrollTop)
 
-		let tags = document.querySelector('#tags'),
-			fakeTags = document.querySelector('#fakeTags')
+		if (document.querySelector('#tags')) {
 
-		if (scroll.scrollTop >= 710) {
-			fakeTags.classList.add('fakeTags')
-			tags.classList.add('tagsFixed')
-		} else {
-			fakeTags.classList.remove('fakeTags')
-			tags.classList.remove('tagsFixed')
+			let tags = document.querySelector('#tags'),
+				fakeTags = document.querySelector('#fakeTags')
+
+			if (scroll.scrollTop >= 710) {
+				fakeTags.classList.add('fakeTags')
+				tags.classList.add('tagsFixed')
+			} else {
+				fakeTags.classList.remove('fakeTags')
+				tags.classList.remove('tagsFixed')
+			}
 		}
 	})
 
@@ -170,5 +173,172 @@ document.addEventListener('DOMContentLoaded', () => {
 				}, 400)
 			})
 		})
+	}
+
+
+	// Data Account Page
+
+	if (document.querySelector('#dataMail')) {
+
+		let dataMail = document.querySelector('#dataMail'),
+			dataMailValue = dataMail.value,
+			dataAddress = document.querySelector('#dataAddress'),
+			dataAddressValue = dataAddress.value,
+			dataPhone = document.querySelector('#dataPhone'),
+			dataPhoneValue = dataPhone.value,
+			dataPassword = document.querySelector('#dataPassword'),
+			dataPasswordValue = dataPassword.value
+
+		let changeDataMail = document.querySelector('#changeDataMail'),
+			changeDataAddress = document.querySelector('#changeDataAddress'),
+			changeDataPhone = document.querySelector('#changeDataPhone'),
+			changeDataPassword = document.querySelector('#changeDataPassword')
+
+		let changingDataMail = document.querySelector('#changingDataMail'),
+			changingDataAddress = document.querySelector('#changingDataAddress'),
+			changingDataPhone = document.querySelector('#changingDataPhone'),
+			changingDataPassword = document.querySelector('#changingDataPassword')
+
+		let validateDataMail = document.querySelector('#validateDataMail'),
+			validateDataAddress = document.querySelector('#validateDataAddress'),
+			validateDataPhone = document.querySelector('#validateDataPhone'),
+			validateDataPassword = document.querySelector('#validateDataPassword')
+
+		let cancelDataMail = document.querySelector('#cancelDataMail'),
+			cancelDataAddress = document.querySelector('#cancelDataAddress'),
+			cancelDataPhone = document.querySelector('#cancelDataPhone'),
+			cancelDataPassword = document.querySelector('#cancelDataPassword')
+
+
+
+
+		// Data Mail
+
+		changeDataMail.addEventListener('click', () => {
+
+			dataMail.classList.add('changing')
+			dataMail.disabled = false
+			dataMail.value = ""
+			changeDataMail.classList.add('none')
+			changingDataMail.classList.remove('none')
+
+		})
+
+		cancelDataMail.addEventListener('click', () => {
+
+			dataMail.classList.remove('changing')
+			dataMail.disabled = true
+			dataMail.value = dataMailValue
+			changeDataMail.classList.remove('none')
+			changingDataMail.classList.add('none')
+
+		})
+
+		validateDataMail.addEventListener('click', () => {
+
+			dataMail.classList.remove('changing')
+			dataMail.disabled = true
+			changeDataMail.classList.remove('none')
+			changingDataMail.classList.add('none')
+
+		})
+
+
+		// Data Address
+
+		changeDataAddress.addEventListener('click', () => {
+
+			dataAddress.classList.add('changing')
+			dataAddress.disabled = false
+			dataAddress.value = ""
+			changeDataAddress.classList.add('none')
+			changingDataAddress.classList.remove('none')
+
+		})
+
+		cancelDataAddress.addEventListener('click', () => {
+
+			dataAddress.classList.remove('changing')
+			dataAddress.disabled = true
+			dataAddress.value = dataAddressValue
+			changeDataAddress.classList.remove('none')
+			changingDataAddress.classList.add('none')
+
+		})
+
+		validateDataAddress.addEventListener('click', () => {
+
+			dataAddress.classList.remove('changing')
+			dataAddress.disabled = true
+			changeDataAddress.classList.remove('none')
+			changingDataAddress.classList.add('none')
+
+		})
+
+
+		// Data Phone
+
+		changeDataPhone.addEventListener('click', () => {
+
+			dataPhone.classList.add('changing')
+			dataPhone.disabled = false
+			dataPhone.value = ""
+			changeDataPhone.classList.add('none')
+			changingDataPhone.classList.remove('none')
+
+		})
+
+		cancelDataPhone.addEventListener('click', () => {
+
+			dataPhone.classList.remove('changing')
+			dataPhone.disabled = true
+			dataPhone.value = dataPhoneValue
+			changeDataPhone.classList.remove('none')
+			changingDataPhone.classList.add('none')
+
+		})
+
+		validateDataPhone.addEventListener('click', () => {
+
+			dataPhone.classList.remove('changing')
+			dataPhone.disabled = true
+			changeDataPhone.classList.remove('none')
+			changingDataPhone.classList.add('none')
+
+		})
+
+
+		// Data Password
+
+		changeDataPassword.addEventListener('click', () => {
+
+			dataPassword.classList.add('changing')
+			dataPassword.disabled = false
+			dataPassword.value = ""
+			changeDataPassword.classList.add('none')
+			changingDataPassword.classList.remove('none')
+
+		})
+
+		cancelDataPassword.addEventListener('click', () => {
+
+			dataPassword.classList.remove('changing')
+			dataPassword.disabled = true
+			dataPassword.value = dataPasswordValue
+			changeDataPassword.classList.remove('none')
+			changingDataPassword.classList.add('none')
+
+		})
+
+		validateDataPassword.addEventListener('click', () => {
+
+			dataPassword.classList.remove('changing')
+			dataPassword.disabled = true
+			changeDataPassword.classList.remove('none')
+			changingDataPassword.classList.add('none')
+
+		})
+
+
 	}
 })

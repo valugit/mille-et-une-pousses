@@ -1733,7 +1733,6 @@ section {
         }
 
         .container {
-            width: 60%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -1743,7 +1742,6 @@ section {
                 width: 100%;
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
                 margin: 25px 0;
 
                 h3 {
@@ -1762,15 +1760,39 @@ section {
                     }
                 }
 
+                .data {
+                    width: 400px;
+                    font-size: 25px;
+                    padding: 0.5em 1em;
+                    margin: 0 2em;
+                    border: 2px solid transparent;
+
+                    &.changing {
+                        border-color: $deepBlue;
+                    }
+
+                    &::placeholder {
+                        text-transform: capitalize;
+                    }
+                }
+
                 .btn {
                     text-transform: capitalize;
                     font-size: 25px;
+                }
+
+                .btns {
+                    min-width: 320px;
                 }
             }
         }
 
         .back {
             font-size: 20px;
+        }
+
+        .none {
+            display: none;
         }
     }
 }
