@@ -2038,7 +2038,7 @@ footer .part3 .container form input {
   height: 2.5em;
 }
 footer .part3 .container form input.text {
-  padding-inline-start: 1em;
+  padding: 0 3em 0 1em;
   font-style: italic;
   font-weight: 300;
 }
