@@ -149,4 +149,56 @@ document.addEventListener("DOMContentLoaded", () => {
 
         })
     }
+
+    if (document.querySelector('#account')) {
+
+        let accountOne = document.querySelector('#account-one'),
+            accounttwo = document.querySelector('#account-two'),
+            accountthree = document.querySelector('#account-three'),
+            subscriptionProfile = document.querySelector('#subscriptionProfile'),
+            infoProfile = document.querySelector('#infoProfile'),
+            backToProfile = document.querySelectorAll('.backToProfile')
+
+        subscriptionProfile.addEventListener('click', () => {
+
+            accountOne.classList.add('opacityOut')
+
+            setTimeout(() => {
+                accountOne.classList.add('none')
+                accounttwo.classList.remove('none')
+                accounttwo.classList.add('opacityIn')
+            }, 500);
+
+        })
+
+        infoProfile.addEventListener('click', () => {
+
+            accountOne.classList.add('opacityOut')
+
+            setTimeout(() => {
+                accountOne.classList.add('none')
+                accountthree.classList.remove('none')
+                accountthree.classList.add('opacityIn')
+            }, 500);
+
+        })
+
+        backToProfile.forEach(back => {
+
+            back.addEventListener('click', () => {
+
+                accounttwo.classList.add('opacityOut')
+                accountthree.classList.add('opacityOut')
+
+                setTimeout(() => {
+                    accounttwo.classList.add('none')
+                    accountthree.classList.add('none')
+                    accountOne.classList.remove('none')
+                    accountOne.classList.add('opacityIn')
+                }, 400);
+
+            })
+
+        });
+    }
 })
