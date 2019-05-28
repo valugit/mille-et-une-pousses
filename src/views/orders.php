@@ -13,7 +13,7 @@
         <h2 class="title c-deepBlue">Commandes en cours</h2>
         <div class="product">
             <div class="img">
-                <img src="/media/products/calathea/calathea.jpg" alt="">
+                <img src="/media/products/calathea/calathea.jpg" alt="calathea" title="photo de calathea">
             </div>
             <div class="text">
                 <h3 class="c-lightPink">calathea</h3>
@@ -21,7 +21,7 @@
                     donne un côté très décoratif.</p>
             </div>
             <form method="POST" action="">
-                <input class="btn btn-lightPink b-lightPink c-white" type="submit" value="annuler">
+                <input class="btn btn-lightPink b-lightPink c-white" type="submit" value="annuler" title="annuler la commande en cours">
             </form>
         </div>
     </section>
@@ -32,7 +32,7 @@
         <h2 class="title c-deepBlue">Historique</h2>
         <div class="product">
             <div class="img">
-                <img src="/media/products/calathea/calathea.jpg" alt="">
+                <img src="/media/products/calathea/calathea.jpg" alt="calathea" title="photo de calathea">
             </div>
             <div class="text">
                 <h3 class="c-lightPink">calathea</h3>
@@ -42,7 +42,7 @@
         </div>
         <div class="product">
             <div class="img">
-                <img src="/media/products/calathea/calathea.jpg" alt="">
+                <img src="/media/products/calathea/calathea.jpg" alt="calathea" title="photo de calathea">
             </div>
             <div class="text">
                 <h3 class="c-lightPink">calathea</h3>
@@ -52,7 +52,7 @@
         </div>
         <div class="product">
             <div class="img">
-                <img src="/media/products/calathea/calathea.jpg" alt="">
+                <img src="/media/products/calathea/calathea.jpg" alt="calathea" title="photo de calathea">
             </div>
             <div class="text">
                 <h3 class="c-lightPink">calathea</h3>
@@ -62,7 +62,7 @@
         </div>
         <div class="product">
             <div class="img">
-                <img src="/media/products/calathea/calathea.jpg" alt="">
+                <img src="/media/products/calathea/calathea.jpg" alt="calathea" title="photo de calathea">
             </div>
             <div class="text">
                 <h3 class="c-lightPink">calathea</h3>

@@ -38,7 +38,7 @@
                 </div>
 
                 <form action="" method="post">
-                    <input class="c-pinkOrange" type="submit" value="renouveler">
+                    <input class="c-pinkOrange" type="submit" value="renouveler" title="renouveler l'abonnement">
                 </form>
 
                 <span class="bar top-bar b-deepBlue"></span>
@@ -55,7 +55,7 @@
 
                 <div class="form">
                     <form action="" method="post">
-                        <input class="c-pinkOrange" type="submit" value="résilier">
+                        <input class="c-pinkOrange" type="submit" value="résilier" title="résilier l'abonnement">
                     </form>
                 </div>
 
@@ -75,19 +75,19 @@
         <div class=container>
             <div class="info">
                 <h3 class='c-deepBlue'>mails</h3>
-                <button class="btn btn-deepBlue b-deepBlue c-white">modifier</button>
+                <button class="btn btn-deepBlue b-deepBlue c-white" title="modifier l'adresse mail">modifier</button>
             </div>
             <div class="info">
                 <h3 class='c-deepBlue'>adresse</h3>
-                <button class="btn btn-deepBlue b-deepBlue c-white">modifier</button>
+                <button class="btn btn-deepBlue b-deepBlue c-white" title="modifier l'adresse">modifier</button>
             </div>
             <div class="info">
                 <h3 class='c-deepBlue'>téléphone</h3>
-                <button class="btn btn-deepBlue b-deepBlue c-white">modifier</button>
+                <button class="btn btn-deepBlue b-deepBlue c-white" title="modifier le numéro de téléphone">modifier</button>
             </div>
             <div class="info">
                 <h3 class='c-deepBlue'>mot de passe</h3>
-                <button class="btn btn-deepBlue b-deepBlue c-white">modifier</button>
+                <button class="btn btn-deepBlue b-deepBlue c-white" title="modifier le mot de passe">modifier</button>
             </div>
         </div>
         <button class="back btn btn-lightPink b-lightPink c-white backToProfile">retour</button>

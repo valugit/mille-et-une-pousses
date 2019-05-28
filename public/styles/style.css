@@ -187,8 +187,8 @@ nav ul li .rout:hover .underline {
   width: 100%;
 }
 nav ul li .cart {
-  margin-left: 10px;
   transition: 0.6s ease;
+  margin-left: 10px;
   width: 40px;
 }
 nav ul li .cartValue {
@@ -230,7 +230,7 @@ nav ul li .cartValue {
   bottom: -2px;
 }
 .navbar-scroll ul li .cart {
-  height: 33px;
+  width: 33px;
 }
 .navbar-scroll ul li .cartValue {
   position: absolute;
@@ -2024,12 +2024,28 @@ section .container {
   width: initial;
   font-size: 35px;
 }
-.connexionPage .connexion form .forgotPassword {
-  font-size: 25px;
+.connexionPage .connexion form .btn-bis {
+  font-size: 28px;
+  margin-top: 1em;
+  text-transform: capitalize;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.connexionPage .connexion .newAccount {
-  font-size: 25px;
-  margin: 0.8em 0;
+.connexionPage .connexion form .btn-bis .underline {
+  transition: 0.2s ease;
+  position: absolute;
+  bottom: -4px;
+  height: 4px;
+  width: 0;
+  border-radius: 10px;
+}
+.connexionPage .connexion form .btn-bis:hover {
+  cursor: pointer;
+}
+.connexionPage .connexion form .btn-bis:hover .underline {
+  width: 100%;
 }
 @keyframes cardEntranceConnexionPage {
   0% {

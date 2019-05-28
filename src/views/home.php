@@ -25,7 +25,7 @@
 
             <p class="c-deepBlue">Nous vous avons préparé une sélection de plantes spécialement pour l'occasion</p>
 
-            <a href="/product/listall" class="btn btn-lightPink b-lightPink c-white">découvrez la sélection</a>
+            <a href="/product/listall" class="btn btn-lightPink b-lightPink c-white" title="notre sélection pour la fête des mère">découvrez la sélection</a>
 
         </div>
 
@@ -39,7 +39,7 @@
                 il nous tient à coeur de vous offrir une qualité irréprochable mais également des produits respectueux
                 de l’environnement.</p>
 
-            <a href="/product/listall" class="btn btn-deepBlue b-deepBlue c-white">découvrez nos plantes</a>
+            <a href="/product/listall" class="btn btn-deepBlue b-deepBlue c-white" title="nos plantes">découvrez nos plantes</a>
 
         </div>
 
@@ -57,11 +57,11 @@
 
             <p class="c-deepBlue">@élisabeth</p>
 
-            <a href="/subscription/info" class="btn btn-deepBlue c-white b-deepBlue">découvrez nos abonnements</a>
+            <a href="/subscription/info" class="btn btn-deepBlue c-white b-deepBlue" title="nos abonnements">découvrez nos abonnements</a>
 
         </div>
 
-        <img src="./../media/img/home2.png" alt="cactus">
+        <img src="./../media/img/home2.png" alt="cactus" title="photo de petits cactus">
 
     </section>
 
@@ -72,7 +72,7 @@
             <h2 class="c-deepBlue"> Mille et une pousses c’est avant tout
                 une équipe de passionnés…</h2>
 
-            <img class="b-white" src="./../media/img/team.png" alt="team mille et une pousses">
+            <img class="b-white" src="./../media/img/team.png" alt="team mille et une pousses" title="photo de l'équipe de mille et une pousses">
 
         </div>
 

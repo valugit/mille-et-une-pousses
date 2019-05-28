@@ -34,12 +34,12 @@
 
                     <p class="c-deepBlue">Sans engagement</p>
 
-                    <button class="btn btn-deepBlue b-deepBlue c-white">s'abonner</button>
+                    <button class="btn btn-deepBlue b-deepBlue c-white" title="abonnement mensuel">s'abonner</button>
 
                 </div>
 
                 <div class="img img-one">
-                    <img src="./../media/img/box_mensuel.jpg" alt="box mensuel">
+                    <img src="./../media/img/box_mensuel.jpg" alt="box mensuel" title="photo de notre box pour un abonnement mensuel">
                 </div>
 
             </div>
@@ -53,7 +53,7 @@
             <div class="box">
 
                 <div class="img img-two">
-                    <img class="img-two" src="./../media/img/box_annuel.jpg" alt="box annuel">
+                    <img class="img-two" src="./../media/img/box_annuel.jpg" alt="box annuel" title="photo de notre box pour un abonnement annuel">
                 </div>
 
                 <div class="text">
@@ -64,7 +64,7 @@
 
                     <p class="c-deepBlue">Paiement en une seule fois</p>
 
-                    <button class="btn btn-deepBlue b-deepBlue c-white">s'abonner</button>
+                    <button class="btn btn-deepBlue b-deepBlue c-white" title="abonnement annuel">s'abonner</button>
 
                 </div>
 

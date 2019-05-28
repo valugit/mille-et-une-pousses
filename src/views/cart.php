@@ -21,23 +21,23 @@
 
                     <div class="col col-one c-deepBlue">
                         <div class="img">
-                            <img src="<?php echo $item["path"] ?>" alt="<?php echo $item["alt"] ?>">
+                            <img src="<?php echo $item["path"] ?>" alt="<?php echo $item["alt"] ?>" alt="photo de <?php echo $item["alt"] ?>">
                         </div>
                         <p class="name c-deepBlue"><?php echo $item["name"] ?></p>
                     </div>
 
                     <div class="col col-two">
-                        <button type="button" class="btn btn-quantity btn-lightPink b-lightPink">
+                        <button type="button" class="btn btn-quantity btn-lightPink b-lightPink" title="retirer un article">
                             <i class="fas fa-minus c-white"></i>
                         </button>
 
                         <?php foreach ($quantities as $itemName => $itemQuantity): ?>
                             <?php if ($itemName == $item["name"]): ?>
-                            <input id="quantity" class="c-deepBlue" type="text" name="quantity" value="<?php echo $itemQuantity ?>" disabled>
+                            <input id="quantity" class="c-deepBlue" type="text" name="quantity" value="<?php echo $itemQuantity ?>" title="nombre d'articles sélectionnés" disabled>
                             <?php endif?>
                         <?php endforeach?>
 
-                        <button type="button" class="btn btn-quantity btn-lightPink b-lightPink">
+                        <button type="button" class="btn btn-quantity btn-lightPink b-lightPink" title="ajouter un article">
                             <i class="fas fa-plus c-white"></i>
                         </button>
                     </div>
@@ -51,7 +51,7 @@
             <p class="text c-deepBlue">Remplissez votre panier et votre intérieur vous remerciera !</p>
 
             <!-- <input class="confirm btn btn-lightPink b-lightPink c-white" type="submit" value="valider ma commande"> -->
-            <a class="confirm btn btn-lightPink b-lightPink c-white" href="/user/identification">valider ma commande</a>
+            <a class="confirm btn btn-lightPink b-lightPink c-white" href="/user/identification" title="valider ma commande">valider ma commande</a>
         </form>
     </section>
 </main>
