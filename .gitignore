@@ -4,4 +4,4 @@ public/.htaccess-test
 config/dbconfig.php
 database/requests.php
 database/milleetunepoussesDB.png
-database/milleetunepousses.mwb
+database/milleetunepousses.mwb.DS_Store
