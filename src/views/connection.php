@@ -28,7 +28,7 @@
 
         <a href="/" class="back btn btn-pinkOrange b-pinkOrange">
             <i class="fas fa-arrow-left c-white"></i>
-            <p class="c-white">accueil</p>
+            <p class="c-white" title="retour à la page d'accueil">accueil</p>
         </a>
 
         <section id="connexion-one" class="connexion connexion-one b-white">
@@ -39,8 +39,12 @@
                 <input class="text b-white c-deepBlue" type="password" name="password" placeholder="mot de passe">
                 <p class="c-deepBlue">Rentrez votre adresse mail ainsi que votre mot de passe afin de vous connecter</p>
                 <input class="btn btn-pinkOrange b-pinkOrange c-white" type="submit" value="valider">
-                <button id="forgotPassword" class="forgotPassword btn btn-pinkOrange b-pinkOrange c-white" type="button">mot de passe oublié ?</button>
-                <button id="createAccount" class="newAccount btn btn-pinkOrange b-pinkOrange c-white" type="button">pas encore de compte ?</button>
+                <button id="forgotPassword" class="btn-bis forgotPassword c-deepBlue" type="button" title="vous avez oublié votre mot de passe ?">mot de passe oublié ?
+            <span class="underline b-deepBlue"></span>
+                </button>
+                <button id="createAccount" class="btn-bis newAccount c-deepBlue" type="button" title="vous n'avez pas encore de compte ?">pas encore de compte ?
+            <span class="underline b-deepBlue"></span>
+                </button>
                 <?php if (isset($validation) && is_string($validation)): ?>
                 <p class="c-lightPink"><?php echo "&#9888; " . $validation ?></p>
                 <?php endif?>
@@ -59,9 +63,9 @@
                         <input class="text b-white c-deepBlue" type="text" name="address" placeholder="adresse">
                         <div class="btns">
                             <button class="btn btn-pinkOrange b-pinkOrange c-white backToConnexion"
-                                type="button">retour</button>
+                                type="button" title="retour au formulaire de connexion">retour</button>
                             <button id="PartOneCreateAcount" class="btn btn-pinkOrange b-pinkOrange c-white"
-                                type="button">suivant</button>
+                                type="button" title="suite du formulaire afin de créer votre compte">suivant</button>
                         </div>
                         <?php if (isset($createAccount) && is_string($createAccount)): ?>
                         <p class="c-lightPink"><?php echo "&#9888; " . $createAccount ?></p>
@@ -74,7 +78,7 @@
                             placeholder="confirmation mot de passe *">
                         <div class="btns">
                             <button id="PartTwoCreateAcount" class="btn btn-pinkOrange b-pinkOrange c-white"
-                                type="button">retour</button>
+                                type="button" title="retour à la première partie pour créer ton compte">retour</button>
                             <input class="btn btn-pinkOrange b-pinkOrange c-white" type="submit" value="valider">
                         </div>
                     </div>
@@ -92,7 +96,7 @@
                     votre mot de passe</p>
                 <div class="btns">
                     <button class="btn btn-pinkOrange b-pinkOrange c-white backToConnexion"
-                        type="button">retour</button>
+                        type="button" title="retour au formulaire de connexion">retour</button>
                     <input class="btn btn-pinkOrange b-pinkOrange c-white" type="submit" value="valider">
                 </div>
             </form>

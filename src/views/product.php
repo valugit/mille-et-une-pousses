@@ -7,7 +7,7 @@
             <div class="imgs">
                 <?php foreach ($images as $image): ?>
                 <div class="otherImg">
-                    <img class="imgsProduct" src="<?php echo $image["path"] ?>" alt="<?php echo $image["alt"] ?>">
+                    <img class="imgsProduct" src="<?php echo $image["path"] ?>" alt="<?php echo $image["alt"] ?>" title="photo de <?php echo $image["alt"] ?>">
                     <span class="bar top-bar b-deepBlue"></span>
                     <span class="bar right-bar b-deepBlue"></span>
                     <span class="bar bottom-bar b-deepBlue"></span>
@@ -17,7 +17,7 @@
             </div>
 
             <div class="imgPrincipal">
-                <img id="imgProduct" src="<?php echo $product["path"] ?>" alt="<?php echo $product["alt"] ?>">
+                <img id="imgProduct" src="<?php echo $product["path"] ?>" alt="<?php echo $product["alt"] ?>" title="photo de <?php echo $product["alt"] ?>">
             </div>
 
             <form method="POST" action="/user/addtocart" class="text">
@@ -32,13 +32,13 @@
                     <h3 class="c-deepBlue">quantité</h3>
 
                     <div>
-                        <button id="less" type="button" class="btn btn-quantity btn-lightPink b-lightPink">
+                        <button id="less" type="button" class="btn btn-quantity btn-lightPink b-lightPink" title="retirer un article">
                             <i class="fas fa-minus c-white"></i>
                         </button>
 
-                        <input id="quantity" class="c-deepBlue" type="number" name="quantity" min="1" value="1">
+                        <input id="quantity" class="c-deepBlue" type="number" name="quantity" min="1" value="1" title="nombre d'articles selectionnés">
 
-                        <button id="more" type="button" class="btn btn-quantity btn-lightPink b-lightPink">
+                        <button id="more" type="button" class="btn btn-quantity btn-lightPink b-lightPink" title="ajouter un article">
                             <i class="fas fa-plus c-white"></i>
                         </button>
                     </div>
@@ -67,7 +67,7 @@
                 </div>
 
                 <input type="hidden" name="name" value="<?php echo $name ?>">
-                <input class="btn btn-lightPink b-lightPink c-white" type="submit" value="ajouter au panier">
+                <input class="btn btn-lightPink b-lightPink c-white" type="submit" value="ajouter au panier" title="ajouter le nombre d'article sélectionné au panier">
             </form>
         </div>
     </section>
@@ -80,7 +80,7 @@
                 <div>
                     <div class="frame">
                         <a href="/product/details/<?php echo urlencode($product["name"]) ?>">
-                            <img src="<?php echo $product["path"] ?>" alt="<?php echo $product["alt"] ?>">
+                            <img src="<?php echo $product["path"] ?>" alt="<?php echo $product["alt"] ?>" alt="photo de <?php echo $product["alt"] ?>">
                             <span>
                                 <p class="b-lightPink c-white">en savoir plus</p>
                             </span>

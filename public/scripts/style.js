@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		let tags = document.querySelector('#tags'),
 			fakeTags = document.querySelector('#fakeTags')
 
-		if (scroll.scrollTop >= 820) {
+		if (scroll.scrollTop >= 710) {
 			fakeTags.classList.add('fakeTags')
 			tags.classList.add('tagsFixed')
 		} else {
@@ -125,6 +125,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			}, 300)
 		})
 	}
+
+
+	// Animation Account Page
 
 	if (document.querySelector('#account')) {
 		let accountOne = document.querySelector('#account-one'),

@@ -284,14 +284,32 @@ $pinkOrange: #e84a5f;
 				}
 			}
 
-			.forgotPassword {
-				font-size: 25px;
-			}
-		}
+			.btn-bis {
+				font-size: 28px;
+				margin-top: 1em;
+				text-transform: capitalize;
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 
-		.newAccount {
-			font-size: 25px;
-			margin: 0.8em 0;
+				.underline {
+					transition: 0.2s ease;
+					position: absolute;
+					bottom: -4px;
+					height: 4px;
+					width: 0;
+					border-radius: 10px;
+				}
+
+				&:hover {
+					cursor: pointer;
+
+					.underline {
+						width: 100%;
+					}
+				}
+			}
 		}
 	}
 

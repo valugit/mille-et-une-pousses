@@ -2,7 +2,7 @@
 
     <section class="part1">
 
-        <img src="/media/img/logo-white.png" alt="logo">
+        <img src="/media/img/logo-white.png" alt="logo" title="logo de Mille et une pousses">
 
         <p class="c-white">Embellissez votre intérieur
             avec des plantes toutes plus
@@ -60,18 +60,18 @@
             <p class="c-white">Suivez nous sur nos réseaux sociaux :</p>
 
             <div class="icons">
-                <a href="https://twitter.com/MPousses">
+                <a href="https://twitter.com/MPousses" title="compte twitter de Mille et une pousses">
                     <i class="fab fa-twitter c-white"></i>
                 </a>
                 <a
-                    href="https://www.facebook.com/Mille-et-une-Pousses-2145077578938412/?__tn__=%2Cd%2CP-R&eid=ARB9eiiG4ekQSJ96eTsXzYjcig96vRcSDihJdGkwMMBkYWgVs_St4meOAEXoemU6PFo080G1cbeApSse">
+                    href="https://www.facebook.com/Mille-et-une-Pousses-2145077578938412/?__tn__=%2Cd%2CP-R&eid=ARB9eiiG4ekQSJ96eTsXzYjcig96vRcSDihJdGkwMMBkYWgVs_St4meOAEXoemU6PFo080G1cbeApSse" title="compte facebook de Mille et une pousses">
                     <i class="fab fa-facebook-square c-white"></i>
                 </a>
-                <a href="https://www.instagram.com/milleetunepousses/">
+                <a href="https://www.instagram.com/milleetunepousses/" title="compte instagram de Mille et une pousses">
                     <i class="fab fa-instagram c-white"></i>
 
                 </a>
-                <a href="">
+                <a href="" title="Chaine youtube de Mille et une pousses">
                     <i class="fab fa-youtube c-white"></i>
                 </a>
             </div>

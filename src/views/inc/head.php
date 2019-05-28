@@ -18,7 +18,7 @@
   <nav id="navbar" class="b-beige">
 
     <a class="logo b-white" href="/">
-      <img src="./../../../media/img/logo.png" alt="logo">
+      <img src="./../../../media/img/logo.png" alt="logo" title="logo de mille et une pousses">
     </a>
 
     <ul>
