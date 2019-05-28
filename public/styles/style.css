@@ -1274,11 +1274,12 @@ section .container {
 }
 .cart-one .container .product .col.col-one {
   width: 50%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .cart-one .container .product .col.col-one .img {
   position: relative;
   width: 30%;
+  margin-left: 10%;
 }
 .cart-one .container .product .col.col-one .img img {
   width: 100%;
@@ -1295,6 +1296,7 @@ section .container {
 }
 .cart-one .container .product .col.col-one .name {
   font-size: 30px;
+  margin-right: 10%;
 }
 .cart-one .container .product .col.col-two {
   width: 30%;

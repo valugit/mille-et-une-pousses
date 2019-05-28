@@ -1238,11 +1238,12 @@ section {
 
                 &.col-one {
                     width: 50%;
-                    justify-content: space-around;
+                    justify-content: space-between;
 
                     .img {
                         position: relative;
                         width: 30%;
+                        margin-left: 10%;
 
                         img {
                             width: 100%;
@@ -1262,6 +1263,7 @@ section {
 
                     .name {
                         font-size: 30px;
+                        margin-right: 10%;
                     }
                 }
 
