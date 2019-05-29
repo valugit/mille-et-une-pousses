@@ -19,7 +19,7 @@
         <div class="buttons">
             <a href="/user/orders" class="btn btn-deepBlue b-deepBlue c-white">mes commandes</a>
             <button id="subscriptionProfile" class="btn btn-deepBlue b-deepBlue c-white">mes abonnements</button>
-            <button id="infoProfile" class="btn btn-deepBlue b-deepBlue c-white">informations personnels</button>
+            <button id="infoProfile" class="btn btn-deepBlue b-deepBlue c-white">informations personnelles</button>
         </div>
     </section>
 
