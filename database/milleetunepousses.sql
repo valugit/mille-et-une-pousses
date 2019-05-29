@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: May 29, 2019 at 08:15 AM
+-- Generation Time: May 29, 2019 at 11:36 AM
 -- Server version: 5.7.25
 -- PHP Version: 7.3.1
 
@@ -228,10 +228,20 @@ CREATE TABLE `product_category` (
 INSERT INTO `product_category` (`product_id`, `category_id`) VALUES
 (1, 2),
 (1, 5),
+(1, 7),
+(1, 8),
+(1, 9),
 (2, 2),
+(2, 8),
 (4, 2),
+(4, 7),
+(4, 8),
+(4, 9),
 (5, 2),
-(6, 2);
+(5, 7),
+(5, 9),
+(6, 2),
+(6, 8);
 
 -- --------------------------------------------------------
 
