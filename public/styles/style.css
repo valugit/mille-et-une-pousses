@@ -10,6 +10,10 @@
   background: none;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 .c-white {
   color: white;
 }
@@ -108,6 +112,17 @@
 .btn.btn-pinkOrange:hover i {
   color: #E84A5F;
 }
+.btn.btn-beige {
+  border-color: #FECEA8;
+}
+.btn.btn-beige:hover {
+  background: transparent;
+  color: #FECEA8;
+  box-shadow: none;
+}
+.btn.btn-beige:hover i {
+  color: #FECEA8;
+}
 
 .btn-quantity {
   padding: 0;
@@ -117,7 +132,7 @@
   height: 40px;
 }
 
-nav {
+.navUser {
   transition: 0.4s ease;
   z-index: 10;
   top: 0;
@@ -130,7 +145,7 @@ nav {
   font-size: 30px;
   box-shadow: 0 1px 10px 0 rgba(0, 92, 120, 0.3);
 }
-nav .logo {
+.navUser .logo {
   transition: 0.4s ease;
   position: absolute;
   top: 0;
@@ -144,39 +159,39 @@ nav .logo {
   justify-content: center;
   box-shadow: 0 10px 10px 0 rgba(0, 92, 120, 0.1);
 }
-nav .logo img {
+.navUser .logo img {
   height: 85%;
 }
-nav ul {
+.navUser ul {
   transition: 0.6s ease;
   width: 90%;
   display: flex;
   justify-content: space-between;
 }
-nav ul div {
+.navUser ul div {
   display: flex;
 }
-nav ul li {
+.navUser ul li {
   position: relative;
   display: flex;
   transition: 0.6s ease;
   margin: 0 1.5em;
 }
-nav ul li .rout {
+.navUser ul li .rout {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: capitalize;
 }
-nav ul li .rout .deconnexion {
+.navUser ul li .rout .deconnexion {
   font-size: 30px;
   text-transform: capitalize;
 }
-nav ul li .rout .deconnexion:hover {
+.navUser ul li .rout .deconnexion:hover {
   cursor: pointer;
 }
-nav ul li .rout .underline {
+.navUser ul li .rout .underline {
   transition: 0.2s ease;
   position: absolute;
   bottom: -4px;
@@ -184,16 +199,16 @@ nav ul li .rout .underline {
   width: 0;
   border-radius: 10px;
 }
-nav ul li .rout:hover .underline {
+.navUser ul li .rout:hover .underline {
   width: 100%;
 }
-nav ul li .cart {
+.navUser ul li .cart {
   transition: 0.6s ease;
   margin-left: 10px;
   width: 40px;
   max-height: 42px;
 }
-nav ul li .cartValue {
+.navUser ul li .cartValue {
   transition: 0.6s ease;
   position: absolute;
   display: flex;
@@ -2440,6 +2455,248 @@ section .container {
 }
 .connexionPage .connexion-three.in {
   top: 50%;
+}
+
+.navAdmin {
+  position: fixed;
+  margin: 25px 0 0 75px;
+}
+.navAdmin ul li {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navAdmin ul li h3 {
+  font-size: 48px;
+  text-transform: capitalize;
+  text-shadow: 0 0.05em 0 #ff847c;
+}
+.navAdmin ul li hr {
+  height: 2px;
+  width: 60%;
+}
+.navAdmin ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navAdmin ul li a p {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.navAdmin ul li a .underline {
+  transition: 0.2s ease;
+  position: absolute;
+  bottom: -4px;
+  height: 4px;
+  width: 0;
+  border-radius: 10px;
+}
+.navAdmin ul li a:hover .underline {
+  width: 100%;
+}
+.navAdmin ul li a::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #ff847c;
+  left: -30px;
+}
+.navAdmin ul li a::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #ff847c;
+  right: -30px;
+}
+
+.admin {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin .title h2 {
+  font-size: 88px;
+  text-transform: capitalize;
+  margin-bottom: 0.3em;
+  text-shadow: 0 0.05em 0 #005c78;
+}
+.admin .title hr {
+  height: 3px;
+  width: 80%;
+}
+.admin .title .circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.admin .title .circle::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 50%;
+  border-radius: 5px;
+  background: white;
+}
+.admin .title .circle::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 50%;
+  border-radius: 5px;
+  background: white;
+  transform: rotate(90deg);
+}
+.admin .container {
+  width: 80%;
+}
+.admin .container .article {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+.admin .container .article .text {
+  width: 50%;
+}
+.admin .container .article .text h3 {
+  font-size: 48px;
+  text-transform: capitalize;
+}
+.admin .container .article .text p {
+  font-size: 22px;
+}
+.admin .container .article button {
+  font-size: 33px;
+  text-transform: initial;
+  padding: 0.2em 3em;
+}
+.admin .container .article button .fas {
+  margin-left: 1em;
+}
+.admin .container .article::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 75%;
+  background: #ff847c;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.productAdmin .container .article .name {
+  display: flex;
+  align-items: center;
+}
+.productAdmin .container .article .name h4 {
+  font-size: 35px;
+  text-transform: capitalize;
+  margin-left: 2em;
+}
+
+.userAdmin .container .user {
+  position: relative;
+  padding: 25px 0;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.userAdmin .container .user .text {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.userAdmin .container .user .text .title {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+}
+.userAdmin .container .user .text .title > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.userAdmin .container .user .text .title > div h3 {
+  font-size: 49px;
+  text-transform: capitalize;
+}
+.userAdmin .container .user .text .title > div h4 {
+  font-size: 34px;
+  text-transform: initial;
+  margin-left: 2em;
+}
+.userAdmin .container .user .text .title h4 {
+  font-size: 35px;
+  text-transform: initial;
+}
+.userAdmin .container .user .text .infos {
+  height: 50%;
+  width: 85%;
+}
+.userAdmin .container .user .text .infos > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.userAdmin .container .user .text .infos > div h5 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.userAdmin .container .user .text .infos > div h6 {
+  font-size: 25px;
+  margin-left: 3em;
+}
+.userAdmin .container .user .text .infos p {
+  font-size: 22px;
+}
+.userAdmin .container .user .text::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 75%;
+  background: #ff847c;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.userAdmin .container .btns {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.userAdmin .container .btns .btn {
+  text-transform: capitalize;
+  font-size: 33px;
+}
+.userAdmin .container .btns .btn:last-child {
+  font-size: 22px;
 }
 
 footer {

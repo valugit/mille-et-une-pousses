@@ -53,6 +53,20 @@
             }
         }
     }
+
+    &.btn-beige {
+        border-color: $beige;
+
+        &:hover {
+            background: transparent;
+            color: $beige;
+            box-shadow: none;
+
+            i {
+                color: $beige;
+            }
+        }
+    }
 }
 
 .btn-quantity {
