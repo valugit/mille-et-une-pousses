@@ -1448,7 +1448,6 @@ section .container {
   justify-content: center;
   height: 100%;
   width: 100%;
-  border: 2px solid white;
   align-self: flex-start;
   overflow: hidden;
 }
@@ -1507,13 +1506,252 @@ section .container {
   left: -20px;
 }
 
-.account {
+.articlePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.articlePage .circle {
+  z-index: -1;
+  position: absolute;
+  height: 1808px;
+  width: 1808px;
+  border-radius: 50%;
+  top: 145vh;
+  left: -1000px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+}
+
+.article-one {
+  padding: 300px 0;
+  width: 100%;
+}
+.article-one .author {
+  width: 85%;
+  display: flex;
+  align-items: center;
+}
+.article-one .author .img {
+  height: 175px;
+  width: 175px;
+  border-radius: 50%;
+  margin: 50px 50px 50px 0;
+  overflow: hidden;
+}
+.article-one .author .img img {
+  height: 100%;
+  width: 100%;
+}
+.article-one .author h3 {
+  font-size: 65px;
+  text-transform: capitalize;
+}
+.article-one .container {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.article-one .container .img {
+  width: 45%;
+}
+.article-one .container .img img {
+  width: 100%;
+}
+.article-one .container .text {
+  width: 45%;
+}
+.article-one .container .text h3 {
+  font-size: 59px;
+}
+.article-one .container .text p {
+  font-size: 32px;
+  margin: 1em 0;
+}
+
+.article-two {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article-two .title {
+  font-size: 130px;
+  text-shadow: 0 0.05em 0 #ff847c;
+  text-transform: initial;
+}
+.article-two .other-articles {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 50px 0 200px 0;
+}
+.article-two .other-articles .article {
+  width: 27%;
+}
+.article-two .other-articles .article h3 {
+  width: 350px;
+  font-size: 32px;
+}
+.article-two .other-articles .article .frame {
+  position: relative;
+  height: 530px;
+  width: 350px;
+  border: none;
+}
+.article-two .other-articles .article .frame a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border: none;
+  align-self: flex-start;
+  overflow: hidden;
+}
+.article-two .other-articles .article .frame a img {
+  border: none;
+  z-index: 2;
+  transition: 0.2s ease;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.article-two .other-articles .article .frame a span {
+  z-index: 3;
+  transition: 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+}
+.article-two .other-articles .article .frame a span p {
+  transition: 0.2s ease;
+  position: absolute;
+  bottom: -100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5em;
+  transition: 0.2s ease;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+}
+.article-two .other-articles .article .frame a:hover img {
+  height: 125%;
+  width: 125%;
+}
+.article-two .other-articles .article .frame a:hover span {
+  opacity: 1;
+}
+.article-two .other-articles .article .frame a:hover span p {
+  bottom: 0;
+}
+.article-two .other-articles .article .frame::before {
+  content: "";
+  position: absolute;
+  border-bottom: 5px solid #005c78;
+  border-left: 5px solid #005c78;
+  width: 20%;
+  height: 80%;
+  bottom: -20px;
+  left: -20px;
+}
+.article-two .other-articles .article {
+  width: 27%;
+  margin: 50px 0 50px 50px;
+}
+.article-two .other-articles .article h3 {
+  width: 350px;
+  font-size: 32px;
+}
+.article-two .other-articles .article .frame {
+  position: relative;
+  height: 530px;
+  width: 350px;
+}
+.article-two .other-articles .article .frame a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border: 2px solid white;
+  align-self: flex-start;
+  overflow: hidden;
+}
+.article-two .other-articles .article .frame a img {
+  z-index: 2;
+  transition: 0.2s ease;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.article-two .other-articles .article .frame a span {
+  z-index: 3;
+  transition: 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+}
+.article-two .other-articles .article .frame a span p {
+  transition: 0.2s ease;
+  position: absolute;
+  bottom: -100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5em;
+  transition: 0.2s ease;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+}
+.article-two .other-articles .article .frame a:hover img {
+  height: 125%;
+  width: 125%;
+}
+.article-two .other-articles .article .frame a:hover span {
+  opacity: 1;
+}
+.article-two .other-articles .article .frame a:hover span p {
+  bottom: 0;
+}
+.article-two .other-articles .article .frame::before {
+  content: "";
+  position: absolute;
+  border-bottom: 5px solid #005c78;
+  border-left: 5px solid #005c78;
+  width: 20%;
+  height: 80%;
+  bottom: -20px;
+  left: -20px;
+}
+.article-two .accountPage {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.account .circle {
+.article-two .accountPage .circle {
   z-index: -1;
   position: absolute;
   height: 808px;
@@ -1523,16 +1761,16 @@ section .container {
   right: -150px;
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
 }
-.account .leaf {
+.article-two .accountPage .leaf {
   position: absolute;
   height: 600px;
 }
-.account .leaf.leaf-1 {
+.article-two .accountPage .leaf.leaf-1 {
   top: 55vh;
   left: -25px;
   transform: rotate(55deg) scaleX(-1);
 }
-.account .leaf.leaf-2 {
+.article-two .accountPage .leaf.leaf-2 {
   top: 65vh;
   left: 0;
   transform: rotate(70deg) scaleX(-1);
@@ -1545,91 +1783,91 @@ section .container {
     opacity: 0;
   }
 }
-.account .opacityOut {
+.article-two .accountPage .opacityOut {
   animation: inOut 0.4s ease forwards;
 }
-.account .opacityIn {
+.article-two .accountPage .opacityIn {
   animation: inOut 0.4s reverse ease forwards;
 }
-.account .none {
+.article-two .accountPage .none {
   display: none;
 }
-.account .account-one {
+.article-two .accountPage .account-one {
   height: 100vh;
   transition: 0.3s ease;
 }
-.account .account-one .text {
+.article-two .accountPage .account-one .text {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.account .account-one .text .title {
+.article-two .accountPage .account-one .text .title {
   font-size: 80px;
   text-shadow: 0 0.06em 0 #ff847c;
   margin: 0.5em;
 }
-.account .account-one .text p {
+.article-two .accountPage .account-one .text p {
   font-size: 35px;
 }
-.account .account-one .buttons {
+.article-two .accountPage .account-one .buttons {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
 }
-.account .account-one .buttons .btn {
+.article-two .accountPage .account-one .buttons .btn {
   font-size: 35px;
   margin: 0.3em;
   text-align: center;
 }
-.account .account-two {
+.article-two .accountPage .account-two {
   width: 80%;
   height: 105vh;
   transition: 0.3s ease;
 }
-.account .account-two .text {
+.article-two .accountPage .account-two .text {
   text-align: center;
   font-size: 38px;
   font-weight: bold;
   font-family: "Roboto Condensed";
 }
-.account .account-two .container {
+.article-two .accountPage .account-two .container {
   margin: 25px 0 75px 0;
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.account .account-two .container .button {
+.article-two .accountPage .account-two .container .button {
   transition: 0.2s ease;
   position: relative;
   height: 180px;
   width: 272px;
 }
-.account .account-two .container .button .img {
+.article-two .accountPage .account-two .container .button .img {
   z-index: 1;
   position: absolute;
   height: 100%;
   top: 0;
   right: 0;
 }
-.account .account-two .container .button .img img {
+.article-two .accountPage .account-two .container .button .img img {
   height: 100%;
 }
-.account .account-two .container .button:first-of-type .img {
+.article-two .accountPage .account-two .container .button:first-of-type .img {
   position: absolute;
   height: 100%;
 }
-.account .account-two .container .button:first-of-type .img img {
+.article-two .accountPage .account-two .container .button:first-of-type .img img {
   transform: scaleY(-1);
 }
-.account .account-two .container .button form {
+.article-two .accountPage .account-two .container .button form {
   z-index: 3;
   position: absolute;
   height: 100%;
   width: 100%;
 }
-.account .account-two .container .button form input {
+.article-two .accountPage .account-two .container .button form input {
   transition: 0.2s ease;
   height: 100%;
   width: 100%;
@@ -1641,84 +1879,84 @@ section .container {
   font-weight: bold;
   text-transform: uppercase;
 }
-.account .account-two .container .button form input:hover {
+.article-two .accountPage .account-two .container .button form input:hover {
   cursor: pointer;
   color: white;
 }
-.account .account-two .container .button .bar {
+.article-two .accountPage .account-two .container .button .bar {
   transition: 0.5s ease;
   position: absolute;
 }
-.account .account-two .container .button .top-bar {
+.article-two .accountPage .account-two .container .button .top-bar {
   top: -15px;
   left: -15px;
   height: 4px;
   width: 80%;
 }
-.account .account-two .container .button .left-bar {
+.article-two .accountPage .account-two .container .button .left-bar {
   top: -15px;
   left: -15px;
   height: 80%;
   width: 4px;
 }
-.account .account-two .container .button .right-bar {
+.article-two .accountPage .account-two .container .button .right-bar {
   bottom: -15px;
   right: -15px;
   height: 55%;
   width: 4px;
 }
-.account .account-two .container .button .bottom-bar {
+.article-two .accountPage .account-two .container .button .bottom-bar {
   bottom: -15px;
   right: -15px;
   height: 4px;
   width: 55%;
 }
-.account .account-two .container .button:hover {
+.article-two .accountPage .account-two .container .button:hover {
   background-color: #e84a5f;
 }
-.account .account-two .container .button:hover .top-bar {
+.article-two .accountPage .account-two .container .button:hover .top-bar {
   left: 50%;
   width: 55%;
 }
-.account .account-two .container .button:hover .left-bar {
+.article-two .accountPage .account-two .container .button:hover .left-bar {
   top: 53%;
   height: 55%;
 }
-.account .account-two .container .button:hover .right-bar {
+.article-two .accountPage .account-two .container .button:hover .right-bar {
   bottom: 28%;
   height: 80%;
 }
-.account .account-two .container .button:hover .bottom-bar {
+.article-two .accountPage .account-two .container .button:hover .bottom-bar {
   right: 25%;
   width: 80%;
 }
-.account .account-two .back {
+.article-two .accountPage .account-two .back {
   font-size: 20px;
 }
-.account .account-three {
+.article-two .accountPage .account-three {
   width: 80%;
   height: 105vh;
   transition: 0.3s ease;
 }
-.account .account-three .text {
+.article-two .accountPage .account-three .text {
   text-align: center;
   font-size: 38px;
   font-weight: bold;
   font-family: "Roboto Condensed";
 }
-.account .account-three .container {
+.article-two .accountPage .account-three .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 75px;
 }
-.account .account-three .container .info {
+.article-two .accountPage .account-three .container .info {
   width: 100%;
   display: flex;
   align-items: center;
   margin: 25px 0;
 }
-.account .account-three .container .info h3 {
+.article-two .accountPage .account-three .container .info h3 {
   position: relative;
   font-size: 30px;
   text-transform: uppercase;
@@ -1727,45 +1965,44 @@ section .container {
   padding: 0 1em;
   text-align: center;
 }
-.account .account-three .container .info h3::after {
+.article-two .accountPage .account-three .container .info h3::after {
   content: ":";
   position: absolute;
   right: 0;
 }
-.account .account-three .container .info .data {
+.article-two .accountPage .account-three .container .info .data {
   width: 400px;
   font-size: 25px;
   padding: 0.5em 1em;
   margin: 0 2em;
   border: 2px solid transparent;
 }
-.account .account-three .container .info .data.changing {
+.article-two .accountPage .account-three .container .info .data.changing {
   border-color: #005c78;
 }
-.account .account-three .container .info .data::placeholder {
+.article-two .accountPage .account-three .container .info .data::placeholder {
   text-transform: capitalize;
 }
-.account .account-three .container .info .btn {
+.article-two .accountPage .account-three .container .info .btn {
   text-transform: capitalize;
   font-size: 25px;
 }
-.account .account-three .container .info .btns {
+.article-two .accountPage .account-three .container .info .btns {
   min-width: 320px;
 }
-.account .account-three .back {
+.article-two .accountPage .account-three .back {
   font-size: 20px;
 }
-.account .account-three .none {
+.article-two .accountPage .account-three .none {
   display: none;
 }
-
-.ordersPage {
+.article-two .ordersPage {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 200px 0;
 }
-.ordersPage .circle {
+.article-two .ordersPage .circle {
   z-index: -1;
   position: absolute;
   top: -2000px;
@@ -1775,7 +2012,7 @@ section .container {
   border-radius: 50%;
   background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
 }
-.ordersPage .back {
+.article-two .ordersPage .back {
   position: absolute;
   display: flex;
   align-items: center;
@@ -1784,44 +2021,44 @@ section .container {
   right: 2em;
   padding-left: 1.5em;
 }
-.ordersPage .back .fas {
+.article-two .ordersPage .back .fas {
   margin-right: 0.5em;
 }
-.ordersPage .back:hover .fas {
+.article-two .ordersPage .back:hover .fas {
   color: #e84a5f;
 }
-.ordersPage .back:hover p {
+.article-two .ordersPage .back:hover p {
   color: #e84a5f;
 }
-.ordersPage hr {
+.article-two .ordersPage hr {
   height: 3px;
   width: 55%;
   border-radius: 3px;
   margin: 50px 0;
 }
-.ordersPage .orders {
+.article-two .ordersPage .orders {
   width: 75%;
   align-items: flex-start;
 }
-.ordersPage .orders .title {
+.article-two .ordersPage .orders .title {
   font-size: 68px;
   text-shadow: 0 0.05em 0 #ff847c;
   text-transform: initial;
 }
-.ordersPage .orders .product {
+.article-two .ordersPage .orders .product {
   width: 100%;
   display: flex;
   align-items: center;
   margin: 50px 0;
 }
-.ordersPage .orders .product .img {
+.article-two .ordersPage .orders .product .img {
   position: relative;
   height: 200px;
 }
-.ordersPage .orders .product .img img {
+.article-two .ordersPage .orders .product .img img {
   height: 100%;
 }
-.ordersPage .orders .product .img::after {
+.article-two .ordersPage .orders .product .img::after {
   content: "";
   position: absolute;
   height: 85%;
@@ -1831,7 +2068,7 @@ section .container {
   bottom: -15px;
   left: -15px;
 }
-.ordersPage .orders .product .text {
+.article-two .ordersPage .orders .product .text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1839,14 +2076,14 @@ section .container {
   width: 70%;
   margin: 0 1em;
 }
-.ordersPage .orders .product .text h3 {
+.article-two .ordersPage .orders .product .text h3 {
   font-size: 42px;
   text-transform: capitalize;
 }
-.ordersPage .orders .product .text p {
+.article-two .ordersPage .orders .product .text p {
   font-size: 25px;
 }
-.ordersPage .orders .product .btn {
+.article-two .ordersPage .orders .product .btn {
   font-size: 30px;
 }
 

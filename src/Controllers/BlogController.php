@@ -7,4 +7,9 @@ class BlogController {
 
     include "./blog.php";
   }
+
+  public function detailsAction() {
+
+    include "./article.php";
+  }
 }

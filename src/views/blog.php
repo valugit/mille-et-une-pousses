@@ -14,7 +14,7 @@
             <h3 class="c-deepBlue">Mon animal a mangé une de mes plantes, que faire ?</h3>
             <div class="frame">
                 <a href="">
-                    <img src="/media/articles/milada-vigerova.jpg" alt="milada-vigerova">
+                    <img src="/media/articles/article1/milada-vigerova.jpg" alt="milada-vigerova">
                     <span>
                         <p class="info b-lightPink c-white">lire article</p>
                     </span>
@@ -24,8 +24,8 @@
         <div class="article">
             <h3 class="c-deepBlue">Le cactus de nouveau tendance ?</h3>
             <div class="frame">
-                <a href="">
-                    <img src="/media/articles/charles.jpg" alt="charles">
+                <a href="/blog/details">
+                    <img src="/media/articles/article2/charles.jpg" alt="charles">
                     <span>
                         <p class="info b-lightPink c-white">lire article</p>
                     </span>
@@ -36,7 +36,7 @@
             <h3 class="c-deepBlue">Un balcon vert à Paris ?</h3>
             <div class="frame">
                 <a href="">
-                    <img src="/media/articles/sonnie-hiles.jpg" alt="sonnie-hiles">
+                    <img src="/media/articles/article3/sonnie-hiles.jpg" alt="sonnie-hiles">
                     <span>
                         <p class="info b-lightPink c-white">lire article</p>
                     </span>
@@ -47,7 +47,7 @@
             <h3 class="c-deepBlue">Quelles plantes pour ma salle de bain ?</h3>
             <div class="frame">
                 <a href="">
-                    <img src="/media/articles/phil-hearing.jpg" alt="phil-hearing">
+                    <img src="/media/articles/article4/phil-hearing.jpg" alt="phil-hearing">
                     <span>
                         <p class="info b-lightPink c-white">lire article</p>
                     </span>

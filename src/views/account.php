@@ -1,6 +1,6 @@
 <?php include "./inc/head.php";?>
 
-<main id="account" class="account">
+<main id="account" class="accountPage">
 
     <span class="circle b-lightPink"></span>
 
