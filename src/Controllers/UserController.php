@@ -124,4 +124,9 @@ class UserController {
 
     include "./orders.php";
   }
+
+  public function adminAction() {
+
+    include "./admin.php";
+  }
 }

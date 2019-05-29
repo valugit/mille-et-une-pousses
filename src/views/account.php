@@ -39,7 +39,7 @@
                 </div>
 
                 <form action="" method="post">
-                    <input class="c-pinkOrange" type="submit" value="renouveler" title="renouveler l'abonnement">
+                    <input class="c-white" type="submit" value="renouveler" title="renouveler l'abonnement">
                 </form>
 
                 <span class="bar top-bar b-deepBlue"></span>
@@ -56,7 +56,7 @@
 
                 <div class="form">
                     <form action="" method="post">
-                        <input class="c-pinkOrange" type="submit" value="résilier" title="résilier l'abonnement">
+                        <input class="c-white" type="submit" value="résilier" title="résilier l'abonnement">
                     </form>
                 </div>
 
@@ -156,7 +156,7 @@
         </div>
 
         <div class="buttons">
-            <a href="/admin" class="btn btn-deepBlue b-deepBlue c-white">gestion du site</a>
+            <a href="/user/admin" class="btn btn-deepBlue b-deepBlue c-white">gestion du site</a>
         </div>
     </section>
     <?php endif?>

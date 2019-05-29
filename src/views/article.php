@@ -2,14 +2,17 @@
 
 <main class="articlePage">
 
+    <img class="leaf leaf-1" src="/media/leafs/leaf1_1.png" alt="leaf">
+    <img class="leaf leaf-2" src="/media/leafs/leaf1_2.png" alt="leaf">
+
     <span class="circle b-lightPink"></span>
 
     <section class="article-one">
         <div class="author">
             <div class="img">
-                <img src="/media/articles/article2/danielle_lamanche.jpg" alt="danielle lamanche">
+                <img src="./../../../media/img/logo.png" alt="logo" title="logo de mille et une pousses">
             </div>
-            <h3 class="c-lightPink">danielle lamanche</h3>
+            <h3 class="c-lightPink">souni morault</h3>
         </div>
 
         <div class="container">
@@ -23,7 +26,7 @@
                     pas la chance d’avoir un jardin… C’est pourquoi adopter des plantes d’intérieur est un bon moyen
                     pour les urbains de se reconnecter à la nature. Nous avons pour vous décrypter l’ensemble des
                     tendances 2019 autour de nos amis les plantes d’intérieures. </p>
-                <p class="c-deepBlue">Alors sans plus tarder commençons par les cactus !</p>
+                <p class="c-deepBlue">Alors sans plus tarder commençons par les cactus&nbsp;!</p>
                 <p class="c-deepBlue">Quoi de mieux qu’un cactus pour mettre du piquant dans votre décoration
                     intérieure. En effet, le cactus de par son aspect esthétique saura sublimer ce qui l’entoure.
                     Chambre, salle de bain, salon… Il saura s’adapter à n’importe quel environnement et avec un peu

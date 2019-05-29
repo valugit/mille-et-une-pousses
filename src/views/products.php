@@ -67,10 +67,10 @@
 
         <div class="container">
             <?php foreach ($products as $product): ?>
-            <div class="product <?php foreach ($categories as $key => $category) {
+            <div class="product<?php foreach ($categories as $key => $category) {
                 if ($product["id"] == $key) {
                     foreach ($category as $value) {
-                    echo $value["name"] . " ";
+                    echo " " . $value["name"];
                     }
                 }}?>">
                 <div class="frame">
