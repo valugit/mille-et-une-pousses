@@ -48,6 +48,7 @@ nav {
         }
 
         li {
+            position: relative;
             display: flex;
             transition: 0.6s ease;
             margin: 0 1.5em;
@@ -98,7 +99,7 @@ nav {
                 align-items: center;
                 justify-content: center;
                 top: 8px;
-                right: -60px;
+                right: -10px;
                 height: 25px;
                 width: 25px;
                 background: $pinkOrange;
@@ -148,7 +149,7 @@ nav {
                 align-items: center;
                 justify-content: center;
                 top: 8px;
-                right: -50px;
+                right: -8px;
                 height: 20px;
                 width: 20px;
                 background: $pinkOrange;

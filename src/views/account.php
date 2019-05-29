@@ -1,6 +1,6 @@
 <?php include "./inc/head.php";?>
 
-<main id="account" class="account">
+<main id="account" class="accountPage">
 
     <span class="circle b-lightPink"></span>
 
@@ -74,25 +74,78 @@
             quand vous
             le souhaitez ! </p>
         <div class=container>
-            <div class="info">
+            <form method="POST" action="" class="info">
+
                 <h3 class='c-deepBlue'>mail</h3>
-                <button class="btn btn-deepBlue b-deepBlue c-white" title="modifier l'adresse mail">modifier</button>
-            </div>
-            <div class="info">
+
+                <input id="dataMail" class="data c-deepBlue" type="text" name="email" value="mail" placeholder="nouvelle adresse mail"
+                    title="votre adresse mail actuelle" disabled>
+
+                <button id="changeDataMail" type="button" class="btn btn-deepBlue b-deepBlue c-white"
+                    title="modifier l'adresse mail'">modifier</button>
+
+                <div id="changingDataMail" class="btns none">
+                    <input id="validateDataMail" class="btn btn-deepBlue b-deepBlue c-white" type="submit"
+                        value="valider" title="annuler la modification de l'adresse mail">
+                        <button id="cancelDataMail" type="button" class="btn btn-pinkOrange b-pinkOrange c-white"
+                        title="modifier le mot de passe">annuler</button>
+                </div>
+
+            </form>
+            <form method="POST" action="" class="info">
+
                 <h3 class='c-deepBlue'>adresse</h3>
-                <input type="text" placeholder="mail">
-                <button class="btn btn-deepBlue b-deepBlue c-white" title="modifier l'adresse">modifier</button>
-            </div>
-            <div class="info">
+
+                <input id="dataAddress" class="data c-deepBlue" type="text" name="adresse" value="address" placeholder="nouvelle adresse"
+                    title="votre adresse actuelle" disabled>
+
+                <button id="changeDataAddress" type="button" class="btn btn-deepBlue b-deepBlue c-white"
+                    title="modifier l'adresse">modifier</button>
+
+                <div id="changingDataAddress" class="btns none">
+                    <input id="validateDataAddress" class="btn btn-deepBlue b-deepBlue c-white" type="submit"
+                        value="valider" title="annuler la modification de l'adresse">
+                    <button id="cancelDataAddress" type="button" class="btn btn-pinkOrange b-pinkOrange c-white"
+                        title="modifier le mot de passe">annuler</button>
+                </div>
+
+            </form>
+            <form method="POST" action="" class="info">
+
                 <h3 class='c-deepBlue'>téléphone</h3>
-                <input type="text" placeholder="mail">
-                <button class="btn btn-deepBlue b-deepBlue c-white" title="modifier le numéro de téléphone">modifier</button>
-            </div>
-            <div class="info">
+
+                <input id="dataPhone" class="data c-deepBlue" type="tel" name="phone" value="phone" placeholder="nouveau numéro de téléphone"
+                    title="votre numéro de téléphone actuel" disabled>
+
+                <button id="changeDataPhone" type="button" class="btn btn-deepBlue b-deepBlue c-white"
+                    title="modifier le numéro de téléphone">modifier</button>
+
+                <div id="changingDataPhone" class="btns none">
+                    <input id="validateDataPhone" class="btn btn-deepBlue b-deepBlue c-white" type="submit"
+                        value="valider" title="annuler la modification du numéro de téléphone">
+                    <button id="cancelDataPhone" type="button" class="btn btn-pinkOrange b-pinkOrange c-white"
+                        title="modifier le mot de passe">annuler</button>
+                </div>
+
+            </form>
+            <form method="POST" action="" class="info">
+
                 <h3 class='c-deepBlue'>mot de passe</h3>
-                <input type="text" placeholder="mail">
-                <button class="btn btn-deepBlue b-deepBlue c-white" title="modifier le mot de passe">modifier</button>
-            </div>
+
+                <input id="dataPassword" class="data c-deepBlue" type="password" name="password" placeholder="nouveau mot de passe"
+                    value="mot de passe" title="votre mot de passe actuel" disabled>
+
+                <button id="changeDataPassword" type="button" class="btn btn-deepBlue b-deepBlue c-white"
+                    title="modifier le mot de passe">modifier</button>
+
+                <div id="changingDataPassword" class="btns none">
+                    <input id="validateDataPassword" class="btn btn-deepBlue b-deepBlue c-white" type="submit"
+                        value="valider" title="annuler la modification du mot de passe">
+                    <button id="cancelDataPassword" type="button" class="btn btn-pinkOrange b-pinkOrange c-white"
+                        title="modifier le mot de passe">annuler</button>
+                </div>
+
+            </form>
         </div>
         <button class="back btn btn-lightPink b-lightPink c-white backToProfile">retour</button>
     </section>

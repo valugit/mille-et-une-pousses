@@ -38,14 +38,16 @@
           <a class="rout" value="blog" href="/user/cart">
             <p class="c-deepBlue">panier</p>
             <span class="underline b-deepBlue"></span>
-            <?php if (count($_SESSION["cart"]) > 0): ?>
+          </a>
+
+          <?php if (count($_SESSION["cart"]) > 0): ?>
             <span class="cartValue">
               <?php echo $count = array_sum(array_map(function ($cart) {
                 return $cart["quantity"];
               }, $_SESSION["cart"])) ?>
             </span>
-          </a>
           <?php endif?>
+          
           <?php if (count($_SESSION["cart"]) == 0): ?>
           <img class="cart" src="./../../../media/img/cart-icone.png" alt="panier">
           <?php elseif ($count == 1): ?>
