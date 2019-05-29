@@ -645,9 +645,6 @@ section .container {
   justify-content: space-between;
   padding: 15vh 0;
 }
-.products-two .fakeTags {
-  width: 40%;
-}
 .products-two .tags {
   width: 40%;
   display: flex;
@@ -750,6 +747,12 @@ section .container {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 100px;
+}
+.products-two .container .product.none {
+  display: none;
+}
+.products-two .container .product.display {
+  display: flex;
 }
 .products-two .container .product .frame {
   position: relative;

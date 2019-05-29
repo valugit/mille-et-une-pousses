@@ -471,10 +471,6 @@ section {
     justify-content: space-between;
     padding: 15vh 0;
 
-    .fakeTags {
-        width: 40%;
-    }
-
     .tags {
         width: 40%;
         display: flex;
@@ -600,6 +596,14 @@ section {
             align-items: center;
             justify-content: space-between;
             margin-bottom: 100px;
+
+            &.none {
+                display: none;
+            }
+
+            &.display {
+                display: flex;
+            }
 
             .frame {
                 position: relative;

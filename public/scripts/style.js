@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 
 		// Tags Scroll Fixed ProductsPage
-		console.log(scroll.scrollTop)
 
 		if (document.querySelector('#tags')) {
 
@@ -38,6 +37,102 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		}
 	})
+
+
+	// Tags Checked
+
+
+	if (document.querySelector('#tags')) {
+
+		let tag0ne = document.querySelector('#tagOne'),
+			tagTwo = document.querySelector('#tagTwo'),
+			tagThree = document.querySelector('#tagThree'),
+			entretien_facile = document.querySelectorAll('.entretien_facile'),
+			peu_de_lumière = document.querySelectorAll('.peu_de_lumière'),
+			pet_friendly = document.querySelectorAll('.pet_friendly')
+
+
+		tag0ne.addEventListener('click', () => {
+
+			if (tag0ne.checked == true) {
+				entretien_facile.forEach(element => {
+					element.classList.add("display")
+				});
+				peu_de_lumière.forEach(element => {
+					element.classList.add("none")
+				});
+				pet_friendly.forEach(element => {
+					element.classList.add("none")
+				});
+			} else {
+				entretien_facile.forEach(element => {
+					element.classList.remove("display")
+				});
+				peu_de_lumière.forEach(element => {
+					element.classList.remove("none")
+				});
+				pet_friendly.forEach(element => {
+					element.classList.remove("none")
+				});
+			}
+
+		})
+
+		tagTwo.addEventListener('click', () => {
+
+			if (tagTwo.checked == true) {
+				entretien_facile.forEach(element => {
+					element.classList.add("none")
+				});
+				peu_de_lumière.forEach(element => {
+					element.classList.add("display")
+				});
+				pet_friendly.forEach(element => {
+					element.classList.add("none")
+				});
+			} else {
+				entretien_facile.forEach(element => {
+					element.classList.remove("none")
+				});
+				peu_de_lumière.forEach(element => {
+					element.classList.remove("display")
+				});
+				pet_friendly.forEach(element => {
+					element.classList.remove("none")
+				});
+			}
+
+		})
+
+		tagThree.addEventListener('click', () => {
+
+			if (tagThree.checked == true) {
+				entretien_facile.forEach(element => {
+					element.classList.add("none")
+				});
+				peu_de_lumière.forEach(element => {
+					element.classList.add("none")
+				});
+				pet_friendly.forEach(element => {
+					element.classList.add("display")
+				});
+			} else {
+				entretien_facile.forEach(element => {
+					element.classList.remove("none")
+				});
+				peu_de_lumière.forEach(element => {
+					element.classList.remove("none")
+				});
+				pet_friendly.forEach(element => {
+					element.classList.remove("display")
+				});
+			}
+
+		})
+
+	}
+
+
 
 	// Change image on ProductPage
 
