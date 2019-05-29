@@ -76,8 +76,6 @@ class UserController {
     $item = ["name" => $_POST["name"], "quantity" => $_POST["quantity"]];
     array_push($_SESSION["cart"], $item);
 
-    // unset($_SESSION["cart"]);
-
     header("location: /product/details/" . $_POST["name"]);
     exit();
   }
