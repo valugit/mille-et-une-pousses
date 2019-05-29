@@ -8,7 +8,7 @@
     <img class="leaf leaf-2" src="/media/leafs/leaf1_1.png" alt="leaf">
 
     <?php if ($profile["role_id"] == 2): ?>
-    <section id="account-one" class="account-one none">
+    <section id="account-one" class="account-one">
 
         <div class="text">
             <h1 class="title c-deepBlue">Bienvenue <?php echo $profile["firstname"] ?> !</h1>
@@ -69,7 +69,7 @@
         <button class="back btn btn-lightPink b-lightPink c-white backToProfile">retour</button>
     </section>
 
-    <section id="account-three" class="account-three ">
+    <section id="account-three" class="account-three none">
         <p class="text c-deepBlue">Un changement d’adresse ?<br> Pas de soucis, changez vos informations personnelles
             quand vous
             le souhaitez ! </p>

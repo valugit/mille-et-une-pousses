@@ -1341,8 +1341,15 @@ section {
 
 // Blog Page
 
+.blogPage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .blog-one {
     height: 60vh;
+    width: 100%;
     background-image: url(./../media/img/blog.jpg);
     background-size: contain;
     align-items: flex-start;
@@ -1400,15 +1407,25 @@ section {
 }
 
 .blog-two {
+    width: 88%;
     flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    padding: 200px 0;
 
     .article {
+        width: 27%;
+        margin: 50px 0 50px 50px;
 
+        h3 {
+            width: 350px;
+            font-size: 32px;
+        }
 
         .frame {
             position: relative;
-            height: 350px;
+            height: 530px;
             width: 350px;
 
             a {
@@ -1427,6 +1444,7 @@ section {
                     transition: 0.2s ease;
                     position: absolute;
                     height: 100%;
+                    width: 100%;
                 }
 
                 span {
@@ -1462,6 +1480,7 @@ section {
 
                     img {
                         height: 125%;
+                        width: 125%;
                     }
 
                     span {
@@ -1487,6 +1506,12 @@ section {
         }
     }
 }
+
+
+// Article Page
+
+
+
 
 
 // Account Page

@@ -1361,8 +1361,15 @@ section .container {
   margin: 1em 0;
 }
 
+.blogPage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .blog-one {
   height: 60vh;
+  width: 100%;
   background-image: url(./../media/img/blog.jpg);
   background-size: contain;
   align-items: flex-start;
@@ -1414,12 +1421,24 @@ section .container {
 }
 
 .blog-two {
+  width: 88%;
   flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  padding: 200px 0;
+}
+.blog-two .article {
+  width: 27%;
+  margin: 50px 0 50px 50px;
+}
+.blog-two .article h3 {
+  width: 350px;
+  font-size: 32px;
 }
 .blog-two .article .frame {
   position: relative;
-  height: 350px;
+  height: 530px;
   width: 350px;
 }
 .blog-two .article .frame a {
@@ -1438,6 +1457,7 @@ section .container {
   transition: 0.2s ease;
   position: absolute;
   height: 100%;
+  width: 100%;
 }
 .blog-two .article .frame a span {
   z-index: 3;
@@ -1468,6 +1488,7 @@ section .container {
 }
 .blog-two .article .frame a:hover img {
   height: 125%;
+  width: 125%;
 }
 .blog-two .article .frame a:hover span {
   opacity: 1;
