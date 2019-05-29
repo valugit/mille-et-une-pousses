@@ -9,6 +9,7 @@ visuel et/ou auditif.
 
 # Important
 
+ - La base de données se trouve dans le dossier "database".
  - Lancer MAMP (sur mac) ou WAMP (sur windows)
  - Ouvrir le projet en utilisant `php -S 0.0.0.0:3008 -t public` ou dans un environnement apache.
  - Installer composer.

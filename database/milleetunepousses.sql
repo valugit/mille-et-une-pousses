@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: May 25, 2019 at 09:56 PM
+-- Generation Time: May 29, 2019 at 08:15 AM
 -- Server version: 5.7.25
 -- PHP Version: 7.3.1
 
@@ -321,7 +321,6 @@ INSERT INTO `roles` (`id`, `name`) VALUES
 
 CREATE TABLE `subscriptions` (
   `id` int(11) NOT NULL,
-  `order_id` int(11) NOT NULL,
   `activation_date` date NOT NULL,
   `expiration_date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -350,7 +349,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `password`, `phone`, `first_address_id`, `second_address_id`, `role_id`) VALUES
 (1, 'admin', 'admin', 'gregoire.masse@supinternet.fr', '$2y$10$.88ghb05I2udj4nztM5zy..P5Mm0Vvmup0MZkg6AynhHnwWTgTY5u', NULL, NULL, NULL, 1),
-(2, 'Jean-Guy', 'Plantlover', 'jean.guy@plantlover.fr', '$2y$10$xsmcv1TTn0S46beYflAYZ.m8IkfGYoD.fk6iCQtugFGEDUm3hPvGu', '0612345678', 1, NULL, 2);
+(2, 'Jean-Guy', 'Plantlover', 'jean.guy@plantlover.fr', '$2y$10$xsmcv1TTn0S46beYflAYZ.m8IkfGYoD.fk6iCQtugFGEDUm3hPvGu', '0612345678', 1, NULL, 2),
+(17, 'J', 'B', 'jeanbernardo@wanadoo.org', '$2y$10$QyJa4C51mCS.kX4z5I/yUOi9mI9jrBYoEIFHnKdLswSo1ekuoVn0y', NULL, NULL, NULL, 2),
+(18, 'Lily', 'Rose', 'lily.rose@hotmail.fr', '$2y$10$gi6lPysCdG6c9Rbn6UZ8teUpWP1hMdpYWZajJdcs1TAU3TG4XMOye', NULL, NULL, NULL, 2);
 
 --
 -- Indexes for dumped tables
@@ -453,8 +454,7 @@ ALTER TABLE `roles`
 -- Indexes for table `subscriptions`
 --
 ALTER TABLE `subscriptions`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `fk_subscriptions_orders1_idx` (`order_id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `users`
@@ -535,4 +535,4 @@ ALTER TABLE `subscriptions`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
