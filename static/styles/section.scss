@@ -82,6 +82,34 @@ main {
             }
         }
 
+        @keyframes homeAnimationLeaf-12 {
+            0% {
+                top: 275vh;
+                right: 300px;
+                transform: rotate(0deg) scaleX(-1);
+            }
+
+            100% {
+                top: 268vh;
+                right: 260px;
+                transform: rotate(35deg) scaleX(-1);
+            }
+        }
+
+        @keyframes homeAnimationLeaf-13 {
+            0% {
+                top: 275vh;
+                right: 300px;
+                transform: rotate(0deg) scaleX(-1);
+            }
+
+            100% {
+                top: 268vh;
+                right: 240px;
+                transform: rotate(50deg) scaleX(-1);
+            }
+        }
+
         .leaf {
             z-index: 3;
             position: absolute;
@@ -188,6 +216,29 @@ main {
 
             &.leaf_animation {
                 animation: homeAnimationLeaf-11 3s ease forwards;
+            }
+        }
+
+        .leaf-12 {
+            height: 300px;
+            top: 275vh;
+            right: 300px;
+            transform: rotate(0deg) scaleX(-1);
+
+            &.leaf_animation {
+                animation: homeAnimationLeaf-12 2s ease forwards;
+            }
+        }
+
+        .leaf-13 {
+            z-index: 2;
+            height: 300px;
+            top: 275vh;
+            right: 300px;
+            transform: rotate(0deg) scaleX(-1);
+
+            &.leaf_animation {
+                animation: homeAnimationLeaf-13 2s ease forwards;
             }
         }
     }
@@ -346,6 +397,7 @@ section {
     background: linear-gradient(-50deg, $lightPink 28%, $beige 28%);
 
     .container {
+        z-index: 4;
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -363,9 +415,14 @@ section {
             text-shadow: 0 0.05em 0 $lightPink;
         }
 
-        img {
-            height: 500px;
+        .img {
+            height: 485px;
             width: 950px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
         }
 
     }
@@ -556,7 +613,6 @@ section {
                     justify-content: center;
                     height: 100%;
                     width: 100%;
-                    border: 2px solid white;
                     align-self: flex-start;
                     overflow: hidden;
 
@@ -659,6 +715,47 @@ section {
 
 
 // Product page
+
+
+.productPage {
+    .leaf {
+        position: absolute;
+        height: 500px;
+    }
+
+    .leaf-1 {
+        height: 800px;
+        top: 80vh;
+        right: -150px;
+        transform: rotate(-50deg);
+    }
+
+    .leaf-2 {
+        top: 115vh;
+        right: -150px;
+        transform: rotate(-60deg);
+    }
+
+    .leaf-3 {
+        top: 125vh;
+        right: -150px;
+        transform: rotate(-80deg);
+    }
+
+    .leaf-4 {
+        top: 135vh;
+        right: -150px;
+        transform: rotate(-100deg);
+    }
+
+    .leaf-5 {
+        z-index: -1;
+        height: 700px;
+        top: 130vh;
+        right: -200px;
+        transform: rotate(-140deg);
+    }
+}
 
 .product-one {
     height: 100vh;
@@ -919,7 +1016,6 @@ section {
                     justify-content: center;
                     height: 100%;
                     width: 100%;
-                    border: 2px solid white;
                     align-self: flex-start;
                     overflow: hidden;
 
@@ -1144,8 +1240,8 @@ section {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: space-evenly;
-                height: 100%;
+                justify-content: space-between;
+                height: 80%;
                 width: 45%;
 
                 p {
@@ -1321,7 +1417,7 @@ section {
             align-items: center;
             justify-content: center;
             font-size: 50px;
-            margin: 0.5em 0 1em 0;
+            margin: 100px 0 50px 0;
         }
     }
 }
@@ -1415,6 +1511,10 @@ section {
     padding: 200px 0;
 
     .article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 650px;
         width: 27%;
         margin: 50px 0 50px 50px;
 
@@ -1514,6 +1614,23 @@ section {
     flex-direction: column;
     align-items: center;
 
+    .leaf {
+        position: absolute;
+        height: 500px;
+    }
+
+    .leaf-1 {
+        top: 0;
+        right: -50px;
+        transform: rotate(-130deg) scaleX(-1);
+    }
+
+    .leaf-2 {
+        top: -50px;
+        right: 0;
+        transform: rotate(-120deg) scaleX(-1);
+    }
+
     .circle {
         z-index: -1;
         position: absolute;
@@ -1527,7 +1644,7 @@ section {
 }
 
 .article-one {
-    padding: 300px 0;
+    padding: 150px 0;
     width: 100%;
 
     .author {
@@ -1538,13 +1655,16 @@ section {
         .img {
             height: 175px;
             width: 175px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border-radius: 50%;
             margin: 50px 50px 50px 0;
             overflow: hidden;
+            border: 3px solid $beige;
 
             img {
-                height: 100%;
-                width: 100%;
+                height: 80%;
             }
         }
 
@@ -1601,9 +1721,13 @@ section {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
-        margin: 50px 0 200px 0;
+        margin: 100px 0 200px 0;
 
         .article {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 650px;
             width: 27%;
 
             h3 {
@@ -1848,7 +1972,7 @@ section {
                 width: 100%;
 
                 input {
-                    transition: 0.2s ease;
+                    transition: 0.5s ease;
                     height: 100%;
                     width: 100%;
                     display: flex;
@@ -1861,7 +1985,6 @@ section {
 
                     &:hover {
                         cursor: pointer;
-                        color: white;
                     }
                 }
             }

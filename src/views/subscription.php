@@ -53,7 +53,7 @@
             <div class="box">
 
                 <div class="img img-two">
-                    <img class="img-two" src="./../media/img/box_annuel.jpg" alt="box annuel" title="photo de notre box pour un abonnement annuel">
+                    <img class="img-two" src="./../media/img/box_annuel.png" alt="box annuel" title="photo de notre box pour un abonnement annuel">
                 </div>
 
                 <div class="text">
