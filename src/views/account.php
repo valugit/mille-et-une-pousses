@@ -78,7 +78,7 @@
 
                 <h3 class='c-deepBlue'>mail</h3>
 
-                <input id="dataMail" class="data c-deepBlue" type="text" name="email" value="mail" placeholder="nouvelle adresse mail"
+                <input id="dataMail" class="data c-deepBlue" type="text" name="email" value="<?php echo $profile["email"] ?>" placeholder="nouvelle adresse mail"
                     title="votre adresse mail actuelle" disabled>
 
                 <button id="changeDataMail" type="button" class="btn btn-deepBlue b-deepBlue c-white"
@@ -96,7 +96,7 @@
 
                 <h3 class='c-deepBlue'>adresse</h3>
 
-                <input id="dataAddress" class="data c-deepBlue" type="text" name="adresse" value="address" placeholder="nouvelle adresse"
+                <input id="dataAddress" class="data c-deepBlue" type="text" name="adresse" value="<?php echo (isset($profile["adress"]) ? $profile["adress"] : " ") ?>" placeholder="nouvelle adresse"
                     title="votre adresse actuelle" disabled>
 
                 <button id="changeDataAddress" type="button" class="btn btn-deepBlue b-deepBlue c-white"
@@ -114,7 +114,7 @@
 
                 <h3 class='c-deepBlue'>téléphone</h3>
 
-                <input id="dataPhone" class="data c-deepBlue" type="tel" name="phone" value="phone" placeholder="nouveau numéro de téléphone"
+                <input id="dataPhone" class="data c-deepBlue" type="tel" name="phone" value="<?php echo (isset($profile["phone"]) ? $profile["phone"] : " ") ?>" placeholder="nouveau numéro de téléphone"
                     title="votre numéro de téléphone actuel" disabled>
 
                 <button id="changeDataPhone" type="button" class="btn btn-deepBlue b-deepBlue c-white"
@@ -133,7 +133,7 @@
                 <h3 class='c-deepBlue'>mot de passe</h3>
 
                 <input id="dataPassword" class="data c-deepBlue" type="password" name="password" placeholder="nouveau mot de passe"
-                    value="mot de passe" title="votre mot de passe actuel" disabled>
+                    value="**********" title="votre mot de passe actuel" disabled>
 
                 <button id="changeDataPassword" type="button" class="btn btn-deepBlue b-deepBlue c-white"
                     title="modifier le mot de passe">modifier</button>
